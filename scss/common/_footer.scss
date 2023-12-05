@@ -1,0 +1,14 @@
+footer {
+	width: 1500px;
+	margin: 0 auto;
+	margin-top: 300px;
+	.banner {
+		width: 100%;
+		.inner {
+			article {
+				display: flex;
+				justify-content: space-between;
+			}
+		}
+	}
+}

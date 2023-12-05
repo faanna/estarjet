@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+// common
+@import './common/header';
+@import './common/footer';
+@import './common/popnotice';
+@import './common/reset';
+
+// main
+@import './main.scss/slide';
+@import './main.scss/tab';
+@import './main.scss/visual';
+@import './main.scss/trip';
+@import './main.scss/affiliated';
+@import './main.scss/added';
+@import './main.scss/notice';

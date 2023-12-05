@@ -1,0 +1,67 @@
+.announcement {
+	width: 1920px;
+	height: 30px;
+	display: flex;
+	background-color: antiquewhite;
+	margin: 0 auto;
+	align-items: center;
+	justify-content: space-evenly;
+	cursor: pointer;
+	.inner {
+		width: 1500px;
+		height: 100%;
+		display: flex;
+		margin-left: 0;
+		.content {
+			width: 1500px;
+			height: 100%;
+			margin: 0 auto;
+			ul {
+				display: flex;
+				.announc_icon {
+					a {
+						height: 100%;
+						i {
+							height: 100%;
+							font-size: 16px;
+							color: orange;
+							padding: 6px 10px;
+						}
+					}
+				}
+				.announc_contents {
+					display: block;
+					height: 30px;
+					overflow: hidden;
+					p {
+						text-align: left;
+						align-items: center;
+						margin: 3px 20px;
+						font: bold 14px/1.5 '맑은고딕';
+						color: rgb(0, 0, 109);
+					}
+				}
+			}
+		}
+		.close {
+			width: 130px;
+			a {
+				height: 30px;
+				align-items: center;
+				text-align: center;
+				margin-top: 7px;
+				font: bold 13px/1 '맑은고딕';
+				color: rgb(0, 0, 109);
+			}
+			i {
+				height: 30px;
+				line-height: 30px;
+				color: orange;
+				transform: rotate(45deg);
+				&:hover {
+					color: rgb(0, 0, 109);
+				}
+			}
+		}
+	}
+}
