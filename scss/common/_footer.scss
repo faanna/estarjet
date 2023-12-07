@@ -1,13 +1,106 @@
 footer {
-	width: 1500px;
+	width: 100%;
 	margin: 0 auto;
 	margin-top: 300px;
+	cursor: pointer;
 	.banner {
 		width: 100%;
+		margin: 0 auto;
+		background-color: #eee;
 		.inner {
+			width: 1500px;
+			margin: 0 auto;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
 			article {
+				width: 400px;
 				display: flex;
 				justify-content: space-between;
+				padding: 20px 0px;
+				div {
+					h4 {
+						font: bold 24px/2.5 '맑은고딕';
+						color: #aaa;
+					}
+					p {
+						font: bold 30px/1.8 'arial';
+						color: #fff;
+					}
+					span {
+						font: 18px/1.8 '맑은고딕';
+						color: #ddd;
+					}
+				}
+				.pic {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+			}
+			:nth-of-type(3) {
+				.part {
+					h4 {
+						font: bold 24px/2.5 '맑은고딕';
+						color: #aaa;
+					}
+					span {
+						display: block;
+						// height: 100px;
+						margin-top: 20px;
+						font: 18px/1.8 '맑은고딕';
+						color: #ddd;
+					}
+				}
+			}
+		}
+	}
+	.footer_sub {
+		width: 100%;
+		background-color: rgb(1, 7, 37);
+		border-bottom: 2px solid #555;
+		.footer_submenu {
+			width: 1500px;
+			margin: 0 auto;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 20px 0px;
+			li {
+				position: relative;
+				font: normal 15px/1 '맑은고딕';
+				color: #aaa;
+			}
+		}
+	}
+	.footer_main {
+		width: 100%;
+		background-color: rgb(1, 7, 37);
+		.footer_con {
+			width: 1500px;
+			margin: 0 auto;
+			display: flex;
+			justify-content: space-between;
+			padding: 20px 0px;
+			h2 {
+				padding: 50px 0px;
+			}
+			.copylight {
+				padding: 40px 0px;
+				.copy {
+					display: flex;
+					justify-content: left;
+					li {
+						font: normal 13px/2 '맑은고딕';
+						color: #ccc;
+					}
+				}
+			}
+			.sns {
+				padding: 50px 0px;
+				a {
+					margin-right: 10px;
+				}
 			}
 		}
 	}
