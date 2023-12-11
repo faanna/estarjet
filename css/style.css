@@ -4,7 +4,7 @@ header {
   border-bottom: 2px solid #eee;
 }
 header .inner {
-  width: 1500px;
+  width: 1300px;
   height: 90px;
   margin: 0 auto;
   position: relative;
@@ -123,7 +123,7 @@ header .inner .sub .sub_manu .menu.on article:hover p {
 header .inner .util_menu {
   position: absolute;
   top: 25px;
-  right: 0;
+  right: 0px;
   display: flex;
   cursor: pointer;
 }
@@ -170,7 +170,7 @@ header .inner .util_menu .language ul li .language_menu .language_box i {
   color: #555;
 }
 header .inner .util_menu .language ul li .language_menu .glober {
-  display: none;
+  display: block;
   width: 100px;
   background-color: #fff;
   border: 1px solid #aaa;
@@ -201,7 +201,7 @@ footer .banner {
   background-color: #eee;
 }
 footer .banner .inner {
-  width: 1500px;
+  width: 1300px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -214,16 +214,16 @@ footer .banner .inner article {
   padding: 20px 0px;
 }
 footer .banner .inner article div h4 {
-  font: bold 24px/2.5 "맑은고딕";
-  color: #aaa;
+  font: normal 24px/2.5 "맑은고딕";
+  color: #bbb;
 }
 footer .banner .inner article div p {
   font: bold 30px/1.8 "arial";
-  color: #fff;
+  color: #aaa;
 }
 footer .banner .inner article div span {
   font: 18px/1.8 "맑은고딕";
-  color: #ddd;
+  color: #aaa;
 }
 footer .banner .inner article .pic {
   display: flex;
@@ -231,22 +231,22 @@ footer .banner .inner article .pic {
   align-items: center;
 }
 footer .banner .inner :nth-of-type(3) .part h4 {
-  font: bold 24px/2.5 "맑은고딕";
-  color: #aaa;
+  font: normal 24px/2.5 "맑은고딕";
+  color: #bbb;
 }
 footer .banner .inner :nth-of-type(3) .part span {
   display: block;
   margin-top: 20px;
-  font: 18px/1.8 "맑은고딕";
-  color: #ddd;
+  font: bold 18px/1.8 "맑은고딕";
+  color: #aaa;
 }
 footer .footer_sub {
   width: 100%;
-  background-color: rgb(1, 7, 37);
-  border-bottom: 2px solid #555;
+  background-color: #ccc;
+  border-bottom: 2px solid #aaa;
 }
 footer .footer_sub .footer_submenu {
-  width: 1500px;
+  width: 1300px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -256,14 +256,22 @@ footer .footer_sub .footer_submenu {
 footer .footer_sub .footer_submenu li {
   position: relative;
   font: normal 15px/1 "맑은고딕";
-  color: #aaa;
+  color: #777;
+}
+footer .footer_sub .footer_submenu li:nth-of-type(3) {
+  font: bold 15px/1 "맑은고딕";
+  color: #666;
+}
+footer .footer_sub .footer_submenu li:nth-of-type(7) {
+  font: bold 15px/1 "맑은고딕";
+  color: #666;
 }
 footer .footer_main {
   width: 100%;
-  background-color: rgb(1, 7, 37);
+  background-color: #aaa;
 }
 footer .footer_main .footer_con {
-  width: 1500px;
+  width: 1300px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -281,7 +289,7 @@ footer .footer_main .footer_con .copylight .copy {
 }
 footer .footer_main .footer_con .copylight .copy li {
   font: normal 13px/2 "맑은고딕";
-  color: #ccc;
+  color: #eee;
 }
 footer .footer_main .footer_con .sns {
   padding: 50px 0px;
@@ -301,13 +309,13 @@ footer .footer_main .footer_con .sns a {
   cursor: pointer;
 }
 .announcement .inner {
-  width: 1500px;
+  width: 1300px;
   height: 100%;
   display: flex;
   margin-left: 0;
 }
 .announcement .inner .content {
-  width: 1500px;
+  width: 1200px;
   height: 100%;
   margin: 0 auto;
 }
@@ -336,7 +344,7 @@ footer .footer_main .footer_con .sns a {
   color: rgb(0, 0, 109);
 }
 .announcement .inner .close {
-  width: 130px;
+  width: 115px;
 }
 .announcement .inner .close a {
   height: 30px;
@@ -386,7 +394,7 @@ a {
 #main .visual .prep {
   position: absolute;
   top: 45%;
-  left: 11%;
+  left: 16%;
   font-size: 60px;
   color: #444;
   opacity: 0.9;
@@ -394,7 +402,7 @@ a {
 #main .visual .next {
   position: absolute;
   top: 45%;
-  right: 11%;
+  right: 16%;
   font-size: 60px;
   color: #444;
   opacity: 0.9;
@@ -410,7 +418,7 @@ a {
   margin-top: 100px;
 }
 #Affiliated_services .inner {
-  width: 1500px;
+  width: 1300px;
   margin: 0 auto;
   position: relative;
 }
@@ -447,7 +455,7 @@ a {
   margin-top: 100px;
 }
 #Added_services .inner {
-  width: 1500px;
+  width: 1300px;
   margin: 0 auto;
   position: relative;
 }
@@ -499,14 +507,14 @@ a {
 }
 
 #notice {
-  width: 1500px;
+  width: 1300px;
   margin-top: 150px;
   display: flex;
   justify-content: space-between;
 }
 #notice .inner {
   width: 200px;
-  margin-left: 13%;
+  margin-left: 23%;
 }
 #notice .inner h2 {
   font: bold 35px/1 "맑은고딕";
@@ -528,7 +536,7 @@ a {
 #notice .contents {
   position: relative;
   top: 0;
-  right: -200px;
+  right: -300px;
   width: 900px;
 }
 #notice .contents ul li {

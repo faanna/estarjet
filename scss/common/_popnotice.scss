@@ -8,12 +8,12 @@
 	justify-content: space-evenly;
 	cursor: pointer;
 	.inner {
-		width: 1500px;
+		width: 1300px;
 		height: 100%;
 		display: flex;
 		margin-left: 0;
 		.content {
-			width: 1500px;
+			width: 1200px;
 			height: 100%;
 			margin: 0 auto;
 			ul {
@@ -44,7 +44,7 @@
 			}
 		}
 		.close {
-			width: 130px;
+			width: 115px;
 			a {
 				height: 30px;
 				align-items: center;

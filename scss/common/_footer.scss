@@ -8,7 +8,7 @@ footer {
 		margin: 0 auto;
 		background-color: #eee;
 		.inner {
-			width: 1500px;
+			width: 1300px;
 			margin: 0 auto;
 			display: flex;
 			justify-content: space-between;
@@ -20,16 +20,16 @@ footer {
 				padding: 20px 0px;
 				div {
 					h4 {
-						font: bold 24px/2.5 '맑은고딕';
-						color: #aaa;
+						font: normal 24px/2.5 '맑은고딕';
+						color: #bbb;
 					}
 					p {
 						font: bold 30px/1.8 'arial';
-						color: #fff;
+						color: #aaa;
 					}
 					span {
 						font: 18px/1.8 '맑은고딕';
-						color: #ddd;
+						color: #aaa;
 					}
 				}
 				.pic {
@@ -41,15 +41,15 @@ footer {
 			:nth-of-type(3) {
 				.part {
 					h4 {
-						font: bold 24px/2.5 '맑은고딕';
-						color: #aaa;
+						font: normal 24px/2.5 '맑은고딕';
+						color: #bbb;
 					}
 					span {
 						display: block;
-						// height: 100px;
+
 						margin-top: 20px;
-						font: 18px/1.8 '맑은고딕';
-						color: #ddd;
+						font: bold 18px/1.8 '맑은고딕';
+						color: #aaa;
 					}
 				}
 			}
@@ -57,10 +57,10 @@ footer {
 	}
 	.footer_sub {
 		width: 100%;
-		background-color: rgb(1, 7, 37);
-		border-bottom: 2px solid #555;
+		background-color: #ccc;
+		border-bottom: 2px solid #aaa;
 		.footer_submenu {
-			width: 1500px;
+			width: 1300px;
 			margin: 0 auto;
 			display: flex;
 			justify-content: space-between;
@@ -69,15 +69,23 @@ footer {
 			li {
 				position: relative;
 				font: normal 15px/1 '맑은고딕';
-				color: #aaa;
+				color: #777;
+				&:nth-of-type(3) {
+					font: bold 15px/1 '맑은고딕';
+					color: #666;
+				}
+				&:nth-of-type(7) {
+					font: bold 15px/1 '맑은고딕';
+					color: #666;
+				}
 			}
 		}
 	}
 	.footer_main {
 		width: 100%;
-		background-color: rgb(1, 7, 37);
+		background-color: #aaa;
 		.footer_con {
-			width: 1500px;
+			width: 1300px;
 			margin: 0 auto;
 			display: flex;
 			justify-content: space-between;
@@ -92,7 +100,7 @@ footer {
 					justify-content: left;
 					li {
 						font: normal 13px/2 '맑은고딕';
-						color: #ccc;
+						color: #eee;
 					}
 				}
 			}
