@@ -1,6 +1,6 @@
 #Added_services {
 	width: 100%;
-	margin-top: 100px;
+	margin-top: 150px;
 	.inner {
 		width: 1300px;
 		margin: 0 auto;
@@ -21,27 +21,24 @@
 			article {
 				width: 220px;
 				.pic {
-					width: 100%;
-					height: 180px;
 					.art {
 						width: 100%;
 						height: 280px;
 						background-color: rgba(0, 0, 0, 0.02);
 						padding: 20px;
 						img {
-							width: 170px;
-							height: 150px;
+							width: 150px;
 							object-fit: cover;
-							margin-bottom: 45px;
+							margin-bottom: 60px;
 						}
 						h3 {
-							width: 170px;
-							font: bold 22px/1.5 '맑은고딕';
+							font: bold 20px/1 '맑은고딕';
 							color: #555;
 							text-align: center;
 						}
 						&:hover {
 							background-color: orange;
+							border-radius: 20px;
 							box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
 							h3 {
 								color: #fff;

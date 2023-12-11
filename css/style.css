@@ -197,7 +197,6 @@ footer {
 }
 footer .banner {
   width: 100%;
-  margin: 0 auto;
   background-color: #eee;
 }
 footer .banner .inner {
@@ -208,25 +207,30 @@ footer .banner .inner {
   align-items: center;
 }
 footer .banner .inner article {
-  width: 400px;
+  width: 430px;
   display: flex;
   justify-content: space-between;
   padding: 20px 0px;
 }
-footer .banner .inner article div h4 {
+footer .banner .inner article .part {
+  width: 250px;
+}
+footer .banner .inner article .part h4 {
   font: normal 24px/2.5 "맑은고딕";
   color: #bbb;
 }
-footer .banner .inner article div p {
+footer .banner .inner article .part p {
   font: bold 30px/1.8 "arial";
   color: #aaa;
 }
-footer .banner .inner article div span {
+footer .banner .inner article .part span {
   font: 18px/1.8 "맑은고딕";
   color: #aaa;
 }
 footer .banner .inner article .pic {
+  width: 180px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -415,7 +419,7 @@ a {
 
 #Affiliated_services {
   width: 100%;
-  margin-top: 100px;
+  margin-top: 150px;
 }
 #Affiliated_services .inner {
   width: 1300px;
@@ -435,24 +439,21 @@ a {
 }
 #Affiliated_services .inner .wrap article .pic {
   width: 100%;
-  height: 180px;
 }
 #Affiliated_services .inner .wrap article .pic img {
-  width: 170px;
-  height: 150px;
+  width: 160px;
   object-fit: cover;
+  margin-bottom: 20px;
 }
 #Affiliated_services .inner .wrap article h3 {
-  width: 170px;
-  font: bold 22px/1 "맑은고딕";
+  font: bold 20px/1 "맑은고딕";
   color: #555;
   text-align: center;
-  margin-bottom: 10px;
 }
 
 #Added_services {
   width: 100%;
-  margin-top: 100px;
+  margin-top: 150px;
 }
 #Added_services .inner {
   width: 1300px;
@@ -476,10 +477,6 @@ a {
 #Added_services .inner .wrap article {
   width: 220px;
 }
-#Added_services .inner .wrap article .pic {
-  width: 100%;
-  height: 180px;
-}
 #Added_services .inner .wrap article .pic .art {
   width: 100%;
   height: 280px;
@@ -487,19 +484,18 @@ a {
   padding: 20px;
 }
 #Added_services .inner .wrap article .pic .art img {
-  width: 170px;
-  height: 150px;
+  width: 150px;
   object-fit: cover;
-  margin-bottom: 45px;
+  margin-bottom: 60px;
 }
 #Added_services .inner .wrap article .pic .art h3 {
-  width: 170px;
-  font: bold 22px/1.5 "맑은고딕";
+  font: bold 20px/1 "맑은고딕";
   color: #555;
   text-align: center;
 }
 #Added_services .inner .wrap article .pic .art:hover {
   background-color: orange;
+  border-radius: 20px;
   box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
 }
 #Added_services .inner .wrap article .pic .art:hover h3 {

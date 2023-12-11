@@ -5,7 +5,6 @@ footer {
 	cursor: pointer;
 	.banner {
 		width: 100%;
-		margin: 0 auto;
 		background-color: #eee;
 		.inner {
 			width: 1300px;
@@ -14,11 +13,12 @@ footer {
 			justify-content: space-between;
 			align-items: center;
 			article {
-				width: 400px;
+				width: 430px;
 				display: flex;
 				justify-content: space-between;
 				padding: 20px 0px;
-				div {
+				.part {
+					width: 250px;
 					h4 {
 						font: normal 24px/2.5 '맑은고딕';
 						color: #bbb;
@@ -33,7 +33,9 @@ footer {
 					}
 				}
 				.pic {
+					width: 180px;
 					display: flex;
+					flex-direction: column;
 					justify-content: center;
 					align-items: center;
 				}
