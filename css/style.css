@@ -195,57 +195,80 @@ footer {
   margin-top: 300px;
   cursor: pointer;
 }
-footer .banner {
+footer .inner {
   width: 100%;
-  background-color: #eee;
-}
-footer .banner .inner {
-  width: 1300px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-footer .banner .inner article {
-  width: 370px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background-color: rgb(255, 228, 188);
   padding: 20px 0px;
 }
-footer .banner .inner article .part {
+footer .inner .banner {
+  width: 1300px;
+  margin: 0 auto;
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+footer .inner .banner h2 {
+  font: bold 24px/2 "맑은고딕";
+  color: #333;
+  margin-bottom: 5px;
+}
+footer .inner .banner p {
+  font: 17px/1.5 "맑은고딕";
+  color: #444;
+  margin-bottom: 30px;
+}
+footer .inner .banner .art_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .inner .banner .art_wrap article {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  border: 1px solid none;
+  background-color: rgb(253, 245, 233);
+  box-shadow: 1px 3px 5px 3px rgba(0, 0, 0, 0.06);
+  padding: 30px;
+}
+footer .inner .banner .art_wrap article .part {
   width: 250px;
 }
-footer .banner .inner article .part h4 {
-  font: normal 24px/2.5 "맑은고딕";
-  color: #bbb;
+footer .inner .banner .art_wrap article .part h4 {
+  font: 17px/1 "맑은고딕";
+  color: #666;
+  margin-bottom: 25px;
 }
-footer .banner .inner article .part p {
-  font: bold 30px/1.8 "arial";
-  color: #aaa;
+footer .inner .banner .art_wrap article .part p {
+  font: 23px/1 "arial";
+  color: #444;
+  margin-bottom: 10px;
 }
-footer .banner .inner article .part span {
-  font: 18px/1.8 "맑은고딕";
-  color: #aaa;
+footer .inner .banner .art_wrap article .part span {
+  font: 18px/1 "맑은고딕";
+  color: #555;
 }
-footer .banner .inner article .pic i {
-  color: #ccc;
-  font-size: 80px;
+footer .inner .banner .art_wrap article .pic i {
+  color: rgb(255, 228, 188);
+  font-size: 65px;
 }
-footer .banner .inner :nth-of-type(3) .part h4 {
-  font: normal 24px/2.5 "맑은고딕";
-  color: #bbb;
+footer .inner .banner .art_wrap :nth-of-type(3) .part h4 {
+  font: 18px/1 "맑은고딕";
+  color: #666;
+  margin-bottom: 25px;
 }
-footer .banner .inner :nth-of-type(3) .part span {
+footer .inner .banner .art_wrap :nth-of-type(3) .part span {
   display: block;
   margin-top: 20px;
-  font: bold 18px/1.8 "맑은고딕";
-  color: #aaa;
+  font: bold 18px/1.5 "맑은고딕";
+  color: #666;
 }
 footer .footer_sub {
   width: 100%;
-  background-color: #ccc;
-  border-bottom: 2px solid #aaa;
+  background-color: #eee;
+  border-bottom: 1px solid #ddd;
 }
 footer .footer_sub .footer_submenu {
   width: 1300px;
@@ -258,11 +281,11 @@ footer .footer_sub .footer_submenu {
 footer .footer_sub .footer_submenu li {
   position: relative;
   font: normal 15px/1 "맑은고딕";
-  color: #777;
+  color: #999;
 }
 footer .footer_sub .footer_submenu li:nth-of-type(3) {
   font: bold 15px/1 "맑은고딕";
-  color: #666;
+  color: #777;
 }
 footer .footer_sub .footer_submenu li:nth-of-type(7) {
   font: bold 15px/1 "맑은고딕";
@@ -270,7 +293,7 @@ footer .footer_sub .footer_submenu li:nth-of-type(7) {
 }
 footer .footer_main {
   width: 100%;
-  background-color: #aaa;
+  background-color: #fff;
 }
 footer .footer_main .footer_con {
   width: 1300px;
@@ -291,7 +314,7 @@ footer .footer_main .footer_con .copylight .copy {
 }
 footer .footer_main .footer_con .copylight .copy li {
   font: normal 13px/2 "맑은고딕";
-  color: #eee;
+  color: #777;
 }
 footer .footer_main .footer_con .sns {
   padding: 50px 0px;
@@ -382,6 +405,131 @@ a {
   text-decoration: none;
 }
 
+#popup_tabmenu {
+  position: relative;
+  width: 1300px;
+  height: 250px;
+  margin: 0 auto;
+}
+#popup_tabmenu .inner {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  border: 1px solid #eee;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.6);
+}
+#popup_tabmenu .inner .tap_top {
+  width: 620px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+#popup_tabmenu .inner .tap_top .tab_part {
+  width: 350px;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #eee;
+  border: 1px solid none;
+  border-radius: 10px;
+}
+#popup_tabmenu .inner .tap_top .tab_part li {
+  width: 116px;
+  height: 40px;
+  font: bold 17px/40px "맑은고딕";
+  color: #333;
+  text-align: center;
+}
+#popup_tabmenu .inner .tap_top .tab_part li:hover {
+  border-radius: 10px;
+  background-color: orange;
+  font: bold 17px/40px "맑은고딕";
+  color: #fff;
+}
+#popup_tabmenu .inner .tap_top .tooltip {
+  width: 140px;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 10px;
+}
+#popup_tabmenu .inner .tap_top .tooltip .tolltip_box {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#popup_tabmenu .inner .tap_top .tooltip .tolltip_box p {
+  font: bold 15px/40px "맑은고딕";
+  color: #555;
+}
+#popup_tabmenu .inner .tap_top .tooltip .tolltip_box img {
+  width: 20px;
+  height: 20px;
+}
+#popup_tabmenu .inner .tap_top .tooltip a {
+  display: none;
+  width: 300px;
+  height: 150px;
+  position: absolute;
+  top: 30px;
+  right: 175px;
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  font: normal 13px/1.5 "맑은고딕";
+  color: #555;
+}
+#popup_tabmenu .inner .tap_top .group {
+  width: 130px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#popup_tabmenu .inner .tap_top .group input {
+  width: 16px;
+  height: 16px;
+}
+#popup_tabmenu .inner .tap_top .group label {
+  font: bold 15px/1 "맑은고딕";
+  color: #555;
+}
+#popup_tabmenu .inner .tab_box {
+  width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+#popup_tabmenu .inner .tab_box .tab_menu {
+  margin-top: 30px;
+  display: flex;
+}
+#popup_tabmenu .inner .tab_box .tab_menu .contents {
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #ddd;
+}
+#popup_tabmenu .inner .tab_box .tab_menu .contents h4 {
+  font: normal 17px/1 "맑은고딕";
+  color: #333;
+}
+#popup_tabmenu .inner .tab_box .close {
+  width: 100px;
+  margin-top: 30px;
+}
+#popup_tabmenu .inner .tab_box .close button {
+  padding: 10px;
+  font: bold 17px/1 "맑은고딕";
+  color: #333;
+}
+
 #main {
   width: 100%;
   height: 650px;
@@ -410,11 +558,6 @@ a {
   opacity: 0.9;
 }
 
-#trip {
-  width: 1500px;
-  height: 500px;
-}
-
 #Affiliated_services {
   width: 100%;
   margin-top: 150px;
@@ -427,8 +570,14 @@ a {
 #Affiliated_services .inner h2 {
   font: bold 35px/1 "맑은고딕";
   color: #333;
-  text-align: center;
-  margin-bottom: 40px;
+  text-align: left;
+  margin-bottom: 25px;
+}
+#Affiliated_services .inner p {
+  font: 20px/1 "맑은고딕";
+  color: #333;
+  text-align: left;
+  margin-bottom: 60px;
 }
 #Affiliated_services .inner .wrap {
   width: 100%;
@@ -439,7 +588,7 @@ a {
   width: 100%;
 }
 #Affiliated_services .inner .wrap article .pic img {
-  width: 160px;
+  width: 200px;
   object-fit: cover;
   margin-bottom: 20px;
 }
@@ -461,8 +610,14 @@ a {
 #Added_services .inner h2 {
   font: bold 35px/1 "맑은고딕";
   color: #333;
-  text-align: center;
-  margin-bottom: 40px;
+  text-align: left;
+  margin-bottom: 25px;
+}
+#Added_services .inner p {
+  font: 20px/1 "맑은고딕";
+  color: #333;
+  text-align: left;
+  margin-bottom: 70px;
 }
 #Added_services .inner .wrap {
   width: 100%;
@@ -473,31 +628,24 @@ a {
   text-align: center;
 }
 #Added_services .inner .wrap article {
-  width: 220px;
+  width: 200px;
 }
 #Added_services .inner .wrap article .pic .art {
   width: 100%;
-  height: 280px;
-  background-color: rgba(0, 0, 0, 0.02);
-  padding: 20px;
 }
 #Added_services .inner .wrap article .pic .art img {
-  width: 150px;
+  width: 100%;
   object-fit: cover;
-  margin-bottom: 60px;
 }
 #Added_services .inner .wrap article .pic .art h3 {
+  width: 100%;
+  position: relative;
+  left: 0;
+  bottom: 60px;
   font: bold 20px/1 "맑은고딕";
   color: #555;
   text-align: center;
-}
-#Added_services .inner .wrap article .pic .art:hover {
-  background-color: orange;
-  border-radius: 20px;
-  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
-}
-#Added_services .inner .wrap article .pic .art:hover h3 {
-  color: #fff;
+  align-items: center;
 }
 
 #notice {

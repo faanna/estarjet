@@ -1,0 +1,124 @@
+#popup_tabmenu {
+	position: relative;
+	width: 1300px;
+	height: 250px;
+	margin: 0 auto;
+	.inner {
+		position: absolute;
+		top: -100px;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		padding: 20px;
+		border: 1px solid #eee;
+		border-radius: 20px;
+		background-color: #fff;
+		box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.6);
+		.tap_top {
+			width: 620px;
+			display: flex;
+			justify-content: space-between;
+			margin: 0 auto;
+			.tab_part {
+				width: 350px;
+				height: 40px;
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+				background-color: #eee;
+				border: 1px solid none;
+				border-radius: 10px;
+				li {
+					width: 116px;
+					height: 40px;
+					font: bold 17px/40px '맑은고딕';
+					color: #333;
+					text-align: center;
+					&:hover {
+						border-radius: 10px;
+						background-color: orange;
+						font: bold 17px/40px '맑은고딕';
+						color: #fff;
+					}
+				}
+			}
+			.tooltip {
+				width: 140px;
+				height: 40px;
+				display: flex;
+				justify-content: space-around;
+				margin-left: 10px;
+				.tolltip_box {
+					width: 100%;
+					display: flex;
+					justify-content: space-evenly;
+					align-items: center;
+					p {
+						font: bold 15px/ 40px '맑은고딕';
+						color: #555;
+					}
+					img {
+						width: 20px;
+						height: 20px;
+					}
+				}
+				a {
+					display: none;
+					width: 300px;
+					height: 150px;
+					position: absolute;
+					top: 30px;
+					right: 175px;
+					background-color: #fff;
+					border: 1px solid #eee;
+					border-radius: 10px;
+					font: normal 13px/1.5 '맑은고딕';
+					color: #555;
+				}
+			}
+			.group {
+				width: 130px;
+				display: flex;
+				justify-content: space-evenly;
+				align-items: center;
+				input {
+					width: 16px;
+					height: 16px;
+				}
+				label {
+					font: bold 15px/1 '맑은고딕';
+					color: #555;
+				}
+			}
+		}
+		.tab_box {
+			width: 1100px;
+			display: flex;
+			justify-content: space-between;
+			margin: 0 auto;
+			.tab_menu {
+				margin-top: 30px;
+				display: flex;
+				.contents {
+					width: 200px;
+					display: flex;
+					justify-content: space-around;
+					border-bottom: 1px solid #ddd;
+					h4 {
+						font: normal 17px/1 '맑은고딕';
+						color: #333;
+					}
+				}
+			}
+			.close {
+				width: 100px;
+				margin-top: 30px;
+				button {
+					padding: 10px;
+					font: bold 17px/1 '맑은고딕';
+					color: #333;
+				}
+			}
+		}
+	}
+}

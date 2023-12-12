@@ -8,8 +8,14 @@
 		h2 {
 			font: bold 35px/1 '맑은고딕';
 			color: #333;
-			text-align: center;
-			margin-bottom: 40px;
+			text-align: left;
+			margin-bottom: 25px;
+		}
+		p {
+			font: 20px/1 '맑은고딕';
+			color: #333;
+			text-align: left;
+			margin-bottom: 60px;
 		}
 		.wrap {
 			width: 100%;
@@ -19,7 +25,7 @@
 				.pic {
 					width: 100%;
 					img {
-						width: 160px;
+						width: 200px;
 						object-fit: cover;
 						margin-bottom: 20px;
 					}
