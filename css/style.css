@@ -207,9 +207,10 @@ footer .banner .inner {
   align-items: center;
 }
 footer .banner .inner article {
-  width: 430px;
+  width: 370px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 20px 0px;
 }
 footer .banner .inner article .part {
@@ -227,12 +228,9 @@ footer .banner .inner article .part span {
   font: 18px/1.8 "맑은고딕";
   color: #aaa;
 }
-footer .banner .inner article .pic {
-  width: 180px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+footer .banner .inner article .pic i {
+  color: #ccc;
+  font-size: 80px;
 }
 footer .banner .inner :nth-of-type(3) .part h4 {
   font: normal 24px/2.5 "맑은고딕";

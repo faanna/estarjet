@@ -13,9 +13,10 @@ footer {
 			justify-content: space-between;
 			align-items: center;
 			article {
-				width: 430px;
+				width: 370px;
 				display: flex;
 				justify-content: space-between;
+				align-items: center;
 				padding: 20px 0px;
 				.part {
 					width: 250px;
@@ -33,11 +34,10 @@ footer {
 					}
 				}
 				.pic {
-					width: 180px;
-					display: flex;
-					flex-direction: column;
-					justify-content: center;
-					align-items: center;
+					i {
+						color: #ccc;
+						font-size: 80px;
+					}
 				}
 			}
 			:nth-of-type(3) {
