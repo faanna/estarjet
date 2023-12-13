@@ -4,12 +4,17 @@
 	display: flex;
 	justify-content: space-between;
 	.inner {
-		width: 200px;
+		width: 400px;
 		margin-left: 23%;
 		h2 {
 			font: bold 35px/1 '맑은고딕';
 			color: #333;
-			margin-bottom: 130px;
+			margin-bottom: 25px;
+		}
+		p {
+			font: 20px/1 '맑은고딕';
+			color: #333;
+			margin-bottom: 90px;
 		}
 		a {
 			font: bold 17px/1 '맑은고딕';

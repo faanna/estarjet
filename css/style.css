@@ -406,22 +406,38 @@ a {
 }
 
 #popup_tabmenu {
-  position: relative;
-  width: 1300px;
-  height: 250px;
-  margin: 0 auto;
-}
-#popup_tabmenu .inner {
   position: absolute;
-  top: -100px;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 20px;
-  border: 1px solid #eee;
+  top: 70%;
+  left: 16%;
+  width: 1300px;
+  height: 220px;
   border-radius: 20px;
   background-color: #fff;
-  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.6);
+  box-shadow: 1px 2px 13px 5px rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+}
+#popup_tabmenu .top {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: orange;
+  border-radius: 20px 20px 0px 0px;
+}
+#popup_tabmenu .top span {
+  font: bold 17px/1 "맑은고딕";
+  color: #fff;
+  margin-left: 100px;
+}
+#popup_tabmenu .top img {
+  width: 140px;
+  margin-right: 100px;
+}
+#popup_tabmenu .inner {
+  width: 100%;
+  height: 200px;
+  padding: 20px;
 }
 #popup_tabmenu .inner .tap_top {
   width: 620px;
@@ -473,18 +489,31 @@ a {
   width: 20px;
   height: 20px;
 }
-#popup_tabmenu .inner .tap_top .tooltip a {
+#popup_tabmenu .inner .tap_top .tooltip .imformation {
   display: none;
   width: 300px;
-  height: 150px;
+  height: 180px;
   position: absolute;
-  top: 30px;
-  right: 175px;
+  top: 37%;
+  right: 15.5%;
   background-color: #fff;
   border: 1px solid #eee;
   border-radius: 10px;
-  font: normal 13px/1.5 "맑은고딕";
-  color: #555;
+  padding: 10px;
+}
+#popup_tabmenu .inner .tap_top .tooltip .imformation h5 {
+  font: bold 15px/1 "맑은고딕";
+  color: #333;
+  margin-bottom: 10px;
+}
+#popup_tabmenu .inner .tap_top .tooltip .imformation p {
+  font: bold 14px/1.5 "맑은고딕";
+  color: #444;
+  margin-top: 10px;
+}
+#popup_tabmenu .inner .tap_top .tooltip .imformation span {
+  font: normal 13px/1 "맑은고딕";
+  color: #333;
 }
 #popup_tabmenu .inner .tap_top .group {
   width: 130px;
@@ -492,9 +521,12 @@ a {
   justify-content: space-evenly;
   align-items: center;
 }
-#popup_tabmenu .inner .tap_top .group input {
+#popup_tabmenu .inner .tap_top .group input[type=checkbox] {
   width: 16px;
   height: 16px;
+}
+#popup_tabmenu .inner .tap_top .group input[type=checkbox]:checked {
+  accent-color: orange;
 }
 #popup_tabmenu .inner .tap_top .group label {
   font: bold 15px/1 "맑은고딕";
@@ -507,17 +539,167 @@ a {
   margin: 0 auto;
 }
 #popup_tabmenu .inner .tab_box .tab_menu {
-  margin-top: 30px;
+  width: 160px;
+  margin-top: 40px;
   display: flex;
 }
 #popup_tabmenu .inner .tab_box .tab_menu .contents {
   width: 200px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   border-bottom: 1px solid #ddd;
 }
 #popup_tabmenu .inner .tab_box .tab_menu .contents h4 {
-  font: normal 17px/1 "맑은고딕";
+  font: bold 17px/1 "맑은고딕";
+  color: #555;
+}
+#popup_tabmenu .inner .tab_box .tab_menu .contents i {
+  color: #888;
+}
+#popup_tabmenu .inner .tab_box .tab_menu .departures {
+  width: 600px;
+  height: 200px;
+  position: absolute;
+  top: 200px;
+  left: 100px;
+  background-color: #fff;
+  border: 1px solid #555;
+  border-radius: 5px;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+#popup_tabmenu .inner .tab_box .tab_menu .departures .list_box {
+  width: 200px;
+  height: 100%;
+  background-color: #eee;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+#popup_tabmenu .inner .tab_box .tab_menu .departures .list_box li {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#popup_tabmenu .inner .tab_box .tab_menu .departures .list_box li.on a {
+  padding: 10px;
+  border: 2px solid orange;
+  border-radius: 5px;
+  font: bold 15px/1 "맑은고딕";
+  background-color: #fff;
+}
+#popup_tabmenu .inner .tab_box .tab_menu .departures .list_box li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  font: normal 15px/1 "맑은고딕";
+  color: #333;
+  padding: 0px 10px;
+}
+#popup_tabmenu .inner .tab_box .tab_menu .departures .list {
+  width: 380px;
+  height: 100%;
+}
+#popup_tabmenu .inner .tab_box .tab_menu .departures .list article {
+  width: 100%;
+  display: none;
+}
+#popup_tabmenu .inner .tab_box .tab_menu .departures .list article.on {
+  display: block;
+}
+#popup_tabmenu .inner .tab_box .tab_menu .departures .list article a {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eee;
+  border-radius: 5px;
+  margin-bottom: 6px;
+}
+#popup_tabmenu .inner .tab_box .tab_menu .departures .list article a.on span {
+  font: bold 15px/1 "맑은고딕";
+  background-color: #fff;
+  color: orange;
+}
+#popup_tabmenu .inner .tab_box .tab_menu .departures .list article a span {
+  font: normal 15px/1 "맑은고딕";
+  color: #333;
+}
+#popup_tabmenu .inner .tab_box .tab_menu .arrivals {
+  width: 600px;
+  height: 200px;
+  position: absolute;
+  top: 200px;
+  left: 300px;
+  background-color: #fff;
+  border: 1px solid #555;
+  border-radius: 5px;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+#popup_tabmenu .inner .tab_box .tab_menu .arrivals .list_box {
+  width: 200px;
+  height: 100%;
+  background-color: #eee;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+#popup_tabmenu .inner .tab_box .tab_menu .arrivals .list_box li {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#popup_tabmenu .inner .tab_box .tab_menu .arrivals .list_box li.on a {
+  padding: 10px;
+  border: 2px solid orange;
+  border-radius: 5px;
+  font: bold 15px/1 "맑은고딕";
+  background-color: #fff;
+}
+#popup_tabmenu .inner .tab_box .tab_menu .arrivals .list_box li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  font: normal 15px/1 "맑은고딕";
+  color: #333;
+  padding: 0px 10px;
+}
+#popup_tabmenu .inner .tab_box .tab_menu .arrivals .list {
+  width: 380px;
+  height: 100%;
+}
+#popup_tabmenu .inner .tab_box .tab_menu .arrivals .list article {
+  width: 100%;
+  display: none;
+}
+#popup_tabmenu .inner .tab_box .tab_menu .arrivals .list article.on {
+  display: block;
+}
+#popup_tabmenu .inner .tab_box .tab_menu .arrivals .list article a {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eee;
+  border-radius: 5px;
+  margin-bottom: 6px;
+}
+#popup_tabmenu .inner .tab_box .tab_menu .arrivals .list article a.on span {
+  font: bold 15px/1 "맑은고딕";
+  background-color: #fff;
+  color: orange;
+}
+#popup_tabmenu .inner .tab_box .tab_menu .arrivals .list article a span {
+  font: normal 15px/1 "맑은고딕";
   color: #333;
 }
 #popup_tabmenu .inner .tab_box .close {
@@ -525,9 +707,16 @@ a {
   margin-top: 30px;
 }
 #popup_tabmenu .inner .tab_box .close button {
-  padding: 10px;
+  padding: 10px 25px;
   font: bold 17px/1 "맑은고딕";
   color: #333;
+  border: 1px solid #eee;
+  border-radius: 7px;
+}
+#popup_tabmenu .inner .tab_box .close button:hover {
+  background-color: orange;
+  color: #fff;
+  border: 1px solid orange;
 }
 
 #main {
@@ -560,7 +749,7 @@ a {
 
 #Affiliated_services {
   width: 100%;
-  margin-top: 150px;
+  margin-top: 300px;
 }
 #Affiliated_services .inner {
   width: 1300px;
@@ -655,13 +844,18 @@ a {
   justify-content: space-between;
 }
 #notice .inner {
-  width: 200px;
+  width: 400px;
   margin-left: 23%;
 }
 #notice .inner h2 {
   font: bold 35px/1 "맑은고딕";
   color: #333;
-  margin-bottom: 130px;
+  margin-bottom: 25px;
+}
+#notice .inner p {
+  font: 20px/1 "맑은고딕";
+  color: #333;
+  margin-bottom: 90px;
 }
 #notice .inner a {
   font: bold 17px/1 "맑은고딕";
