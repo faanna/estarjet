@@ -8,6 +8,7 @@
 	background-color: #fff;
 	box-shadow: 1px 2px 13px 5px rgba(0, 0, 0, 0.06);
 	cursor: pointer;
+	z-index: 1;
 	.top {
 		width: 100%;
 		height: 50px;
@@ -35,13 +36,14 @@
 			display: flex;
 			justify-content: space-between;
 			margin: 0 auto;
+			z-index: 2;
 			.tab_part {
 				width: 350px;
 				height: 40px;
 				display: flex;
 				justify-content: space-around;
 				align-items: center;
-				background-color: #eee;
+				background-color: rgba(0, 0, 0, 0.03);
 				border: 1px solid none;
 				border-radius: 10px;
 				li {
@@ -77,31 +79,31 @@
 						width: 20px;
 						height: 20px;
 					}
-				}
-				.imformation {
-					display: none;
-					width: 300px;
-					height: 180px;
-					position: absolute;
-					top: 37%;
-					right: 15.5%;
-					background-color: #fff;
-					border: 1px solid #eee;
-					border-radius: 10px;
-					padding: 10px;
-					h5 {
-						font: bold 15px/1 '맑은고딕';
-						color: #333;
-						margin-bottom: 10px;
-					}
-					p {
-						font: bold 14px/1.5 '맑은고딕';
-						color: #444;
-						margin-top: 10px;
-					}
-					span {
-						font: normal 13px/1 '맑은고딕';
-						color: #333;
+					.imformation {
+						display: none;
+						width: 300px;
+						height: 180px;
+						position: absolute;
+						top: 37%;
+						right: 15.5%;
+						background-color: #fff;
+						border: 1px solid #eee;
+						border-radius: 10px;
+						padding: 10px;
+						h5 {
+							font: bold 15px/1 '맑은고딕';
+							color: #333;
+							margin-bottom: 10px;
+						}
+						p {
+							font: bold 14px/1.5 '맑은고딕';
+							color: #444;
+							margin-top: 10px;
+						}
+						span {
+							font: normal 13px/1 '맑은고딕';
+							color: #333;
+						}
 					}
 				}
 			}
@@ -128,6 +130,7 @@
 			display: flex;
 			justify-content: space-between;
 			margin: 0 auto;
+			z-index: 2;
 			.tab_menu {
 				width: 160px;
 				margin-top: 40px;
@@ -138,11 +141,21 @@
 					justify-content: space-between;
 					border-bottom: 1px solid #ddd;
 					h4 {
-						font: bold 17px/1 '맑은고딕';
+						font: normal 17px/1 '맑은고딕';
 						color: #555;
 					}
 					i {
 						color: #888;
+					}
+					&:hover {
+						border-bottom: 1px solid orange;
+						h4 {
+							font: bold 17px/1 '맑은고딕';
+							color: #333;
+						}
+						i {
+							color: orange;
+						}
 					}
 				}
 				.departures {
@@ -158,10 +171,23 @@
 					justify-content: space-between;
 					align-items: center;
 					padding: 20px;
+					&::before {
+						content: '';
+						display: block;
+						width: 20px;
+						height: 20px;
+						background-color: #fff;
+						border-top: 1px solid #555;
+						border-left: 1px solid #555;
+						position: absolute;
+						top: -11px;
+						transform: rotate(45deg);
+						z-index: 3;
+					}
 					.list_box {
 						width: 200px;
 						height: 100%;
-						background-color: #eee;
+						background-color: rgba(0, 0, 0, 0.03);
 						border-radius: 5px;
 						margin-right: 20px;
 						li {
@@ -202,7 +228,7 @@
 								display: flex;
 								justify-content: space-between;
 								align-items: center;
-								background-color: #eee;
+								background-color: rgba(0, 0, 0, 0.03);
 								border-radius: 5px;
 								margin-bottom: 6px;
 								&.on span {
@@ -231,10 +257,23 @@
 					justify-content: space-between;
 					align-items: center;
 					padding: 20px;
+					&::before {
+						content: '';
+						display: block;
+						width: 20px;
+						height: 20px;
+						background-color: #fff;
+						border-top: 1px solid #555;
+						border-left: 1px solid #555;
+						position: absolute;
+						top: -11px;
+						transform: rotate(45deg);
+						z-index: 3;
+					}
 					.list_box {
 						width: 200px;
 						height: 100%;
-						background-color: #eee;
+						background-color: rgba(0, 0, 0, 0.03);
 						border-radius: 5px;
 						margin-right: 20px;
 						li {
@@ -275,7 +314,7 @@
 								display: flex;
 								justify-content: space-between;
 								align-items: center;
-								background-color: #eee;
+								background-color: rgba(0, 0, 0, 0.03);
 								border-radius: 5px;
 								margin-bottom: 6px;
 								&.on span {
@@ -298,9 +337,10 @@
 				button {
 					padding: 10px 25px;
 					font: bold 17px/1 '맑은고딕';
-					color: #333;
-					border: 1px solid #eee;
+					color: #fff;
+					border: 1px solid #fff;
 					border-radius: 7px;
+					background-color: #555;
 					&:hover {
 						background-color: orange;
 						color: #fff;

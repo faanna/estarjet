@@ -22,18 +22,32 @@
 			display: flex;
 			justify-content: space-between;
 			article {
+				cursor: pointer;
 				.pic {
 					width: 100%;
-					img {
-						width: 200px;
-						object-fit: cover;
-						margin-bottom: 20px;
+					span {
+						width: 180px;
+						height: 180px;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						border-radius: 50%;
+						background-color: rgba(0, 0, 0, 0.03);
+						img {
+							width: 150px;
+							object-fit: cover;
+						}
+						&:hover {
+							border: 2px solid orange;
+							background-color: #fff;
+						}
 					}
 				}
 				h3 {
-					font: bold 20px/1 '맑은고딕';
-					color: #555;
+					margin-top: 15px;
 					text-align: center;
+					font: bold 18px/1 '맑은고딕';
+					color: #555;
 				}
 			}
 		}

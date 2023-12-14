@@ -30,7 +30,15 @@ header {
 						padding: 14px 40px;
 						font: bold 18px/1 '맑은고딕';
 						color: #333;
-						&:hover {
+					}
+					&:hover {
+						a {
+							border-bottom: 4px solid orange;
+							border-radius: 3px;
+						}
+					}
+					&.on {
+						a {
 							border-bottom: 4px solid orange;
 							border-radius: 3px;
 						}
@@ -39,23 +47,23 @@ header {
 			}
 		}
 		.sub {
-			display: none;
+			// display: flex;
 			cursor: pointer;
 			position: relative;
 			z-index: 2;
 			.sub_manu {
-				width: 1200px;
-				position: absolute;
-				top: 92px;
-				left: 0;
-				background-color: #fff;
-				display: block;
 				.menu {
 					display: none;
 					padding: 30px;
+					width: 1200px;
+					position: absolute;
+					top: 92px;
+					left: 0;
+					background-color: #fff;
+					box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
 				}
 				.menu.on {
-					display: flex;
+					display: none;
 					justify-content: space-evenly;
 					article {
 						width: 300px;
@@ -170,7 +178,7 @@ header {
 								}
 							}
 							.glober {
-								display: block;
+								display: none;
 								width: 100px;
 								background-color: #fff;
 								border: 1px solid #aaa;

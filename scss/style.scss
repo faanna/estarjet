@@ -1,16 +1,16 @@
 @charset "utf-8";
 
 // common
-@import './common/header';
-@import './common/footer';
-@import './common/popnotice';
-@import './common/reset';
+@import './common/01_reset';
+@import './common/02_popnotice';
+@import './common/03_header';
+@import './common/04_btn';
+@import './common/05_footer';
 
 // main
-@import './main.scss/slide';
-@import './main.scss/tab';
-@import './main.scss/visual';
-@import './main.scss/trip';
-@import './main.scss/affiliated';
-@import './main.scss/added';
-@import './main.scss/notice';
+@import './main.scss/01_visual';
+@import './main.scss/02_tab';
+@import './main.scss/03_trip';
+@import './main.scss/04_affiliated';
+@import './main.scss/05_added';
+@import './main.scss/06_notice';
