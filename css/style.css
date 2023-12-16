@@ -533,17 +533,13 @@ footer .footer_main .footer_con .sns i {
   height: 100%;
 }
 .gallery .visual .swiper-wrapper .swiper-slide .inner {
-  transition: all 1s;
+  transition: all 3s;
 }
 .gallery .visual .swiper-wrapper .swiper-slide .inner .con {
   position: relative;
 }
 .gallery .visual .swiper-wrapper .swiper-slide .inner .con img {
   width: 100%;
-}
-.gallery .visual .swiper-wrapper .swiper-slide-prev .inner,
-.gallery .visual .swiper-wrapper .swiper-slide-next .inner {
-  opacity: 0.7;
 }
 .gallery .visual .auto {
   position: absolute;
@@ -588,17 +584,17 @@ footer .footer_main .footer_con .sns i {
   letter-spacing: 3px;
 }
 .gallery .visual .swiper-pagination .swiper-pagination-bullet {
-  font-size: 20px;
+  font-size: 30px;
   color: #444;
 }
-.gallery .visual .swiper-pagination .swiper-pagination-bullet-active {
+.gallery .visual .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet swiper-pagination-bullet-active {
   font-size: 20px;
   color: #444;
 }
 
 #popup_tabmenu {
   position: absolute;
-  top: 70%;
+  top: 75%;
   left: 16%;
   width: 1300px;
   height: 220px;
@@ -948,6 +944,76 @@ footer .footer_main .footer_con .sns i {
   background-color: orange;
   color: #fff;
   border: 1px solid orange;
+}
+
+.trip {
+  width: 100%;
+  height: 550px;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.03);
+  margin-top: 250px;
+}
+.trip .swiper {
+  width: 1400px;
+  height: 100%;
+  transition: 3s;
+}
+.trip .swiper h2 {
+  font: bold 35px/1 "맑은고딕";
+  color: #333;
+  text-align: left;
+  margin-bottom: 25px;
+}
+.trip .swiper p {
+  font: 20px/1 "맑은고딕";
+  color: #333;
+  text-align: left;
+}
+.trip .swiper .swiper-wrapper .swiper-slide {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.trip .swiper .swiper-wrapper .swiper-slide img {
+  display: flex;
+  object-fit: cover;
+}
+.trip .swiper .swiper-button-next {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  right: 1.5%;
+  font-size: 16px;
+  color: #444;
+  background-color: rgba(0, 0, 0, 0.5);
+  filter: grayscale(100%) brightness(3);
+}
+.trip .swiper .swiper-button-prev {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 1.5%;
+  font-size: 16px;
+  color: #444;
+  background-color: rgba(0, 0, 0, 0.5);
+  filter: grayscale(100%) brightness(3);
+}
+.trip .swiper .autoplay-prograss {
+  position: absolute;
+  right: 10%;
+  bottom: 20%;
+  z-index: 10;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #333;
 }
 
 #Affiliated_services {

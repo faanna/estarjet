@@ -1,353 +1,353 @@
 #popup_tabmenu {
-	position: absolute;
-	top: 70%;
-	left: 16%;
-	width: 1300px;
-	height: 220px;
-	border-radius: 20px;
-	background-color: #fff;
-	box-shadow: 1px 2px 13px 5px rgba(0, 0, 0, 0.06);
-	cursor: pointer;
-	z-index: 1;
-	.top {
-		width: 100%;
-		height: 50px;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		background-color: orange;
-		border-radius: 20px 20px 0px 0px;
-		span {
-			font: bold 17px/1 '맑은고딕';
-			color: #fff;
-			margin-left: 100px;
-		}
-		img {
-			width: 140px;
-			margin-right: 100px;
-		}
-	}
-	.inner {
-		width: 100%;
-		height: 200px;
-		padding: 20px;
-		.tap_top {
-			width: 620px;
-			display: flex;
-			justify-content: space-between;
-			margin: 0 auto;
-			z-index: 2;
-			.tab_part {
-				width: 350px;
-				height: 40px;
-				display: flex;
-				justify-content: space-around;
-				align-items: center;
-				background-color: rgba(0, 0, 0, 0.03);
-				border: 1px solid none;
-				border-radius: 10px;
-				li {
-					width: 116px;
-					height: 40px;
-					font: bold 17px/40px '맑은고딕';
-					color: #333;
-					text-align: center;
-					&:hover {
-						border-radius: 10px;
-						background-color: orange;
-						font: bold 17px/40px '맑은고딕';
-						color: #fff;
-					}
-				}
-			}
-			.tooltip {
-				width: 140px;
-				height: 40px;
-				display: flex;
-				justify-content: space-around;
-				margin-left: 10px;
-				.tolltip_box {
-					width: 100%;
-					display: flex;
-					justify-content: space-evenly;
-					align-items: center;
-					p {
-						font: bold 15px/ 40px '맑은고딕';
-						color: #555;
-					}
-					img {
-						width: 20px;
-						height: 20px;
-					}
-					.imformation {
-						display: none;
-						width: 300px;
-						height: 180px;
-						position: absolute;
-						top: 37%;
-						right: 15.5%;
-						background-color: #fff;
-						border: 1px solid #eee;
-						border-radius: 10px;
-						padding: 10px;
-						h5 {
-							font: bold 15px/1 '맑은고딕';
-							color: #333;
-							margin-bottom: 10px;
-						}
-						p {
-							font: bold 14px/1.5 '맑은고딕';
-							color: #444;
-							margin-top: 10px;
-						}
-						span {
-							font: normal 13px/1 '맑은고딕';
-							color: #333;
-						}
-					}
-				}
-			}
-			.group {
-				width: 130px;
-				display: flex;
-				justify-content: space-evenly;
-				align-items: center;
-				input[type='checkbox'] {
-					width: 16px;
-					height: 16px;
-					&:checked {
-						accent-color: orange;
-					}
-				}
-				label {
-					font: bold 15px/1 '맑은고딕';
-					color: #555;
-				}
-			}
-		}
-		.tab_box {
-			width: 1100px;
-			display: flex;
-			justify-content: space-between;
-			margin: 0 auto;
-			z-index: 2;
-			.tab_menu {
-				width: 160px;
-				margin-top: 40px;
-				display: flex;
-				.contents {
-					width: 200px;
-					display: flex;
-					justify-content: space-between;
-					border-bottom: 1px solid #ddd;
-					h4 {
-						font: normal 17px/1 '맑은고딕';
-						color: #555;
-					}
-					i {
-						color: #888;
-					}
-					&:hover {
-						border-bottom: 1px solid orange;
-						h4 {
-							font: bold 17px/1 '맑은고딕';
-							color: #333;
-						}
-						i {
-							color: orange;
-						}
-					}
-				}
-				.departures {
-					width: 600px;
-					height: 200px;
-					position: absolute;
-					top: 200px;
-					left: 100px;
-					background-color: #fff;
-					border: 1px solid #555;
-					border-radius: 5px;
-					display: none;
-					justify-content: space-between;
-					align-items: center;
-					padding: 20px;
-					&::before {
-						content: '';
-						display: block;
-						width: 20px;
-						height: 20px;
-						background-color: #fff;
-						border-top: 1px solid #555;
-						border-left: 1px solid #555;
-						position: absolute;
-						top: -11px;
-						transform: rotate(45deg);
-						z-index: 3;
-					}
-					.list_box {
-						width: 200px;
-						height: 100%;
-						background-color: rgba(0, 0, 0, 0.03);
-						border-radius: 5px;
-						margin-right: 20px;
-						li {
-							width: 100%;
-							padding: 10px;
-							display: flex;
-							justify-content: center;
-							align-items: center;
-							&.on a {
-								padding: 10px;
-								border: 2px solid orange;
-								border-radius: 5px;
-								font: bold 15px/1 '맑은고딕';
-								background-color: #fff;
-							}
-							a {
-								width: 100%;
-								height: 100%;
-								display: block;
-								font: normal 15px/1 '맑은고딕';
-								color: #333;
-								padding: 0px 10px;
-							}
-						}
-					}
-					.list {
-						width: 380px;
-						height: 100%;
-						article {
-							width: 100%;
-							display: none;
-							&.on {
-								display: block;
-							}
-							a {
-								width: 100%;
-								padding: 10px;
-								display: flex;
-								justify-content: space-between;
-								align-items: center;
-								background-color: rgba(0, 0, 0, 0.03);
-								border-radius: 5px;
-								margin-bottom: 6px;
-								&.on span {
-									font: bold 15px/1 '맑은고딕';
-									background-color: #fff;
-									color: orange;
-								}
-								span {
-									font: normal 15px/1 '맑은고딕';
-									color: #333;
-								}
-							}
-						}
-					}
-				}
-				.arrivals {
-					width: 600px;
-					height: 200px;
-					position: absolute;
-					top: 200px;
-					left: 300px;
-					background-color: #fff;
-					border: 1px solid #555;
-					border-radius: 5px;
-					display: none;
-					justify-content: space-between;
-					align-items: center;
-					padding: 20px;
-					&::before {
-						content: '';
-						display: block;
-						width: 20px;
-						height: 20px;
-						background-color: #fff;
-						border-top: 1px solid #555;
-						border-left: 1px solid #555;
-						position: absolute;
-						top: -11px;
-						transform: rotate(45deg);
-						z-index: 3;
-					}
-					.list_box {
-						width: 200px;
-						height: 100%;
-						background-color: rgba(0, 0, 0, 0.03);
-						border-radius: 5px;
-						margin-right: 20px;
-						li {
-							width: 100%;
-							padding: 10px;
-							display: flex;
-							justify-content: center;
-							align-items: center;
-							&.on a {
-								padding: 10px;
-								border: 2px solid orange;
-								border-radius: 5px;
-								font: bold 15px/1 '맑은고딕';
-								background-color: #fff;
-							}
-							a {
-								width: 100%;
-								height: 100%;
-								display: block;
-								font: normal 15px/1 '맑은고딕';
-								color: #333;
-								padding: 0px 10px;
-							}
-						}
-					}
-					.list {
-						width: 380px;
-						height: 100%;
-						article {
-							width: 100%;
-							display: none;
-							&.on {
-								display: block;
-							}
-							a {
-								width: 100%;
-								padding: 10px;
-								display: flex;
-								justify-content: space-between;
-								align-items: center;
-								background-color: rgba(0, 0, 0, 0.03);
-								border-radius: 5px;
-								margin-bottom: 6px;
-								&.on span {
-									font: bold 15px/1 '맑은고딕';
-									background-color: #fff;
-									color: orange;
-								}
-								span {
-									font: normal 15px/1 '맑은고딕';
-									color: #333;
-								}
-							}
-						}
-					}
-				}
-			}
-			.close {
-				width: 100px;
-				margin-top: 30px;
-				button {
-					padding: 10px 25px;
-					font: bold 17px/1 '맑은고딕';
-					color: #fff;
-					border: 1px solid #fff;
-					border-radius: 7px;
-					background-color: #555;
-					&:hover {
-						background-color: orange;
-						color: #fff;
-						border: 1px solid orange;
-					}
-				}
-			}
-		}
-	}
+  position: absolute;
+  top: 75%;
+  left: 16%;
+  width: 1300px;
+  height: 220px;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 1px 2px 13px 5px rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  z-index: 1;
+  .top {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: orange;
+    border-radius: 20px 20px 0px 0px;
+    span {
+      font: bold 17px/1 "맑은고딕";
+      color: #fff;
+      margin-left: 100px;
+    }
+    img {
+      width: 140px;
+      margin-right: 100px;
+    }
+  }
+  .inner {
+    width: 100%;
+    height: 200px;
+    padding: 20px;
+    .tap_top {
+      width: 620px;
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto;
+      z-index: 2;
+      .tab_part {
+        width: 350px;
+        height: 40px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.03);
+        border: 1px solid none;
+        border-radius: 10px;
+        li {
+          width: 116px;
+          height: 40px;
+          font: bold 17px/40px "맑은고딕";
+          color: #333;
+          text-align: center;
+          &:hover {
+            border-radius: 10px;
+            background-color: orange;
+            font: bold 17px/40px "맑은고딕";
+            color: #fff;
+          }
+        }
+      }
+      .tooltip {
+        width: 140px;
+        height: 40px;
+        display: flex;
+        justify-content: space-around;
+        margin-left: 10px;
+        .tolltip_box {
+          width: 100%;
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          p {
+            font: bold 15px/ 40px "맑은고딕";
+            color: #555;
+          }
+          img {
+            width: 20px;
+            height: 20px;
+          }
+          .imformation {
+            display: none;
+            width: 300px;
+            height: 180px;
+            position: absolute;
+            top: 37%;
+            right: 15.5%;
+            background-color: #fff;
+            border: 1px solid #eee;
+            border-radius: 10px;
+            padding: 10px;
+            h5 {
+              font: bold 15px/1 "맑은고딕";
+              color: #333;
+              margin-bottom: 10px;
+            }
+            p {
+              font: bold 14px/1.5 "맑은고딕";
+              color: #444;
+              margin-top: 10px;
+            }
+            span {
+              font: normal 13px/1 "맑은고딕";
+              color: #333;
+            }
+          }
+        }
+      }
+      .group {
+        width: 130px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        input[type="checkbox"] {
+          width: 16px;
+          height: 16px;
+          &:checked {
+            accent-color: orange;
+          }
+        }
+        label {
+          font: bold 15px/1 "맑은고딕";
+          color: #555;
+        }
+      }
+    }
+    .tab_box {
+      width: 1100px;
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto;
+      z-index: 2;
+      .tab_menu {
+        width: 160px;
+        margin-top: 40px;
+        display: flex;
+        .contents {
+          width: 200px;
+          display: flex;
+          justify-content: space-between;
+          border-bottom: 1px solid #ddd;
+          h4 {
+            font: normal 17px/1 "맑은고딕";
+            color: #555;
+          }
+          i {
+            color: #888;
+          }
+          &:hover {
+            border-bottom: 1px solid orange;
+            h4 {
+              font: bold 17px/1 "맑은고딕";
+              color: #333;
+            }
+            i {
+              color: orange;
+            }
+          }
+        }
+        .departures {
+          width: 600px;
+          height: 200px;
+          position: absolute;
+          top: 200px;
+          left: 100px;
+          background-color: #fff;
+          border: 1px solid #555;
+          border-radius: 5px;
+          display: none;
+          justify-content: space-between;
+          align-items: center;
+          padding: 20px;
+          &::before {
+            content: "";
+            display: block;
+            width: 20px;
+            height: 20px;
+            background-color: #fff;
+            border-top: 1px solid #555;
+            border-left: 1px solid #555;
+            position: absolute;
+            top: -11px;
+            transform: rotate(45deg);
+            z-index: 3;
+          }
+          .list_box {
+            width: 200px;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.03);
+            border-radius: 5px;
+            margin-right: 20px;
+            li {
+              width: 100%;
+              padding: 10px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              &.on a {
+                padding: 10px;
+                border: 2px solid orange;
+                border-radius: 5px;
+                font: bold 15px/1 "맑은고딕";
+                background-color: #fff;
+              }
+              a {
+                width: 100%;
+                height: 100%;
+                display: block;
+                font: normal 15px/1 "맑은고딕";
+                color: #333;
+                padding: 0px 10px;
+              }
+            }
+          }
+          .list {
+            width: 380px;
+            height: 100%;
+            article {
+              width: 100%;
+              display: none;
+              &.on {
+                display: block;
+              }
+              a {
+                width: 100%;
+                padding: 10px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: rgba(0, 0, 0, 0.03);
+                border-radius: 5px;
+                margin-bottom: 6px;
+                &.on span {
+                  font: bold 15px/1 "맑은고딕";
+                  background-color: #fff;
+                  color: orange;
+                }
+                span {
+                  font: normal 15px/1 "맑은고딕";
+                  color: #333;
+                }
+              }
+            }
+          }
+        }
+        .arrivals {
+          width: 600px;
+          height: 200px;
+          position: absolute;
+          top: 200px;
+          left: 300px;
+          background-color: #fff;
+          border: 1px solid #555;
+          border-radius: 5px;
+          display: none;
+          justify-content: space-between;
+          align-items: center;
+          padding: 20px;
+          &::before {
+            content: "";
+            display: block;
+            width: 20px;
+            height: 20px;
+            background-color: #fff;
+            border-top: 1px solid #555;
+            border-left: 1px solid #555;
+            position: absolute;
+            top: -11px;
+            transform: rotate(45deg);
+            z-index: 3;
+          }
+          .list_box {
+            width: 200px;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.03);
+            border-radius: 5px;
+            margin-right: 20px;
+            li {
+              width: 100%;
+              padding: 10px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              &.on a {
+                padding: 10px;
+                border: 2px solid orange;
+                border-radius: 5px;
+                font: bold 15px/1 "맑은고딕";
+                background-color: #fff;
+              }
+              a {
+                width: 100%;
+                height: 100%;
+                display: block;
+                font: normal 15px/1 "맑은고딕";
+                color: #333;
+                padding: 0px 10px;
+              }
+            }
+          }
+          .list {
+            width: 380px;
+            height: 100%;
+            article {
+              width: 100%;
+              display: none;
+              &.on {
+                display: block;
+              }
+              a {
+                width: 100%;
+                padding: 10px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: rgba(0, 0, 0, 0.03);
+                border-radius: 5px;
+                margin-bottom: 6px;
+                &.on span {
+                  font: bold 15px/1 "맑은고딕";
+                  background-color: #fff;
+                  color: orange;
+                }
+                span {
+                  font: normal 15px/1 "맑은고딕";
+                  color: #333;
+                }
+              }
+            }
+          }
+        }
+      }
+      .close {
+        width: 100px;
+        margin-top: 30px;
+        button {
+          padding: 10px 25px;
+          font: bold 17px/1 "맑은고딕";
+          color: #fff;
+          border: 1px solid #fff;
+          border-radius: 7px;
+          background-color: #555;
+          &:hover {
+            background-color: orange;
+            color: #fff;
+            border: 1px solid orange;
+          }
+        }
+      }
+    }
+  }
 }
