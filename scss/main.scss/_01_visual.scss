@@ -29,7 +29,7 @@
     .auto {
       position: absolute;
       bottom: 20%;
-      left: 46%;
+      left: 45%;
       z-index: 2;
       li {
         float: left;
@@ -63,18 +63,23 @@
       background-color: rgba(0, 0, 0, 0.5);
       filter: grayscale(100%) brightness(3);
     }
-    .swiper-pagination {
+    .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+      position: absolute;
       bottom: 21%;
+      .swiper-pagination-bullet {
+        width: 20px;
+        height: 20px;
+        background-color: #777;
+      }
+      .swiper-pagination-bullet-active {
+        width: 25px;
+        height: 25px;
+        background-color: rgb(0, 0, 109);
+      }
+    }
+    .swiper-pagination {
       left: 3%;
       letter-spacing: 3px;
-      .swiper-pagination-bullet {
-        font-size: 30px;
-        color: #444;
-        &.swiper-pagination-bullet swiper-pagination-bullet-active {
-          font-size: 20px;
-          color: #444;
-        }
-      }
     }
   }
 }
