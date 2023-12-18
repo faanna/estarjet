@@ -1,142 +1,142 @@
 footer {
-  width: 100%;
-  margin: 0 auto;
-  margin-top: 200px;
-  .inner {
-    width: 100%;
-    background-color: rgb(255, 228, 188);
-    padding: 20px 0px;
-    .banner {
-      width: 1300px;
-      margin: 0 auto;
-      display: block;
-      justify-content: space-between;
-      align-items: center;
-      padding-bottom: 20px;
-      h2 {
-        font: bold 24px/2 "맑은고딕";
-        color: #333;
-        margin-bottom: 5px;
-      }
-      p {
-        font: 17px/1.5 "맑은고딕";
-        color: #444;
-        margin-bottom: 30px;
-      }
-      .art_wrap {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        article {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          width: 400px;
-          border: 1px solid none;
-          background-color: rgb(253, 245, 233);
-          box-shadow: 1px 3px 5px 3px rgba(0, 0, 0, 0.06);
-          padding: 30px;
-          .part {
-            width: 250px;
-            h4 {
-              font: 17px/1 "맑은고딕";
-              color: #666;
-              margin-bottom: 25px;
-            }
-            p {
-              font: 23px/1 "arial";
-              color: #444;
-              margin-bottom: 10px;
-            }
-            span {
-              font: 18px/1 "맑은고딕";
-              color: #555;
-            }
-          }
-          .pic {
-            i {
-              color: rgb(255, 228, 188);
-              font-size: 65px;
-            }
-          }
-        }
-        :nth-of-type(3) {
-          .part {
-            h4 {
-              font: 18px/1 "맑은고딕";
-              color: #666;
-              margin-bottom: 25px;
-            }
-            span {
-              display: block;
-              margin-top: 20px;
-              font: bold 18px/1.5 "맑은고딕";
-              color: #666;
-            }
-          }
-        }
-      }
-    }
-  }
-  .footer_sub {
-    width: 100%;
-    background-color: #eee;
-    border-bottom: 1px solid #ddd;
-    .footer_submenu {
-      width: 1300px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 0px;
-      li {
-        position: relative;
-        font: normal 15px/1 "맑은고딕";
-        color: #999;
-        cursor: pointer;
-        &:nth-of-type(3) {
-          font: bold 15px/1 "맑은고딕";
-          color: #777;
-        }
-        &:nth-of-type(7) {
-          font: bold 15px/1 "맑은고딕";
-          color: #666;
-        }
-      }
-    }
-  }
-  .footer_main {
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.02);
-    .footer_con {
-      width: 1300px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      padding: 20px 0px;
-      h2 {
-        padding: 50px 0px;
-      }
-      .copylight {
-        padding: 40px 0px;
-        .copy {
-          display: flex;
-          justify-content: left;
-          li {
-            font: normal 13px/2 "맑은고딕";
-            color: #777;
-          }
-        }
-      }
-      .sns {
-        padding: 70px 0px;
-        i {
-          font-size: 25px;
-          color: #bbb;
-          margin-left: 20px;
-          cursor: pointer;
-        }
-      }
-    }
-  }
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 200px;
+	.inner {
+		width: 100%;
+		background-color: rgb(255, 228, 188);
+		padding: 20px 0px;
+		.banner {
+			width: 1200px;
+			margin: 0 auto;
+			display: block;
+			justify-content: space-between;
+			align-items: center;
+			padding-bottom: 20px;
+			h2 {
+				font: bold 24px/2 '맑은고딕';
+				color: #333;
+				margin-bottom: 5px;
+			}
+			p {
+				font: 17px/1.5 '맑은고딕';
+				color: #444;
+				margin-bottom: 30px;
+			}
+			.art_wrap {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				article {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					width: 350px;
+					border: 1px solid none;
+					background-color: rgb(253, 245, 233);
+					box-shadow: 1px 3px 5px 3px rgba(0, 0, 0, 0.06);
+					padding: 30px;
+					.part {
+						width: 250px;
+						h4 {
+							font: 17px/1 '맑은고딕';
+							color: #666;
+							margin-bottom: 25px;
+						}
+						p {
+							font: 23px/1 'arial';
+							color: #444;
+							margin-bottom: 10px;
+						}
+						span {
+							font: 18px/1 '맑은고딕';
+							color: #555;
+						}
+					}
+					.pic {
+						i {
+							color: rgb(255, 228, 188);
+							font-size: 65px;
+						}
+					}
+				}
+				:nth-of-type(3) {
+					.part {
+						h4 {
+							font: 18px/1 '맑은고딕';
+							color: #666;
+							margin-bottom: 25px;
+						}
+						span {
+							display: block;
+							margin-top: 20px;
+							font: bold 18px/1.5 '맑은고딕';
+							color: #666;
+						}
+					}
+				}
+			}
+		}
+	}
+	.footer_sub {
+		width: 100%;
+		background-color: #eee;
+		border-bottom: 1px solid #ddd;
+		.footer_submenu {
+			width: 1200px;
+			margin: 0 auto;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 20px 0px;
+			li {
+				position: relative;
+				font: normal 15px/1 '맑은고딕';
+				color: #999;
+				cursor: pointer;
+				&:nth-of-type(3) {
+					font: bold 15px/1 '맑은고딕';
+					color: #777;
+				}
+				&:nth-of-type(7) {
+					font: bold 15px/1 '맑은고딕';
+					color: #666;
+				}
+			}
+		}
+	}
+	.footer_main {
+		width: 100%;
+		background-color: rgba(0, 0, 0, 0.02);
+		.footer_con {
+			width: 1200px;
+			margin: 0 auto;
+			display: flex;
+			justify-content: space-between;
+			padding: 20px 0px;
+			h2 {
+				padding: 50px 0px;
+			}
+			.copylight {
+				padding: 40px 0px;
+				.copy {
+					display: flex;
+					justify-content: left;
+					li {
+						font: normal 13px/2 '맑은고딕';
+						color: #777;
+					}
+				}
+			}
+			.sns {
+				padding: 70px 0px;
+				i {
+					font-size: 25px;
+					color: #bbb;
+					margin-left: 20px;
+					cursor: pointer;
+				}
+			}
+		}
+	}
 }

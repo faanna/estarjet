@@ -8,9 +8,13 @@
 @import './common/05_footer';
 
 // main
-@import './main.scss/01_visual';
-@import './main.scss/02_tab';
-@import './main.scss/03_trip';
-@import './main.scss/04_affiliated';
-@import './main.scss/05_added';
-@import './main.scss/06_notice';
+@import './main/01_visual';
+@import './main/02_tab';
+@import './main/03_trip';
+@import './main/04_added';
+@import './main/05_affiliated';
+@import './main/06_notice';
+
+// sub
+@import './sub/airline-meal';
+@import './sub/in-flight-service';

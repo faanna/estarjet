@@ -2,7 +2,7 @@ header {
 	width: 100%;
 	border-bottom: 2px solid #eee;
 	.inner {
-		width: 1300px;
+		width: 1200px;
 		height: 90px;
 		margin: 0 auto;
 		position: relative;
@@ -129,7 +129,7 @@ header {
 	}
 	.util_menu {
 		position: absolute;
-		top: 25px;
+		top: 20px;
 		right: 0px;
 		display: flex;
 		cursor: pointer;
@@ -141,12 +141,12 @@ header {
 				a {
 					font: bold 14px/1 '맑은고딕';
 					color: #777;
-					&:nth-of-type(3) {
-						border-bottom: 1px solid #ddd;
-					}
-					&:nth-of-type(4) {
-						border-bottom: 1px solid #ddd;
-					}
+					// &:nth-of-type(3) {
+					// 	border-bottom: 1px solid #ddd;
+					// }
+					// &:nth-of-type(4) {
+					// 	border-bottom: 1px solid #ddd;
+					// }
 				}
 			}
 		}
