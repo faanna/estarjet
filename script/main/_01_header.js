@@ -43,3 +43,30 @@ const lan_box = document.querySelector('.language_box');
 lan_box.addEventListener('click', () => {
 	article.style.display = 'block';
 });
+
+// announcement
+// const announc_contents = document.querySelector('.announc_contents');
+
+// let wid = 0;
+// let num = 0;
+// let timer = null;
+// setInterval(move, 200);
+
+// initList();
+// function initList() {
+// 	const list_p = announc_contents.querySelectorAll('p');
+// 	const len = list_p.length;
+// 	wid = parseInt(getComputedStyle(list_p[0]).width);
+// 	announc_contents.style.width = len * wid + 'px';
+// 	announc_contents.style.marginLeft = -wid + 'px';
+// 	announc_contents.prepend(announc_contents.lastElementChild);
+// }
+// function move() {
+// 	if (num < -wid * 2) {
+// 		num = -wid;
+// 		announc_contents.append(announc_contents.firstElementChild);
+// 	} else {
+// 		num -= 2;
+// 	}
+// 	announc_contents.style.marginLeft = num + 'px';
+// }

@@ -74,7 +74,7 @@ header {
 					position: relative;
 					flex-direction: column;
 					h3 {
-						padding-top: 40px;
+						margin-top: 40px;
 						padding-bottom: 20px;
 						font: bold 17px/1 '맑은고딕';
 						color: #333;
@@ -83,6 +83,7 @@ header {
 					}
 					ul {
 						width: 100%;
+						margin-bottom: 30px;
 						li {
 							text-align: center;
 							a {

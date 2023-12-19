@@ -1,9 +1,5 @@
 // visual;
 var swiper = new Swiper('.visual', {
-	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
-	},
 	loop: true,
 	spaceBetween: 0,
 	speed: 4000,
@@ -16,6 +12,11 @@ var swiper = new Swiper('.visual', {
 	},
 	pagination: {
 		el: '.swiper-pagination',
+		clickable: true,
+	},
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
 	},
 });
 
@@ -25,7 +26,7 @@ var swiper = new Swiper('.mySwiper', {
 	spaceBetween: 30,
 	loop: true,
 	autoplay: {
-		delay: 5000,
+		delay: 2000,
 		disableOnInteraction: false,
 	},
 	pagination: {

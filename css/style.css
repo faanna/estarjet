@@ -39,6 +39,9 @@ a {
 .announcement .inner .content ul {
   display: flex;
 }
+.announcement .inner .content ul .announc_icon {
+  width: 30px;
+}
 .announcement .inner .content ul .announc_icon a {
   height: 100%;
 }
@@ -49,6 +52,7 @@ a {
   padding: 6px 10px;
 }
 .announcement .inner .content ul .announc_contents {
+  width: 700px;
   display: block;
   height: 30px;
   overflow: hidden;
@@ -59,6 +63,7 @@ a {
   margin: 3px 20px;
   font: bold 14px/1.5 "맑은고딕";
   color: rgb(0, 0, 109);
+  transition: 0.5s;
 }
 .announcement .inner .close {
   width: 115px;
@@ -154,7 +159,7 @@ header .inner .sub .sub_manu article {
   flex-direction: column;
 }
 header .inner .sub .sub_manu article h3 {
-  padding-top: 40px;
+  margin-top: 40px;
   padding-bottom: 20px;
   font: bold 17px/1 "맑은고딕";
   color: #333;
@@ -163,6 +168,7 @@ header .inner .sub .sub_manu article h3 {
 }
 header .inner .sub .sub_manu article ul {
   width: 100%;
+  margin-bottom: 30px;
 }
 header .inner .sub .sub_manu article ul li {
   text-align: center;
