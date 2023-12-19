@@ -1,19 +1,19 @@
 @charset "utf-8";
 
 // common
-@import './common/01_reset';
-@import './common/02_announcement';
-@import './common/03_header';
-@import './common/04_btn';
-@import './common/05_footer';
+@import './common/reset';
+@import './common/announcement';
+@import './common/header';
+@import './common/btn';
+@import './common/footer';
 
 // main
-@import './main/01_visual';
-@import './main/02_tab';
-@import './main/03_trip';
-@import './main/04_added';
-@import './main/05_affiliated';
-@import './main/06_notice';
+@import './main/tab';
+@import './main/visual';
+@import './main/trip';
+@import './main/added';
+@import './main/affiliated';
+@import './main/notice';
 
 // sub
 @import './sub/airline-meal';
