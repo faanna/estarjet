@@ -3,10 +3,16 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<title>기내식구매</title>
+		<link rel="stylesheet" href="../css/style.css" />
+		<script
+			src="https://kit.fontawesome.com/c12878d3ba.js"
+			crossorigin="anonymous"
+		></script>
+		<script defer src="../script/header.js"></script>
 	</head>
 	<body>
-		<aside class="announcement">
+		<aside class="announcement_sub">
 			<div class="inner">
 				<div class="content">
 					<ul>
@@ -29,10 +35,10 @@
 				</div>
 			</div>
 		</aside>
-		<header>
+		<header class="header_sub">
 			<div class="inner">
 				<h1>
-					<a href="../html/main.html"
+					<a href="../index.html"
 						><img src="../image/main/main-logo.png" alt="이스타항공 로고"
 					/></a>
 				</h1>
@@ -47,7 +53,7 @@
 				</nav>
 				<div class="sub">
 					<div class="sub_manu">
-						<section id="manu1" class="menu on">
+						<section id="manu1" class="menu">
 							<article class="etc_service">
 								<h3>기타서비스 구매</h3>
 								<ul>
@@ -125,7 +131,7 @@
 								<ul>
 									<li><a href="#">면세품</a></li>
 									<li><a href="#">유료상품</a></li>
-									<li><a href="#">기내서비스</a></li>
+									<li><a href="../html/In-flight-service.html">기내서비스</a></li>
 								</ul>
 							</article>
 							<article class="affiliated_service">
@@ -183,7 +189,7 @@
 				</nav>
 			</div>
 		</header>
-		<div class="btn">
+		<div class="btn_sub">
 			<a href="#" class="btnUp">
 				<em>UP</em>
 			</a>
@@ -191,7 +197,338 @@
 				<em>DOWN</em>
 			</a>
 		</div>
-		<footer>
+		<section class="content">
+			<div class="navi">
+				<div class="inner">
+					<div class="home">
+						<i class="fa-solid fa-house"></i>
+						<span>홈</span>
+						<i class="fa-solid fa-angle-right"></i>
+					</div>
+					<div class="navi1">
+						<span>예약</span>
+						<i class="fa-solid fa-circle-chevron-down"></i>
+						<i class="fa-solid fa-angle-right"></i>
+					</div>
+					<div class="navi2">
+						<span>기타서비스구매</span>
+						<i class="fa-solid fa-circle-chevron-down"></i>
+						<i class="fa-solid fa-angle-right"></i>
+					</div>
+					<div class="navi3">
+						<span>사전주문기내식</span>
+					</div>
+				</div>
+			</div>
+			<div class="title">
+				<div class="title_box">
+					<div class="title_txt">
+						<h2>사전 주문 기내식</h2>
+						<p>
+							여행의 또다른 즐거움, 이스타항공을 찾아주신 고객분들을 위해
+							정성스럽게 준비한 기내식입니다.
+						</p>
+					</div>
+					<div class="title_img">
+						<img src="../image/sub-airmeal/airline-meal-icon.png" alt="" />
+					</div>
+				</div>
+			</div>
+			<div class="apply">
+				<div class="apply_box">
+					<div class="apply_txt">
+						<h5>기내식 온라인 신청</h5>
+						<p>기내식은 항공권 예매가 완료된 이후에 신청하실 수 있습니다.</p>
+					</div>
+					<div class="apply_button">
+						<span>기내식 신청하기</span>
+					</div>
+				</div>
+			</div>
+			<div class="best_menu">
+				<div class="best_box">
+					<div class="bext_txt">
+						<span>인기메뉴</span>
+					</div>
+					<div class="best_img">
+						<div class="img">
+							<a href="#">
+								<img src="../image/sub-airmeal/best/pizza.png" alt="VIPS 페페로니 피자">
+							</a>
+						<p>VIPS 페페로니 피자</p>
+							</img>
+						</div>
+						<div class="img">
+							<img src="../image/sub-airmeal/best/chicken.png" alt="BBQ 치킨강정(순한맛)">
+							<p>BBQ 치킨강정</p>
+							<p>(순한맛)</p>
+							</img>
+						</div>
+						<div class="img">
+							<img src="../image/sub-airmeal/best/bulgogi.png" alt="불고기덮밥">
+							<p>불고기라이스</p>
+							</img>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="menu_tab">
+				<div class="tab_box">
+					<span>전체</span>
+				</div>
+				<div class="tab_box">
+					<span>스페셜</span>
+				</div>
+				<div class="tab_box">
+					<span>라이스</span>
+				</div>
+				<div class="tab_box">
+					<span>베이커리</span>
+				</div>
+				<div class="tab_box">
+					<span>샐러드</span>
+				</div>
+			</div>
+			<div class="meal_menu">
+				<div class="menu_box">
+					<h5>스페셜</h5>
+					<div class="menu_list">
+						<div class="list">
+							<img src="../image/sub-airmeal/special/pizza-nemo.jpg" alt="">
+							<h6>VIPS 페퍼로니 피자</h6>
+							<div class="price">
+								<span>18,000원</span>
+								<span>￥1,800 / $18 / 元110</span>
+							</div>
+							<div class="menu_part">
+								<span>메뉴구성</span>
+								<span>페퍼로니피자,오이피클,핫소스</span>
+							</div>
+							<div class="menu_alle">
+								<span>※ 밀,알류,우유,양파,오이</span>
+							</div>
+							<div class="afford">
+								<i class="fa-solid fa-plane-departure"></i>
+								<span>제공노선 : 인천,김포 출발 국제선(2시간 이상 비행편)</span>
+							</div>
+						</div>
+						<div class="list">
+							<img src="../image/sub-airmeal/special/chicken-nemo.jpg" alt="">
+							<h6>BBQ 치킨강정(순한맛)</h6>
+							<div class="price">
+								<span>18,000원</span>
+								<span>￥1,800 / $18 / 元110</span>
+							</div>
+							<div class="menu_part">
+								<span>메뉴구성</span>
+								<span>치킨강정,치킨무,양념소금</span>
+							</div>
+							<div class="menu_alle">
+								<span>※ 밀,알류,우유,무,닭고기</span>
+							</div>
+							<div class="afford">
+								<i class="fa-solid fa-plane-departure"></i>
+								<span>제공노선 : 인천,김포 출발 국제선(2시간 이상 비행편)</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="menu_box">
+					<h5>라이스</h5>
+					<div class="menu_list">
+						<div class="list">
+							<img src="../image/sub-airmeal/rice/bulgogi-nemo.jpg" alt="">
+							<h6>불고기라이스</h6>
+							<div class="price">
+								<span>15,000원</span>
+								<span>￥1,500 / $15 / 元90</span>
+							</div>
+							<div class="menu_part">
+								<span>메뉴구성</span>
+								<span>소불고기,브로콜리,계란,쌀밥,김치 <br>
+									  초콜릿 브라우니
+								</span>
+							</div>
+							<div class="menu_alle">
+								<span>※ 밀,대두,달걀,소고기,우유,배추,새우젓갈,양파</span>
+							</div>
+							<div class="afford">
+								<i class="fa-solid fa-plane-departure"></i>
+								<span>제공노선 : 인천,김포 출발 국제선(2시간 이상 비행편)</span>
+							</div>
+						</div>
+						<div class="list">
+							<img src="../image/sub-airmeal/rice/hambak.jpg" alt="">
+							<h6>함박스테이크와 볶음밥</h6>
+							<div class="price">
+								<span>15,000원</span>
+								<span>￥1,500 / $15 / 元90</span>
+							</div>
+							<div class="menu_part">
+								<span>메뉴구성</span>
+								<span>계란볶음밥,함박스테이크,당근 <br>
+									데미그라스소스,브로콜리,감자 <br>          
+									오이피클,초콜릿브라우니
+								</span>
+							</div>
+							<div class="menu_alle">
+								<span>※ 쌀,밀,양파,알류,대파,우유</span>
+							</div>
+							<div class="afford">
+								<i class="fa-solid fa-plane-departure"></i>
+								<span>제공노선 : 인천,김포 출발 국제선(2시간 이상 비행편)</span>
+							</div>
+						</div>
+						<div class="list">
+							<img src="../image/sub-airmeal/rice/bibimbab.jpg" alt="">
+							<h6>소고기비빔밥</h6>
+							<div class="price">
+								<span>14,000원</span>
+								<span>￥1,400 / $14 / 元85</span>
+							</div>
+							<div class="menu_part">
+								<span>메뉴구성</span>
+								<span>쌀밥,다진소고기,무생채,애호박 <br> 
+									  당근,도라지,콩나물,표고버섯 <br> 
+									  배추김치,고추장,참기름 <br> 
+								      초콜릿 브라우니</span>                     
+							</div> 
+							<div class="menu_alle">
+								<span>※ 밀,알류,우유,무,닭고기</span>
+							</div>
+							<div class="afford">
+								<i class="fa-solid fa-plane-departure"></i>
+								<span>제공노선 : 인천,김포 출발 국제선(2시간 이상 비행편)</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="menu_box"> 
+					<h5>베이커리</h5>
+					<div class="menu_list">
+						<div class="list">
+							<img src="../image/sub-airmeal/sandwich/danhobak.jpg" alt="">
+							<h6>단호박 샌드위치</h6>
+							<div class="price">
+								<span>10,000원</span>
+								<span>￥1,000 / $10 / 元60</span>
+							</div>
+							<div class="menu_part">
+								<span>메뉴구성</span>
+								<span>호밀빵,단호박,닭고기,치즈소스 <br>
+									  오이피클,상추,아몬드
+								</span>
+							</div>
+							<div class="menu_alle">
+								<span>※ 밀,알류,우유,치즈,닭고기,오이,견과류,베리류</span>
+							</div>
+							<div class="afford">
+								<i class="fa-solid fa-plane-departure"></i>
+								<span>제공노선 : 인천,김포 출발 국제선</span>
+							</div>
+						</div>
+						<div class="list">
+							<img src="../image/sub-airmeal/sandwich/ham&egg.jpg" alt="">
+							<h6>햄에그마요 샌드위치</h6>
+							<div class="price">
+								<span>10,000원</span>
+								<span>￥1,000 / $10 / 元60</span>
+							</div>
+							<div class="menu_part">
+								<span>메뉴구성</span>
+								<span>크루아상,계란,마요네즈,토마토<br>
+									  상추,햄
+								</span>
+							</div>
+							<div class="menu_alle">
+								<span>※ 밀,알류,우유,닭고기 </span>
+							</div>
+							<div class="afford">
+								<i class="fa-solid fa-plane-departure"></i>
+								<span>제공노선 : 인천,김포 출발 국제선</span>
+							</div>
+						</div>
+						<div class="list">
+							<img src="../image/sub-airmeal/sandwich/roze.jpg" alt="">
+							<h6>로제치킨 부리토</h6>
+							<div class="price">
+								<span>10,000원</span>
+								<span>￥1,000 / $10 / 元60</span>
+							</div>
+							<div class="menu_part">
+								<span>메뉴구성</span>
+								<span>토르디아,로제소스,로메인,양상추 <br>
+									토마토,적채,당근,파프리카,로제치킨 <br>
+									감자샐러드
+								</span>
+							</div>
+							<div class="menu_alle">
+								<span>※ 밀,알류,우유,닭고기</span>
+							</div>
+							<div class="afford">
+								<i class="fa-solid fa-plane-departure"></i>
+								<span>제공노선 : 인천,김포 출발 국제선</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="menu_box">
+					<h5>샐러드</h5>
+					<div class="menu_list">
+						<div class="list">
+							<img src="../image/sub-airmeal/salad/salad.jpg" alt="">
+							<h6>훈제닭가슴살 샐러드</h6>
+							<div class="price">
+								<span>8,000원</span>
+								<span>￥800 / $8 / 元50</span>
+							</div>
+							<div class="menu_part">
+								<span>메뉴구성</span>
+								<span>훈제닭가슴살,양상추,토마토 <br>
+									  오렌지,단호박,방울토마토 <br>
+									  호두,대두,참깨드레싱
+								</span>
+							</div>
+							<div class="menu_alle">
+								<span>※ 밀,알류,참깨,견과류</span>
+							</div>
+							<div class="afford">
+								<i class="fa-solid fa-plane-departure"></i>
+								<span>제공노선 : 인천,김포 출발 국제선</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="notice">
+				<div class="notice_box">
+					<div class="notice_list">
+						<h5>안내사항</h5>
+						<p>● EASTAR DELI(기내식) 사전주문은 예약센터, 인터넷, 여행사를 통해 항공권을 구매한 모든 고객이 구매 가능합니다.</p>
+						<p>● 항공권 구매 완료 후 예약센터를 통해 구매하시거나 홈페이지, 모바일 앱을 통해서 직접 예약, 결제 하실 수 있습니다<div class=""></div></p>
+						<p>● 당사 정기노선에서만 이용 가능하며, 기내식은 출발지에 따라 상이할 수 있습니다.</p>
+						<p>● EASTAR SHOP에서도 간단한 스낵, 음료, 인스턴트 식품 등을 구매하실 수 있습니다.</p>
+						<p>● 항공편 예약변경, 취소 시 기내식 신청 내역도 함께 취소되오니 반드시 예약센터(1544-0080) <br>
+							 혹은 홈페이지의 '나의 예매' 페이지를 통해 기내식 신청 상황을 다시 한번 확인해주시기 바랍니다.</p>
+						<p>● 상기 이미지는 연출된 컷으로, 실제와 다를 수 있으며 조기 품절될 수 있습니다.</p>
+						<p>● 출발 72시간 전까지만 주문 및 변경, 취소, 환불 가능합니다.</p>
+					</div>
+					<div class="notice_list">
+						<h5>기내식 사전주문 예약 전화문의 안내</h5>
+						<p>● 기내식 사전 주문 예약 전화문의 안내 1544-0080-121</p>
+					</div>
+					<div class="notice_list">
+						<h5>주의사항</h5>
+						<p>● 모든 메뉴에는 글루텐, 견과류, 달걀 또는 유제품이 포함될 수 있습니다.</p>
+						<p>● 특정식품에 대한 알레르기 또는 유사증상이 있는 고객님은 탑승 전 반드시 상기 메뉴를 확인하여 주시기 바랍니다.</p>
+						<p>● 땅콩 알레르기 승객을 위한 안내: 이스타항공 기내에서는 땅콩 또는 땅콩 성분이 함유된 제품을 제공할 수 있고 <br>
+							다른 손님의 땅콩 소지 및 취식을 제한할 수 없습니다.</p>
+						<p>● 해당 손님께서는 탑승 전 여행 가능여부를 의사와 상의해 주시기 바랍니다.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer_sub">
 			<div class="inner">
 				<div class="banner">
 					<h2>고객지원센터</h2>

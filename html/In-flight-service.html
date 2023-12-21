@@ -1,281 +1,447 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <aside class="announcement">
-        <div class="inner">
-            <div class="content">
-                <ul>
-                    <li class="announc_icon">
-                        <a href="#">
-                            <i class="fa-solid fa-bullhorn"></i>
-                        </a>
-                    </li>
-                    <li class="announc_contents">
-                        <p>2024년 01월 국제선 유류할증료</p>
-                        <p>2023년 12월국내선 유류할증료</p>
-                        <p>2024년 12월 설 연휴 예약 오픈 안내</p>
-                        <p>2024년 국제선 성수기 안내</p>
-                    </li>
-                </ul>
-            </div>
-            <div class="close">
-                <a href="">1일간 보지않기</a>
-                <i class="fa-solid fa-circle-plus"></i>
-            </div>
-        </div>
-    </aside>
-    <header>
-        <div class="inner">
-            <h1>
-                <a href="../html/main.html"
-                    ><img src="../image/main/main-logo.png" alt="이스타항공 로고"
-                /></a>
-            </h1>
-            <nav id="gnb">
-                <ul class="gnb_manu">
-                    <li><a href="">예약</a></li>
-                    <li><a href="">나의예약</a></li>
-                    <li><a href="">여행준비</a></li>
-                    <li><a href="">서비스</a></li>
-                    <li><a href="">이벤트</a></li>
-                </ul>
-            </nav>
-            <div class="sub">
-                <div class="sub_manu">
-                    <section id="manu1" class="menu on">
-                        <article class="etc_service">
-                            <h3>기타서비스 구매</h3>
-                            <ul>
-                                <li><a href="#">지정좌석</a></li>
-                                <li><a href="#">위탁수화물</a></li>
-                                <li><a href="#">사전기내식</a></li>
-                                <li><a href="#">기타서비스 패키지</a></li>
-                            </ul>
-                        </article>
-                        <article class="operation">
-                            <h3>운임 및 운항정보</h3>
-                            <ul>
-                                <li><a href="#">국제선운임</a></li>
-                                <li><a href="#">국내선운임</a></li>
-                                <li><a href="#">출발도착안내</a></li>
-                                <li><a href="#">운항시간표</a></li>
-                                <li><a href="#">운항노선도</a></li>
-                            </ul>
-                        </article>
-                        <article>
-                            <div class="image">
-                                <img
-                                    src="../image/main/trip-banner.jpg"
-                                    alt="항공권예약배너"
-                                />
-                                <p>항공권 예매하러 바로가기</p>
-                            </div>
-                        </article>
-                    </section>
-                    <section id="menu2" class="menu">
-                        <article>
-                            <h3>나의예약</h3>
-                            <ul>
-                                <li><a href="#">예약내역</a></li>
-                                <li><a href="#">예약 변경 및 취소</a></li>
-                            </ul>
-                        </article>
-                    </section>
-                    <section id="menu3" class="menu">
-                        <article class="baggage">
-                            <h3>수하물</h3>
-                            <ul>
-                                <li><a href="#">수하물안내</a></li>
-                                <li><a href="#">휴대수하물</a></li>
-                                <li><a href="#">위탁수하물</a></li>
-                                <li><a href="#">운송제한물품</a></li>
-                                <li><a href="#">지연, 파손 및 유실물</a></li>
-                            </ul>
-                        </article>
-                        <article class="help">
-                            <h3>도움이 필요한 고객</h3>
-                            <ul>
-                                <li><a href="#">장애인 고객</a></li>
-                                <li><a href="#">임산부 고객</a></li>
-                                <li><a href="#">고령자 고객</a></li>
-                                <li><a href="#">유아동반 고객</a></li>
-                                <li><a href="#">반려동물동반 고객</a></li>
-                                <li><a href="#">의료도움이 필요한 고객</a></li>
-                                <li><a href="#">혼자 여행하는 어린이 및 청소년</a></li>
-                            </ul>
-                        </article>
-                    </section>
-                    <section id="menu4" class="menu">
-                        <article class="airline_service">
-                            <h3>공항서비스</h3>
-                            <ul>
-                                <li><a href="#">탑승수속</a></li>
-                                <li><a href="#">국내선 탑승수속 혼잡도</a></li>
-                                <li><a href="#">주차장 혼잡도</a></li>
-                                <li><a href="#">입국신고서 작성안내</a></li>
-                            </ul>
-                        </article>
-                        <article class="cavin_service">
-                            <h3>기내서비스</h3>
-                            <ul>
-                                <li><a href="#">면세품</a></li>
-                                <li><a href="#">유료상품</a></li>
-                                <li><a href="#">기내서비스</a></li>
-                            </ul>
-                        </article>
-                        <article class="affiliated_service">
-                            <h3>제휴서비스</h3>
-                            <ul>
-                                <li><a href="#">숙소</a></li>
-                                <li><a href="#">렌터카</a></li>
-                                <li><a href="#">액티비티</a></li>
-                                <li><a href="#">쇼핑 및 편의시설</a></li>
-                            </ul>
-                        </article>
-                    </section>
-                    <section id="menu5" class="menu">
-                        <article class="event">
-                            <h3>이벤트</h3>
-                            <ul>
-                                <li><a href="#">진행중인 이벤트</a></li>
-                                <li><a href="#">종료된 이벤트</a></li>
-                            </ul>
-                        </article>
-                    </section>
-                </div>
-            </div>
-            <nav class="util_menu">
-                <ul>
-                    <li>
-                        <a href="#">로그인</a>
-                        <a href="#">마이페이지</a>
-                        <a href="#">한국어</a>
-                        <a href="#">English</a>
-                        <div class="language">
-                            <ul>
-                                <li>
-                                    <i class="fa-solid fa-globe"></i>
-                                    <div class="language_menu">
-                                        <div class="language_box">
-                                            <h4>언어</h4>
-                                            <i class="fa-solid fa-chevron-down"></i>
-                                        </div>
-                                        <section class="glober">
-                                            <article>
-                                                <span>한국어</span>
-                                                <span>English</span>
-                                                <span>日本語</span>
-                                                <span>中国人</span>
-                                                <span>Tiếng Việt</span>
-                                            </article>
-                                        </section>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <div class="btn">
-        <a href="#" class="btnUp">
-            <em>UP</em>
-        </a>
-        <a href="#" class="btnDown">
-            <em>DOWN</em>
-        </a>
-    </div>
-    <footer>
-        <div class="inner">
-            <div class="banner">
-                <h2>고객지원센터</h2>
-                <p>이스타항공을 더욱더 편안하게 이용하실수 있게 도와드립니다.</p>
-                <div class="art_wrap">
-                    <article>
-                        <div class="part">
-                            <h4>예약문의</h4>
-                            <p>1544-0080</p>
-                            <span>매일 9시 ~ 6시 연중무휴</span>
-                        </div>
-                        <div class="pic">
-                            <i class="fa-solid fa-headset"></i>
-                        </div>
-                    </article>
-                    <article>
-                        <div class="part">
-                            <h4>별별배송 문의</h4>
-                            <p>1533-3458</p>
-                            <span>평일 9시 ~ 6시</span>
-                        </div>
-                        <div class="pic">
-                            <i class="fa-solid fa-truck"></i>
-                        </div>
-                    </article>
-                    <article>
-                        <div class="part">
-                            <h4>고객의 말씀</h4>
-                            <span>
-                                운영시간에 순차적으로<br />
-                                답변드리겠습니다.
-                            </span>
-                        </div>
-                        <div class="pic">
-                            <i class="fa-solid fa-comments-dollar"></i>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </div>
-        <div class="footer_sub">
-            <div class="footer_submenu">
-                <li>회사소개</li>
-                <li>이용약관</li>
-                <li>개인정보처리방침</li>
-                <li>국내여객운송약관</li>
-                <li>국제여객운송약관</li>
-                <li>항공교통이용자 서비스 계획</li>
-                <li>항공교통이용자 피해구제</li>
-                <li>사이트맵</li>
-            </div>
-        </div>
-        <div class="footer_main">
-            <div class="footer_con">
-                <h2>
-                    <a href="">
-                        <img
-                            src="../image/footer/footer-logo.png"
-                            alt="푸터 하얀색 로고"
-                        />
-                    </a>
-                </h2>
-                <div class="copylight">
-                    <ul class="copy">
-                        <li>이스타항공(주) 대표이사 조중석</li>
-                        <li>사업자 등록번호 401-81-32460</li>
-                        <li>서울특별시 강서구 공항대로 236 이스타항공(주)</li>
-                    </ul>
-                    <ul class="copy">
-                        <li>FAX 02-2665-7470</li>
-                        <li>통신판매업 신고번호 2008-전북군산-0073호</li>
-                        <li>개인정보보호책임자 .이경민</li>
-                    </ul>
-                    <ul class="copy">
-                        <li>COPYRIGHT © 2022 EASTARJET. ALL RIGHTS RESERVED</li>
-                    </ul>
-                </div>
-                <div class="sns">
-                    <i class="fa-brands fa-youtube"></i>
-                    <i class="fa-brands fa-square-instagram"></i>
-                    <i class="fa-brands fa-facebook"></i>
-                </div>
-            </div>
-        </div>
-    </footer>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>기내서비스</title>
+		<link rel="stylesheet" href="../css/style.css" />
+		<script
+			src="https://kit.fontawesome.com/c12878d3ba.js"
+			crossorigin="anonymous"
+		></script>
+		<script defer src="../script/header.js"></script>
+	</head>
+	<body>
+		<aside class="announcement_sub">
+			<div class="inner">
+				<div class="content">
+					<ul>
+						<li class="announc_icon">
+							<a href="#">
+								<i class="fa-solid fa-bullhorn"></i>
+							</a>
+						</li>
+						<li class="announc_contents">
+							<p>2024년 01월 국제선 유류할증료</p>
+							<p>2023년 12월국내선 유류할증료</p>
+							<p>2024년 12월 설 연휴 예약 오픈 안내</p>
+							<p>2024년 국제선 성수기 안내</p>
+						</li>
+					</ul>
+				</div>
+				<div class="close">
+					<a href="">1일간 보지않기</a>
+					<i class="fa-solid fa-circle-plus"></i>
+				</div>
+			</div>
+		</aside>
+		<header class="header_sub">
+			<div class="inner">
+				<h1>
+					<a href="../index.html"
+						><img src="../image/main/main-logo.png" alt="이스타항공 로고"
+					/></a>
+				</h1>
+				<nav id="gnb">
+					<ul class="gnb_manu">
+						<li><a href="#">예약</a></li>
+						<li><a href="#">나의예약</a></li>
+						<li><a href="#">여행준비</a></li>
+						<li><a href="#">서비스</a></li>
+						<li><a href="#">이벤트</a></li>
+					</ul>
+				</nav>
+				<div class="sub">
+					<div class="sub_manu">
+						<section id="manu1" class="menu">
+							<article class="etc_service">
+								<h3>기타서비스 구매</h3>
+								<ul>
+									<li><a href="#">지정좌석</a></li>
+									<li><a href="#">위탁수화물</a></li>
+									<li><a href="../html/airline-meal.html">사전기내식</a></li>
+									<li><a href="#">기타서비스 패키지</a></li>
+								</ul>
+							</article>
+							<article class="operation">
+								<h3>운임 및 운항정보</h3>
+								<ul>
+									<li><a href="#">국제선운임</a></li>
+									<li><a href="#">국내선운임</a></li>
+									<li><a href="#">출발도착안내</a></li>
+									<li><a href="#">운항시간표</a></li>
+									<li><a href="#">운항노선도</a></li>
+								</ul>
+							</article>
+							<article>
+								<div class="image">
+									<img
+										src="../image/main/trip-banner.jpg"
+										alt="항공권예약배너"
+									/>
+									<p>항공권 예매하러 바로가기</p>
+								</div>
+							</article>
+						</section>
+						<section id="menu2" class="menu">
+							<article>
+								<h3>나의예약</h3>
+								<ul>
+									<li><a href="#">예약내역</a></li>
+									<li><a href="#">예약 변경 및 취소</a></li>
+								</ul>
+							</article>
+						</section>
+						<section id="menu3" class="menu">
+							<article class="baggage">
+								<h3>수하물</h3>
+								<ul>
+									<li><a href="#">수하물안내</a></li>
+									<li><a href="#">휴대수하물</a></li>
+									<li><a href="#">위탁수하물</a></li>
+									<li><a href="#">운송제한물품</a></li>
+									<li><a href="#">지연, 파손 및 유실물</a></li>
+								</ul>
+							</article>
+							<article class="help">
+								<h3>도움이 필요한 고객</h3>
+								<ul>
+									<li><a href="#">장애인 고객</a></li>
+									<li><a href="#">임산부 고객</a></li>
+									<li><a href="#">고령자 고객</a></li>
+									<li><a href="#">유아동반 고객</a></li>
+									<li><a href="#">반려동물동반 고객</a></li>
+									<li><a href="#">의료도움이 필요한 고객</a></li>
+									<li><a href="#">혼자 여행하는 어린이 및 청소년</a></li>
+								</ul>
+							</article>
+						</section>
+						<section id="menu4" class="menu">
+							<article class="airline_service">
+								<h3>공항서비스</h3>
+								<ul>
+									<li><a href="#">탑승수속</a></li>
+									<li><a href="#">국내선 탑승수속 혼잡도</a></li>
+									<li><a href="#">주차장 혼잡도</a></li>
+									<li><a href="#">입국신고서 작성안내</a></li>
+								</ul>
+							</article>
+							<article class="cavin_service">
+								<h3>기내서비스</h3>
+								<ul>
+									<li><a href="#">면세품</a></li>
+									<li><a href="#">유료상품</a></li>
+									<li><a href="#">기내서비스</a></li>
+								</ul>
+							</article>
+							<article class="affiliated_service">
+								<h3>제휴서비스</h3>
+								<ul>
+									<li><a href="#">숙소</a></li>
+									<li><a href="#">렌터카</a></li>
+									<li><a href="#">액티비티</a></li>
+									<li><a href="#">쇼핑 및 편의시설</a></li>
+								</ul>
+							</article>
+						</section>
+						<section id="menu5" class="menu">
+							<article class="event">
+								<h3>이벤트</h3>
+								<ul>
+									<li><a href="#">진행중인 이벤트</a></li>
+									<li><a href="#">종료된 이벤트</a></li>
+								</ul>
+							</article>
+						</section>
+					</div>
+				</div>
+				<nav class="util_menu">
+					<ul>
+						<li>
+							<a href="#">로그인</a>
+							<a href="#">마이페이지</a>
+							<a href="#">한국어</a>
+							<a href="#">English</a>
+							<div class="language">
+								<ul>
+									<li>
+										<i class="fa-solid fa-globe"></i>
+										<div class="language_menu">
+											<div class="language_box">
+												<h4>언어</h4>
+												<i class="fa-solid fa-chevron-down"></i>
+											</div>
+											<section class="glober">
+												<article>
+													<span>한국어</span>
+													<span>English</span>
+													<span>日本語</span>
+													<span>中国人</span>
+													<span>Tiếng Việt</span>
+												</article>
+											</section>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<div class="btn_sub">
+			<a href="#" class="btnUp">
+				<em>UP</em>
+			</a>
+			<a href="#" class="btnDown">
+				<em>DOWN</em>
+			</a>
+		</div>
+		<section class="content">
+			<div class="navi">
+				<div class="inner">
+					<div class="home">
+						<i class="fa-solid fa-house"></i>
+						<span>홈</span>
+						<i class="fa-solid fa-angle-right"></i>
+					</div>
+					<div class="navi1">
+						<span>서비스</span>
+						<i class="fa-solid fa-circle-chevron-down"></i>
+						<i class="fa-solid fa-angle-right"></i>
+					</div>
+					<div class="navi2">
+						<span>기내 서비스</span>
+						<i class="fa-solid fa-circle-chevron-down"></i>
+						<i class="fa-solid fa-angle-right"></i>
+					</div>
+					<div class="navi3">
+						<span>기내 서비스 안내</span>
+					</div>
+				</div>
+			</div>
+			<div class="title">
+				<div class="title_box">
+					<div class="title_txt">
+						<h2>기내 서비스 안내</h2>
+						<p>
+							모든 고객이 언제나 만족하실 수 있도록 진심을 다하여 서비스
+							하겠습니다.
+						</p>
+					</div>
+					<div class="title_img">
+						<img
+							src="../image/sub-airservice/images/air-service.png"
+							alt="기내서비스 아이콘"
+						/>
+					</div>
+				</div>
+			</div>
+			<div class="division">
+				<div class="divition_part">
+					<span>국내선</span>
+				</div>
+				<div class="divition_part">
+					<span>국제선</span>
+				</div>
+			</div>
+			<div class="service">
+				<div class="service_box">
+					<div class="domestic">
+						<div class="service_part">
+							<img
+								src="../image/sub-airservice/images/drink.png"
+								alt="음료 아이콘"
+							/>
+							<div class="service_txt">
+								<h6>음료서비스</h6>
+								<p>기내에서는 깨끗한 생수만 무료로 제공되고 있습니다.</p>
+							</div>
+						</div>
+						<div class="service_part">
+							<img
+								src="../image/sub-airservice/images/heart.png"
+								alt="하트 아이콘"
+							/>
+							<div class="service_txt">
+								<h6>승객케어서비스</h6>
+								<p>
+									여행중 몸이 불편한 손님을 위해 기내에 약품 및 접이식 휠체어를
+									비치하고 있으며 <br />
+									요청 시 도움이 필요한 승객들에게 제공해드리고 있습니다.
+								</p>
+							</div>
+						</div>
+						<div class="service_part">
+							<img
+								src="../image/sub-airservice/images/calendar.png"
+								alt="달력 아이콘"
+							/>
+							<div class="service_txt">
+								<h6>기내 이벤트</h6>
+								<div class="txt_list">
+									<p>
+										기내 이벤트를 통해 여행의 즐거움을 선사해 드리고 있습니다.
+									</p>
+									<p>*국내선 일부 지정편 기내 이벤트 실시</p>
+								</div>
+								<a href="#"><span>기내이벤트 안내</span></a>
+							</div>
+						</div>
+						<div class="service_part">
+							<img
+								src="../image/sub-airservice/images/delivery.png"
+								alt="택배차 아이콘"
+							/>
+							<div class="service_txt">
+								<h6>별별배송</h6>
+								<div class="txt_list">
+									<p>
+										이스타항공에서는 보다 특별한 배송서비스 '별별배송'을
+										시행하고 있습니다. <br />
+										양손 가볍게 여행하시고 집에서 편하게 받아보실 수 있습니다.
+									</p>
+								</div>
+								<a href="#"><span>별별배송 구매안내</span></a>
+							</div>
+						</div>
+					</div>
+					<div class="international"></div>
+				</div>
+			</div>
+			<div class="notice1">
+				<div class="notice_box1">
+					<h4>기내 유의사항</h4>
+					<div class="notice_list1">
+						<h5>기내온도</h5>
+						<p>
+							● 기내온도는 23 ~ 25도로 유지되어 선선한 편이므로 얇은 소재의 긴
+							소매 상,하의를 권장 드립니다.
+						</p>
+					</div>
+					<div class="notice_list1">
+						<h5>기내습도 및 기압</h5>
+						<p>
+							● 기내습도는 15% 내외로 상당히 건조한 편입니다. 피부 및 눈, 코
+							등이 건조해져 불편함을 느끼실 수 있으니, 기내에서는 수분을 수시로
+							보충하여 주시기 바라며 눈의 건조나 염증 예방을 위해 렌즈보다는
+							안경 착용을 권장 드립니다.
+						</p>
+						<p>
+							● 순항중인 항공기내의 기압은 보통의 건강하신 분들께는 큰 영향이
+							없겠으나, 이착륙 시의 기압변화로 간혹 귀가 멍멍해지는 경우에는
+							가볍게 턱을 움직이시거나 물을 드시는 것을 권장 드립니다.
+						</p>
+						<p>
+							● 기내에는 비상시에 사용이 가능 한 연고, 반창고, 진통제, 소화제 등
+							각종 상비약이 비치되어 있습니다. 기타 불편한 점이 있으시면
+							승무원에게 도움을 요청하여 주시기 바랍니다.
+						</p>
+					</div>
+					<div class="notice_list1">
+						<h5>안전한 여행을 위한 가이드</h5>
+						<h6>
+							‘항공보안법’에 따라 항공기 안에서의 불법 행위는 엄격히 금지되어
+							있습니다.
+						</h6>
+						<span>※ 항공기 안에서의 불법 행위란?</span>
+						<p>● 승무원 폭행, 협박, 업무 방해 행위</p>
+						<p>● 성적 수치심 유발 행위</p>
+						<p>● 흡연 행위, 출입문/탈출구 등 기기 조작 행위</p>
+						<p>● 폭언 등 소란 행위 및 음주로 인한 위해 행위 등</p>
+						<p>
+							이상의 불법행위 적발 시, 최대 10년 이하 징역 또는 1억원 이하의
+							벌금이 부과될 수 있사오니 유의하여 주시기 바랍니다.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer_sub">
+			<div class="inner">
+				<div class="banner">
+					<h2>고객지원센터</h2>
+					<p>이스타항공을 더욱더 편안하게 이용하실수 있게 도와드립니다.</p>
+					<div class="art_wrap">
+						<article>
+							<div class="part">
+								<h4>예약문의</h4>
+								<p>1544-0080</p>
+								<span>매일 9시 ~ 6시 연중무휴</span>
+							</div>
+							<div class="pic">
+								<i class="fa-solid fa-headset"></i>
+							</div>
+						</article>
+						<article>
+							<div class="part">
+								<h4>별별배송 문의</h4>
+								<p>1533-3458</p>
+								<span>평일 9시 ~ 6시</span>
+							</div>
+							<div class="pic">
+								<i class="fa-solid fa-truck"></i>
+							</div>
+						</article>
+						<article>
+							<div class="part">
+								<h4>고객의 말씀</h4>
+								<span>
+									운영시간에 순차적으로<br />
+									답변드리겠습니다.
+								</span>
+							</div>
+							<div class="pic">
+								<i class="fa-solid fa-comments-dollar"></i>
+							</div>
+						</article>
+					</div>
+				</div>
+			</div>
+			<div class="footer_sub">
+				<div class="footer_submenu">
+					<li>회사소개</li>
+					<li>이용약관</li>
+					<li>개인정보처리방침</li>
+					<li>국내여객운송약관</li>
+					<li>국제여객운송약관</li>
+					<li>항공교통이용자 서비스 계획</li>
+					<li>항공교통이용자 피해구제</li>
+					<li>사이트맵</li>
+				</div>
+			</div>
+			<div class="footer_main">
+				<div class="footer_con">
+					<h2>
+						<a href="">
+							<img
+								src="../image/footer/footer-logo.png"
+								alt="푸터 하얀색 로고"
+							/>
+						</a>
+					</h2>
+					<div class="copylight">
+						<ul class="copy">
+							<li>이스타항공(주) 대표이사 조중석</li>
+							<li>사업자 등록번호 401-81-32460</li>
+							<li>서울특별시 강서구 공항대로 236 이스타항공(주)</li>
+						</ul>
+						<ul class="copy">
+							<li>FAX 02-2665-7470</li>
+							<li>통신판매업 신고번호 2008-전북군산-0073호</li>
+							<li>개인정보보호책임자 .이경민</li>
+						</ul>
+						<ul class="copy">
+							<li>COPYRIGHT © 2022 EASTARJET. ALL RIGHTS RESERVED</li>
+						</ul>
+					</div>
+					<div class="sns">
+						<i class="fa-brands fa-youtube"></i>
+						<i class="fa-brands fa-square-instagram"></i>
+						<i class="fa-brands fa-facebook"></i>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
 </html>
