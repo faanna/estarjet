@@ -5,18 +5,21 @@
 		margin: 0 auto;
 		.divition_part {
 			width: 600px;
-			background-color: rgba(0, 0, 0, 0.03);
+			background-color: #555;
 			text-align: center;
 			padding: 20px;
 			span {
 				font: bold 20px/1 '맑은고딕';
-				color: #333;
+				color: #fff;
 			}
 			&:hover {
 				background-color: orange;
 				span {
 					color: #fff;
 				}
+			}
+			&:not(:nth-of-type(2)) {
+				border-right: 2px solid #aaa;
 			}
 		}
 	}
@@ -64,6 +67,77 @@
 						}
 					}
 				}
+			}
+		}
+	}
+	.service {
+		width: 1200px;
+		margin: 0 auto;
+		margin-top: 80px;
+		.service_box {
+			width: 100%;
+			.domestic {
+				width: 100%;
+				.service_part {
+					width: 100%;
+					display: flex;
+					align-items: center;
+					margin-bottom: 40px;
+					.service_img {
+						width: 140px;
+						height: 140px;
+						border: 2px solid #ccc;
+						border-radius: 50%;
+						margin-right: 100px;
+						img {
+							width: 100px;
+							object-fit: cover;
+							transform: translate(19%, 19%);
+							padding: 10px;
+						}
+						&:hover {
+							border: 2px solid orange;
+						}
+					}
+					.service_txt {
+						position: relative;
+						h6 {
+							font: 500 22px/1 '맑은고딕';
+							color: #333;
+							margin-bottom: 20px;
+						}
+						.txt_list {
+							p {
+								font: 500 16px/2 '맑은고딕';
+								color: #333;
+							}
+							span {
+								font: 600 14px/2 '맑은고딕';
+							}
+						}
+						a {
+							position: absolute;
+							top: 0px;
+							right: 0px;
+							background-color: orange;
+							border-radius: 30px;
+							padding: 5px 20px;
+							span {
+								font: bold 15px/1 '맑은고딕';
+								color: #fff;
+							}
+						}
+					}
+					&:nth-of-type(4) {
+						.service_txt {
+							a {
+								transform: translateX(-50%);
+							}
+						}
+					}
+				}
+			}
+			.international {
 			}
 		}
 	}

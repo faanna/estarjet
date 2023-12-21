@@ -186,16 +186,19 @@ header {
 							position: absolute;
 							top: 18px;
 							left: -1px;
+							z-index: 3;
 							article {
 								display: none;
-								span {
-									display: block;
-									font: normal 14px/1 '맑은고딕';
-									color: #555;
-									padding: 5px;
-									&:hover {
-										background-color: #555;
-										color: #fff;
+								.glober_box {
+									span {
+										display: block;
+										font: normal 14px/1 '맑은고딕';
+										color: #555;
+										padding: 5px;
+										&:hover {
+											background-color: #555;
+											color: #fff;
+										}
 									}
 								}
 							}

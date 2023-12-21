@@ -1,4 +1,79 @@
 .content {
+	.navi {
+		.inner {
+			.navi1 {
+				position: relative;
+				.navi1_part {
+					width: 250px;
+					z-index: 2;
+					position: absolute;
+					top: 30px;
+					left: 0px;
+					background-color: #fff;
+					border: 1px solid #ccc;
+					padding: 10px;
+					display: none;
+					.navi1_list {
+						display: flex;
+						justify-content: space-between;
+						.list_txt1 {
+							h6 {
+								font: 500 13px/1.5 '맑은고딕';
+								color: #444;
+								border-bottom: 1px solid #bbb;
+								margin-bottom: 7px;
+								&:hover {
+									font: 600 13px/1.5 '맑은고딕';
+									color: #333;
+									border-bottom: 1px solid #888;
+								}
+							}
+							li {
+								font: 400 12px/2 '맑은고딕';
+								color: #444;
+								text-align: center;
+								&:hover {
+									font: 600 12px/2 '맑은고딕';
+									color: #333;
+									border-bottom: 1px solid #888;
+								}
+							}
+						}
+					}
+				}
+			}
+			.navi2 {
+				position: relative;
+				.navi2_part {
+					width: 150px;
+					z-index: 2;
+					position: absolute;
+					top: 30px;
+					left: 0px;
+					display: none;
+					justify-content: space-between;
+					background-color: #fff;
+					border: 1px solid #ccc;
+					padding: 10px;
+					.navi2_list {
+						.list_txt {
+							display: block;
+							li {
+								font: 400 12px/2 '맑은고딕';
+								color: #444;
+								text-align: center;
+								&:hover {
+									font: 600 12px/2 '맑은고딕';
+									color: #333;
+									border-bottom: 1px solid #888;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 	.apply {
 		width: 1200px;
 		margin: 0 auto;
@@ -21,11 +96,12 @@
 				}
 			}
 			.apply_button {
-				border: 1px solid orange;
+				// border: 1px solid orange;
+				background-color: #555;
 				padding: 10px 20px;
 				span {
 					font: bold 16px/1 '맑은고딕';
-					color: #333;
+					color: #fff;
 				}
 				&:hover {
 					background-color: orange;
@@ -97,21 +173,24 @@
 		cursor: pointer;
 		.tab_box {
 			width: 240px;
-			padding: 10px;
-			border: 2px solid #ccc;
-			background-color: #fff;
+			padding: 15px;
+			// border: 2px solid #ccc;
+			background-color: #555;
 			text-align: center;
 			span {
-				font: 500 18px/1 '맑은고딕';
-				color: #333;
+				font: 600 18px/1 '맑은고딕';
+				color: #fff;
 			}
 			&:hover {
-				border: 2px solid orange;
+				// border: 2px solid orange;
 				background-color: orange;
 				span {
-					font: 700 18px/1 '맑은고딕';
+					font: 600 18px/1 '맑은고딕';
 					color: #fff;
 				}
+			}
+			&:not(:nth-of-type(5)) {
+				border-right: 2px solid #aaa;
 			}
 		}
 	}

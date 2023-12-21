@@ -39,9 +39,13 @@ function stop(list, index) {
 const glober = document.querySelector('.glober');
 const article = glober.querySelector('article');
 const lan_box = document.querySelector('.language_box');
+const glober_box = article.querySelector('.glober_box');
 
 lan_box.addEventListener('click', () => {
 	article.style.display = 'block';
+	glober_box.addEventListener('click', () => {
+		article.style.display = 'none';
+	});
 });
 
 // announcement

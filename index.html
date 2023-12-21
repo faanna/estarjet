@@ -18,7 +18,7 @@
 			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 		/>
 		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-		<script defer src="./script/main.js"></script>
+		<script defer src="./script/main/main.js"></script>
 		<script defer src="./script/header.js"></script>
 		<script
 			src="https://kit.fontawesome.com/c12878d3ba.js"
@@ -189,11 +189,13 @@
 											</div>
 											<section class="glober">
 												<article>
-													<span>한국어</span>
-													<span>English</span>
-													<span>日本語</span>
-													<span>中国人</span>
-													<span>Tiếng Việt</span>
+													<div class="glober_box">
+														<span>한국어</span>
+														<span>English</span>
+														<span>日本語</span>
+														<span>中国人</span>
+														<span>Tiếng Việt</span>
+													</div>
 												</article>
 											</section>
 										</div>
@@ -253,134 +255,143 @@
 				<div class="swiper-pagination"></div>
 			</div>
 		</section>
-
-		<aside id="popup_tabmenu">
-			<div class="top">
-				<span>항공권예매</span>
-				<img src="./image/main/logo.png" alt="흰색 이스타항공 로고" />
-			</div>
-			<div class="inner">
-				<div class="tap_top">
-					<ul class="tab_part">
-						<li>왕복</li>
-						<li>편도</li>
-						<li>다구간</li>
-					</ul>
-					<div class="tooltip">
-						<div class="tolltip_box">
-							<p>다구간이란?</p>
-							<img src="./image/main/information.png" alt="인포메이션 아이콘" />
-							<div class="imformation">
-								<h5>다구간 여정에 대한 안내</h5>
-								<p>* 편도 기준시</p>
-								<span>
-									최소 2곳 이상의 나라(도시)를 경유하여 <br />
-									최종목적지로 가는것입니다. <br
-								/></span>
-								<p>* 왕복 기준시</p>
-								<span
-									>2곳 이상 경유(중간체류 최소1회이상 포함) <br />
-									하여 출발한 곳으로 돌아오는것 입니다.
-								</span>
+		<aside class="popup">
+			<div id="popup_tabmenu">
+				<div class="top">
+					<span>항공권예매</span>
+					<img src="./image/main/logo.png" alt="흰색 이스타항공 로고" />
+				</div>
+				<div class="inner">
+					<div class="tap_top">
+						<ul class="tab_part">
+							<li>왕복</li>
+							<li>편도</li>
+							<li>다구간</li>
+						</ul>
+						<div class="tooltip">
+							<div class="tolltip_box">
+								<p>다구간이란?</p>
+								<img
+									src="./image/main/information.png"
+									alt="인포메이션 아이콘"
+								/>
+								<div class="imformation">
+									<h5>다구간 여정에 대한 안내</h5>
+									<p>* 편도 기준시</p>
+									<span>
+										최소 2곳 이상의 나라(도시)를 경유하여 <br />
+										최종목적지로 가는것입니다. <br
+									/></span>
+									<p>* 왕복 기준시</p>
+									<span
+										>2곳 이상 경유(중간체류 최소1회이상 포함) <br />
+										하여 출발한 곳으로 돌아오는것 입니다.
+									</span>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="group">
-						<input type="checkbox" />
-						<label for="">단체항공권</label>
-					</div>
-				</div>
-				<div class="tab_box">
-					<div class="tab_menu">
-						<div class="contents">
-							<h4>출발지</h4>
-							<i class="fa-solid fa-location-dot"></i>
-						</div>
-						<nav class="departures">
-							<ul class="list_box">
-								<li class="on"><a href="#">대한민국</a></li>
-								<li><a href="#">동북아시아</a></li>
-								<li><a href="#">동남아시아</a></li>
-							</ul>
-							<section class="list">
-								<article class="on">
-									<a href="#"><span>서울/인천</span><span>ICN</span></a>
-									<a href="#"><span>서울/김포</span><span>GMP</span></a>
-									<a href="#"><span>부산</span><span>PUS</span></a>
-									<a href="#"><span>제주</span><span>CJU</span></a>
-								</article>
-								<article>
-									<a href="#"><span>베이징</span><span>PEK</span></a>
-									<a href="#"><span>상하이</span><span>PVG</span></a>
-									<a href="#"><span>타이베이</span><span>TPE</span></a>
-									<a href="#"><span>후쿠오카</span><span>FUK</span></a>
-								</article>
-								<article>
-									<a href="#"><span>창이</span><span>SIN</span></a>
-									<a href="#"><span>나트랑</span><span>KUL</span></a>
-									<a href="#"><span>푸꾸옥</span><span>CXR</span></a>
-									<a href="#"><span>쿠알라룸푸르</span><span>PQC</span></a>
-								</article>
-							</section>
-						</nav>
-					</div>
-					<div class="tab_menu">
-						<div class="contents">
-							<h4>도착지</h4>
-							<i class="fa-solid fa-plane"></i>
-						</div>
-						<nav class="arrivals">
-							<ul class="list_box">
-								<li class="on"><a href="#">대한민국</a></li>
-								<li><a href="#">동북아시아</a></li>
-								<li><a href="#">동남아시아</a></li>
-							</ul>
-							<section class="list">
-								<article class="on">
-									<a href="#"><span>서울/인천</span><span>ICN</span></a>
-									<a href="#"><span>서울/김포</span><span>GMP</span></a>
-									<a href="#"><span>부산</span><span>PUS</span></a>
-									<a href="#"><span>제주</span><span>CJU</span></a>
-								</article>
-								<article>
-									<a href="#"><span>베이징</span><span>PEK</span></a>
-									<a href="#"><span>상하이</span><span>PVG</span></a>
-									<a href="#"><span>타이베이</span><span>TPE</span></a>
-									<a href="#"><span>후쿠오카</span><span>FUK</span></a>
-								</article>
-								<article>
-									<a href="#"><span>창이</span><span>SIN</span></a>
-									<a href="#"><span>나트랑</span><span>KUL</span></a>
-									<a href="#"><span>푸꾸옥</span><span>CXR</span></a>
-									<a href="#"><span>쿠알라룸푸르</span><span>PQC</span></a>
-								</article>
-							</section>
-						</nav>
-					</div>
-					<div class="tab_menu">
-						<div class="contents">
-							<h4>가는날</h4>
-							<i class="fa-solid fa-calendar-days"></i>
+						<div class="group">
+							<input type="checkbox" />
+							<label for="">단체항공권</label>
 						</div>
 					</div>
-					<div class="tab_menu">
-						<div class="contents">
-							<h4>오는날</h4>
-							<i class="fa-solid fa-house-chimney"></i>
+					<div class="tab_box">
+						<div class="tab_menu1">
+							<div class="contents1">
+								<h4>출발지</h4>
+								<i class="fa-solid fa-location-dot"></i>
+							</div>
+							<nav class="departures">
+								<div class="departures_box">
+									<ul class="list_box">
+										<li class="on"><a href="#">대한민국</a></li>
+										<li><a href="#">동북아시아</a></li>
+										<li><a href="#">동남아시아</a></li>
+									</ul>
+									<section class="list">
+										<article class="on">
+											<a href="#"><span>서울/인천</span><span>ICN</span></a>
+											<a href="#"><span>서울/김포</span><span>GMP</span></a>
+											<a href="#"><span>부산</span><span>PUS</span></a>
+											<a href="#"><span>제주</span><span>CJU</span></a>
+										</article>
+										<article>
+											<a href="#"><span>베이징</span><span>PEK</span></a>
+											<a href="#"><span>상하이</span><span>PVG</span></a>
+											<a href="#"><span>타이베이</span><span>TPE</span></a>
+											<a href="#"><span>후쿠오카</span><span>FUK</span></a>
+										</article>
+										<article>
+											<a href="#"><span>창이</span><span>SIN</span></a>
+											<a href="#"><span>나트랑</span><span>KUL</span></a>
+											<a href="#"><span>푸꾸옥</span><span>CXR</span></a>
+											<a href="#"><span>쿠알라룸푸르</span><span>PQC</span></a>
+										</article>
+									</section>
+								</div>
+							</nav>
 						</div>
-					</div>
-					<div class="tab_menu">
-						<div class="contents">
-							<h4>탑승객</h4>
-							<i class="fa-solid fa-user"></i>
+						<div class="tab_menu2">
+							<div class="contents2">
+								<h4>도착지</h4>
+								<i class="fa-solid fa-plane"></i>
+							</div>
+							<nav class="arrivals">
+								<div class="arrivals_box">
+									<ul class="list_box">
+										<li class="on"><a href="#">대한민국</a></li>
+										<li><a href="#">동북아시아</a></li>
+										<li><a href="#">동남아시아</a></li>
+									</ul>
+									<section class="list">
+										<article class="on">
+											<a href="#"><span>서울/인천</span><span>ICN</span></a>
+											<a href="#"><span>서울/김포</span><span>GMP</span></a>
+											<a href="#"><span>부산</span><span>PUS</span></a>
+											<a href="#"><span>제주</span><span>CJU</span></a>
+										</article>
+										<article>
+											<a href="#"><span>베이징</span><span>PEK</span></a>
+											<a href="#"><span>상하이</span><span>PVG</span></a>
+											<a href="#"><span>타이베이</span><span>TPE</span></a>
+											<a href="#"><span>후쿠오카</span><span>FUK</span></a>
+										</article>
+										<article>
+											<a href="#"><span>창이</span><span>SIN</span></a>
+											<a href="#"><span>나트랑</span><span>KUL</span></a>
+											<a href="#"><span>푸꾸옥</span><span>CXR</span></a>
+											<a href="#"><span>쿠알라룸푸르</span><span>PQC</span></a>
+										</article>
+									</section>
+								</div>
+							</nav>
 						</div>
-					</div>
-					<div class="close">
-						<button type="button">조회</button>
+						<div class="tab_menu">
+							<div class="contents">
+								<h4>가는날</h4>
+								<i class="fa-solid fa-calendar-days"></i>
+							</div>
+						</div>
+						<div class="tab_menu">
+							<div class="contents">
+								<h4>오는날</h4>
+								<i class="fa-solid fa-house-chimney"></i>
+							</div>
+						</div>
+						<div class="tab_menu">
+							<div class="contents">
+								<h4>탑승객</h4>
+								<i class="fa-solid fa-user"></i>
+							</div>
+						</div>
+						<div class="close">
+							<button type="button">조회</button>
+						</div>
 					</div>
 				</div>
 			</div>
 		</aside>
+
 		<div class="trip">
 			<div class="swiper mySwiper">
 				<h2>최저가 항공권</h2>
