@@ -2,10 +2,11 @@
 	position: relative;
 	width: 100%;
 	height: 300px;
+	margin: 0 auto;
 	#popup_tabmenu {
 		position: absolute;
 		top: -17%;
-		left: 18%;
+		left: 18vw;
 		width: 1200px;
 		height: 220px;
 		border-radius: 20px;
@@ -22,7 +23,8 @@
 			background-color: orange;
 			border-radius: 20px 20px 0px 0px;
 			span {
-				font: bold 17px/1 '맑은고딕';
+				font-size: 18px;
+				font-weight: bold;
 				color: #fff;
 				margin-left: 45px;
 			}
@@ -53,13 +55,17 @@
 					li {
 						width: 116px;
 						height: 40px;
-						font: bold 17px/40px '맑은고딕';
+						font-size: 17px;
+						font-weight: bold;
+						line-height: 40px;
 						color: #333;
 						text-align: center;
 						&:hover {
 							border-radius: 10px;
 							background-color: orange;
-							font: bold 17px/40px '맑은고딕';
+							font-size: 17px;
+							font-weight: bold;
+							line-height: 40px;
 							color: #fff;
 						}
 					}
@@ -76,36 +82,38 @@
 						justify-content: space-evenly;
 						align-items: center;
 						p {
-							font: bold 15px/ 40px '맑은고딕';
-							color: #555;
+							font-size: 15px;
+							font-weight: normal;
+							line-height: 40px;
+							color: #333;
 						}
 						img {
-							width: 20px;
-							height: 20px;
+							width: 21px;
+							height: 21px;
 						}
 						.imformation {
 							display: none;
 							width: 300px;
-							height: 180px;
 							position: absolute;
 							top: 37%;
-							right: 15.5%;
+							right: 8vw;
 							background-color: #fff;
-							border: 1px solid #eee;
+							border: 2px solid orange;
 							border-radius: 10px;
-							padding: 10px;
+							padding: 20px 34px;
 							h5 {
-								font: bold 15px/1 '맑은고딕';
+								font-size: 18px;
+								font-weight: bold;
 								color: #333;
-								margin-bottom: 10px;
 							}
 							p {
-								font: bold 14px/1.5 '맑은고딕';
+								font-size: 14px;
+								font-weight: bold;
 								color: #444;
-								margin-top: 10px;
 							}
 							span {
-								font: normal 13px/1 '맑은고딕';
+								font-size: 13px;
+								font-weight: normal;
 								color: #333;
 							}
 						}
@@ -117,14 +125,15 @@
 					justify-content: space-evenly;
 					align-items: center;
 					input[type='checkbox'] {
-						width: 16px;
-						height: 16px;
+						width: 15px;
+						height: 15px;
 						&:checked {
 							accent-color: orange;
 						}
 					}
 					label {
-						font: bold 15px/1 '맑은고딕';
+						font-size: 15px;
+						font-weight: normal;
 						color: #555;
 					}
 				}
@@ -143,114 +152,25 @@
 						width: 200px;
 						display: flex;
 						justify-content: space-between;
-						border-bottom: 1px solid #ddd;
+						border-bottom: 2px solid #ddd;
 						h4 {
-							font: normal 17px/1 '맑은고딕';
+							font-size: 17px;
+							font-weight: normal;
 							color: #555;
 						}
 						i {
+							padding: 5px 0px;
 							color: #888;
 						}
 						&:hover {
-							border-bottom: 1px solid orange;
+							border-bottom: 2px solid orange;
 							h4 {
-								font: bold 17px/1 '맑은고딕';
+								font-size: 17px;
+								font-weight: bold;
 								color: #333;
 							}
 							i {
 								color: orange;
-							}
-						}
-					}
-					.departures {
-						width: 600px;
-						height: 200px;
-						position: absolute;
-						top: 200px;
-						left: 100px;
-						background-color: #fff;
-						border: 1px solid #555;
-						border-radius: 5px;
-						display: none;
-						justify-content: space-between;
-						align-items: center;
-						padding: 20px;
-						z-index: 10;
-						&::before {
-							content: '';
-							display: block;
-							width: 20px;
-							height: 20px;
-							background-color: #fff;
-							border-top: 1px solid #555;
-							border-left: 1px solid #555;
-							position: absolute;
-							top: -11px;
-							transform: rotate(45deg);
-						}
-						.departures_box {
-							display: flex;
-							transform: translateY(0%);
-							.list_box {
-								width: 200px;
-								height: 160px;
-								background-color: rgba(0, 0, 0, 0.03);
-								border-radius: 5px;
-								margin-right: 20px;
-								li {
-									width: 100%;
-									padding: 13px;
-									display: flex;
-									justify-content: center;
-									align-items: center;
-									border: 2px solid transparent;
-									&.on a {
-										padding: 10px;
-										border: 2px solid orange;
-										border-radius: 5px;
-										font: bold 15px/1 '맑은고딕';
-										background-color: #fff;
-									}
-									a {
-										width: 100%;
-										height: 100%;
-										display: block;
-										font: normal 15px/1 '맑은고딕';
-										color: #333;
-										padding: 0px 10px;
-									}
-								}
-							}
-							.list {
-								width: 340px;
-								position: relative;
-								article {
-									width: 100%;
-									display: none;
-									position: absolute;
-									&.on {
-										display: block;
-									}
-									a {
-										width: 100%;
-										padding: 10px;
-										display: flex;
-										justify-content: space-between;
-										align-items: center;
-										background-color: rgba(0, 0, 0, 0.03);
-										border-radius: 5px;
-										margin-bottom: 6px;
-										&.on span {
-											font: bold 15px/1 '맑은고딕';
-											background-color: #fff;
-											color: orange;
-										}
-										span {
-											font: normal 15px/1 '맑은고딕';
-											color: #333;
-										}
-									}
-								}
 							}
 						}
 					}
@@ -263,18 +183,21 @@
 						width: 200px;
 						display: flex;
 						justify-content: space-between;
-						border-bottom: 1px solid #ddd;
+						border-bottom: 2px solid #ddd;
 						h4 {
-							font: normal 17px/1 '맑은고딕';
+							font-size: 17px;
+							font-weight: normal;
 							color: #555;
 						}
 						i {
+							padding: 5px 0px;
 							color: #888;
 						}
 						&:hover {
-							border-bottom: 1px solid orange;
+							border-bottom: 2px solid orange;
 							h4 {
-								font: bold 17px/1 '맑은고딕';
+								font-size: 17px;
+								font-weight: bold;
 								color: #333;
 							}
 							i {
@@ -307,6 +230,7 @@
 							position: absolute;
 							top: -11px;
 							transform: rotate(45deg);
+							z-index: 3;
 						}
 						.departures_box {
 							display: flex;
@@ -383,18 +307,21 @@
 						width: 200px;
 						display: flex;
 						justify-content: space-between;
-						border-bottom: 1px solid #ddd;
+						border-bottom: 2px solid #ddd;
 						h4 {
-							font: normal 17px/1 '맑은고딕';
+							font-size: 17px;
+							font-weight: normal;
 							color: #555;
 						}
 						i {
 							color: #888;
+							padding: 5px 0px;
 						}
 						&:hover {
-							border-bottom: 1px solid orange;
+							border-bottom: 2px solid orange;
 							h4 {
-								font: bold 17px/1 '맑은고딕';
+								font-size: 17px;
+								font-weight: bold;
 								color: #333;
 							}
 							i {
@@ -407,7 +334,7 @@
 						height: 200px;
 						position: absolute;
 						top: 200px;
-						left: 300px;
+						left: 200px;
 						background-color: #fff;
 						border: 1px solid #555;
 						border-radius: 5px;
@@ -415,6 +342,7 @@
 						justify-content: space-between;
 						align-items: center;
 						padding: 20px;
+						z-index: 10;
 						&::before {
 							content: '';
 							display: block;
@@ -499,7 +427,8 @@
 					margin-top: 30px;
 					button {
 						padding: 10px 25px;
-						font: bold 17px/1 '맑은고딕';
+						font-size: 17px;
+						font-weight: bold;
 						color: #fff;
 						border: 1px solid #fff;
 						border-radius: 7px;

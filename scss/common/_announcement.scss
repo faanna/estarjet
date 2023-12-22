@@ -38,8 +38,10 @@
 					p {
 						text-align: left;
 						align-items: center;
-						margin: 3px 20px;
-						font: bold 14px/1.5 '맑은고딕';
+						margin: 8px 20px;
+						font-size: 14px;
+						font-weight: bold;
+						line-height: 14px;
 						color: rgb(0, 0, 109);
 						transition: 0.5s;
 					}
@@ -47,16 +49,20 @@
 			}
 		}
 		.close {
-			width: 115px;
+			width: 220px;
+			display: flex;
+			justify-content: right;
 			a {
-				height: 30px;
 				align-items: center;
 				text-align: center;
-				margin-top: 7px;
-				font: bold 13px/1 '맑은고딕';
+				margin-top: 4px;
+				margin-right: 10px;
+				font-size: 13px;
+				font-weight: normal;
 				color: rgb(0, 0, 109);
 			}
 			i {
+				font-size: 16px;
 				height: 30px;
 				line-height: 30px;
 				color: orange;

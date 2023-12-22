@@ -5,7 +5,7 @@ footer {
 	.inner {
 		width: 100%;
 		background-color: rgb(255, 228, 188);
-		padding: 20px 0px;
+		padding: 40px 0px;
 		.banner {
 			width: 1200px;
 			margin: 0 auto;
@@ -14,12 +14,16 @@ footer {
 			align-items: center;
 			padding-bottom: 20px;
 			h2 {
-				font: bold 24px/2 '맑은고딕';
+				font-size: 24px;
+				font-weight: bold;
+				line-height: 48px;
 				color: #333;
 				margin-bottom: 5px;
 			}
 			p {
-				font: 17px/1.5 '맑은고딕';
+				font-size: 17px;
+				font-weight: normal;
+				line-height: 25px;
 				color: #444;
 				margin-bottom: 30px;
 			}
@@ -39,7 +43,8 @@ footer {
 					.part {
 						width: 250px;
 						h4 {
-							font: 17px/1 '맑은고딕';
+							font-size: 18px;
+							font-weight: normal;
 							color: #666;
 							margin-bottom: 25px;
 						}
@@ -49,7 +54,8 @@ footer {
 							margin-bottom: 10px;
 						}
 						span {
-							font: 18px/1 '맑은고딕';
+							font-size: 18px;
+							font-weight: normal;
 							color: #555;
 						}
 					}
@@ -63,15 +69,18 @@ footer {
 				:nth-of-type(3) {
 					.part {
 						h4 {
-							font: 18px/1 '맑은고딕';
+							font-size: 18px;
+							font-weight: normal;
 							color: #666;
 							margin-bottom: 25px;
 						}
 						span {
 							display: block;
 							margin-top: 20px;
-							font: bold 18px/1.5 '맑은고딕';
-							color: #666;
+							font-size: 18px;
+							font-weight: normal;
+							line-height: 30px;
+							color: #444;
 						}
 					}
 				}
@@ -81,6 +90,7 @@ footer {
 	.footer_sub {
 		width: 100%;
 		background-color: #eee;
+		border-top: 1px solid #ddd;
 		border-bottom: 1px solid #ddd;
 		margin-top: auto;
 		.footer_submenu {
@@ -92,15 +102,18 @@ footer {
 			padding: 20px 0px;
 			li {
 				position: relative;
-				font: normal 15px/1 '맑은고딕';
-				color: #999;
+				font-size: 15px;
+				font-weight: normal;
+				color: #888;
 				cursor: pointer;
 				&:nth-of-type(3) {
-					font: bold 15px/1 '맑은고딕';
+					font-size: 15px;
+					font-weight: bold;
 					color: #777;
 				}
 				&:nth-of-type(7) {
-					font: bold 15px/1 '맑은고딕';
+					font-size: 15px;
+					font-weight: bold;
 					color: #666;
 				}
 			}
@@ -124,7 +137,9 @@ footer {
 					display: flex;
 					justify-content: left;
 					li {
-						font: normal 13px/2 '맑은고딕';
+						font-size: 13px;
+						font-weight: normal;
+						line-height: 26px;
 						color: #777;
 					}
 				}
