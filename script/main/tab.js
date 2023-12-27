@@ -8,6 +8,7 @@ const lis = departures_box.querySelectorAll('li');
 const departures_art_list = departures_box.querySelector('.list');
 
 contents.addEventListener('click', () => {
+	contents.classList.add('on');
 	departures.style.display = 'flex';
 	for (let i = 0; i < lis.length; i++) {
 		lis[i].addEventListener('click', (e) => {
@@ -19,6 +20,7 @@ contents.addEventListener('click', () => {
 	departures_art_list.addEventListener('click', (e) => {
 		e.preventDefault();
 		departures.style.display = 'none';
+		contents.classList.remove('on');
 	});
 });
 function active(list, index) {
@@ -38,18 +40,19 @@ const lis_1 = arrivals_box.querySelectorAll('li');
 const arrivals_art_list = arrivals_box.querySelector('.list');
 
 contents2.addEventListener('click', () => {
+	contents2.classList.add('on');
 	arrivals.style.display = 'block';
 	for (let a = 0; a < lis_1.length; a++) {
 		lis_1[a].addEventListener('click', (e) => {
 			e.preventDefault();
 			active(lis_1, a);
-			console.log(active(lis_1, a));
 			active(article_2, a);
 		});
 	}
 	arrivals_art_list.addEventListener('click', (e) => {
 		e.preventDefault();
 		arrivals.style.display = 'none';
+		contents2.classList.remove('on');
 	});
 });
 

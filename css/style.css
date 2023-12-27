@@ -118,7 +118,7 @@ header .inner h1 a img {
 }
 header .inner #gnb {
   position: absolute;
-  top: 5.3vh;
+  top: 5vh;
   left: 15vw;
   display: flex;
 }
@@ -152,7 +152,7 @@ header .inner .sub .sub_manu .menu {
   padding: 30px;
   width: 1200px;
   position: absolute;
-  top: 2.1vh;
+  top: 2vh;
   left: 0;
   background-color: #f8f9fc;
   box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
@@ -219,7 +219,7 @@ header .inner .sub .sub_manu article .image p {
   color: #333;
   text-align: center;
 }
-header .inner .sub .sub_manu article:hover {
+header .inner .sub .sub_manu article:hover img {
   opacity: 0.8;
 }
 header .inner .sub .sub_manu article:hover p {
@@ -765,7 +765,7 @@ footer .footer_main .footer_con .sns i {
   color: #333;
   text-align: center;
 }
-.header_sub .inner .sub .sub_manu article:hover {
+.header_sub .inner .sub .sub_manu article:hover img {
   opacity: 0.8;
 }
 .header_sub .inner .sub .sub_manu article:hover p {
@@ -1302,6 +1302,21 @@ footer .footer_main .footer_con .sns i {
   font-weight: normal;
   color: #333;
 }
+.popup #popup_tabmenu .inner .tap_top .tooltip .tolltip_box .imformation .imfor a {
+  font-size: 13px;
+  font-weight: normal;
+  color: #444;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 2px 5px;
+  margin-left: 40%;
+  margin-top: 20px;
+}
+.popup #popup_tabmenu .inner .tap_top .tooltip .tolltip_box .imformation .imfor a:hover {
+  border: 1px solid #666;
+  background-color: #666;
+  color: #fff;
+}
 .popup #popup_tabmenu .inner .tap_top .group {
   width: 130px;
   display: flex;
@@ -1378,15 +1393,15 @@ footer .footer_main .footer_con .sns i {
   padding: 5px 0px;
   color: #888;
 }
-.popup #popup_tabmenu .inner .tab_box .tab_menu1 .contents1:hover {
+.popup #popup_tabmenu .inner .tab_box .tab_menu1 .contents1.on, .popup #popup_tabmenu .inner .tab_box .tab_menu1 .contents1:hover {
   border-bottom: 2px solid orange;
 }
-.popup #popup_tabmenu .inner .tab_box .tab_menu1 .contents1:hover h4 {
+.popup #popup_tabmenu .inner .tab_box .tab_menu1 .contents1.on h4, .popup #popup_tabmenu .inner .tab_box .tab_menu1 .contents1:hover h4 {
   font-size: 17px;
   font-weight: bold;
   color: #333;
 }
-.popup #popup_tabmenu .inner .tab_box .tab_menu1 .contents1:hover i {
+.popup #popup_tabmenu .inner .tab_box .tab_menu1 .contents1.on i, .popup #popup_tabmenu .inner .tab_box .tab_menu1 .contents1:hover i {
   color: orange;
 }
 .popup #popup_tabmenu .inner .tab_box .tab_menu1 .departures {
@@ -1473,6 +1488,9 @@ footer .footer_main .footer_con .sns i {
   border-radius: 5px;
   margin-bottom: 6px;
 }
+.popup #popup_tabmenu .inner .tab_box .tab_menu1 .departures .departures_box .list article a:hover {
+  background-color: rgb(248, 224, 179);
+}
 .popup #popup_tabmenu .inner .tab_box .tab_menu1 .departures .departures_box .list article a.on span {
   font: bold 15px/1 "맑은고딕";
   background-color: #fff;
@@ -1502,15 +1520,15 @@ footer .footer_main .footer_con .sns i {
   color: #888;
   padding: 5px 0px;
 }
-.popup #popup_tabmenu .inner .tab_box .tab_menu2 .contents2:hover {
+.popup #popup_tabmenu .inner .tab_box .tab_menu2 .contents2.on, .popup #popup_tabmenu .inner .tab_box .tab_menu2 .contents2:hover {
   border-bottom: 2px solid orange;
 }
-.popup #popup_tabmenu .inner .tab_box .tab_menu2 .contents2:hover h4 {
+.popup #popup_tabmenu .inner .tab_box .tab_menu2 .contents2.on h4, .popup #popup_tabmenu .inner .tab_box .tab_menu2 .contents2:hover h4 {
   font-size: 17px;
   font-weight: bold;
   color: #333;
 }
-.popup #popup_tabmenu .inner .tab_box .tab_menu2 .contents2:hover i {
+.popup #popup_tabmenu .inner .tab_box .tab_menu2 .contents2.on i, .popup #popup_tabmenu .inner .tab_box .tab_menu2 .contents2:hover i {
   color: orange;
 }
 .popup #popup_tabmenu .inner .tab_box .tab_menu2 .arrivals {
@@ -1595,6 +1613,9 @@ footer .footer_main .footer_con .sns i {
   background-color: rgba(0, 0, 0, 0.03);
   border-radius: 5px;
   margin-bottom: 6px;
+}
+.popup #popup_tabmenu .inner .tab_box .tab_menu2 .arrivals .arrivals_box .list article a:hover {
+  background-color: rgb(248, 224, 179);
 }
 .popup #popup_tabmenu .inner .tab_box .tab_menu2 .arrivals .arrivals_box .list article a.on span {
   font: bold 15px/1 "맑은고딕";
@@ -1998,18 +2019,21 @@ footer .footer_main .footer_con .sns i {
 }
 .content .navi .inner .navi1 .navi1_part {
   width: 250px;
-  z-index: 2;
   position: absolute;
   top: 30px;
   left: 0px;
-  background-color: #fff;
-  border: 1px solid #ccc;
+  background-color: #f7f7f7;
+  z-index: 2;
+  border: 2px solid #ccc;
   padding: 10px;
   display: none;
 }
 .content .navi .inner .navi1 .navi1_part .navi1_list {
   display: flex;
-  justify-content: space-between;
+  margin: 0 auto;
+}
+.content .navi .inner .navi1 .navi1_part .navi1_list .list_txt1:not(:nth-of-type(2)) {
+  margin-right: 20px;
 }
 .content .navi .inner .navi1 .navi1_part .navi1_list .list_txt1 h6 {
   font-size: 13px;
@@ -2036,7 +2060,6 @@ footer .footer_main .footer_con .sns i {
 .content .navi .inner .navi1 .navi1_part .navi1_list .list_txt1 li:hover {
   font-weight: 600;
   color: #333;
-  border-bottom: 1px solid #888;
 }
 .content .navi .inner .navi2 {
   position: relative;
@@ -2405,49 +2428,57 @@ footer .footer_main .footer_con .sns i {
 .content .service .service_box .domestic {
   width: 100%;
 }
-.content .service .service_box .domestic .service_part {
+.content .service .service_box .domestic .service_part_up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .service .service_box .domestic .service_part_up .service_part {
   width: 100%;
   display: flex;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 100px;
 }
-.content .service .service_box .domestic .service_part .service_img {
-  width: 140px;
-  height: 140px;
+.content .service .service_box .domestic .service_part_up .service_part:not(:nth-of-type(2)) {
+  margin-right: 20px;
+}
+.content .service .service_box .domestic .service_part_up .service_part .service_img {
+  width: 120px;
+  height: 120px;
   border: 2px solid #ccc;
   border-radius: 50%;
-  margin-right: 100px;
+  margin-right: 50px;
 }
-.content .service .service_box .domestic .service_part .service_img img {
-  width: 100px;
+.content .service .service_box .domestic .service_part_up .service_part .service_img img {
+  width: 90px;
   object-fit: cover;
-  transform: translate(19%, 19%);
+  transform: translate(15%, 15%);
   padding: 10px;
 }
-.content .service .service_box .domestic .service_part .service_img:hover {
+.content .service .service_box .domestic .service_part_up .service_part .service_img:hover {
   border: 2px solid orange;
 }
-.content .service .service_box .domestic .service_part .service_txt {
+.content .service .service_box .domestic .service_part_up .service_part .service_txt {
   position: relative;
 }
-.content .service .service_box .domestic .service_part .service_txt h6 {
+.content .service .service_box .domestic .service_part_up .service_part .service_txt h6 {
   font-size: 22px;
   font-weight: 500;
   color: #333;
   margin-bottom: 20px;
 }
-.content .service .service_box .domestic .service_part .service_txt .txt_list p {
+.content .service .service_box .domestic .service_part_up .service_part .service_txt .txt_list p {
   font-size: 16px;
   font-weight: 500;
   line-height: 32px;
   color: #333;
 }
-.content .service .service_box .domestic .service_part .service_txt .txt_list span {
+.content .service .service_box .domestic .service_part_up .service_part .service_txt .txt_list span {
   font-size: 14px;
   font-weight: 600;
   line-height: 28px;
 }
-.content .service .service_box .domestic .service_part .service_txt a {
+.content .service .service_box .domestic .service_part_up .service_part .service_txt a {
   position: absolute;
   top: 0px;
   right: 0px;
@@ -2455,13 +2486,89 @@ footer .footer_main .footer_con .sns i {
   border-radius: 30px;
   padding: 5px 20px;
 }
-.content .service .service_box .domestic .service_part .service_txt a span {
+.content .service .service_box .domestic .service_part_up .service_part .service_txt a span {
   font-size: 15px;
   font-weight: bold;
   color: #fff;
 }
-.content .service .service_box .domestic .service_part:nth-of-type(4) .service_txt a {
-  transform: translateX(-50%);
+.content .service .service_box .domestic .service_part_up .service_part:nth-of-type(3) .service_txt a {
+  margin-top: 10px;
+  transform: translateX(375%);
+}
+.content .service .service_box .domestic .service_part_up .service_part:nth-of-type(4) .service_txt a {
+  margin-top: 10px;
+  transform: translateX(276%);
+}
+.content .service .service_box .domestic .service_part_down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .service .service_box .domestic .service_part_down .service_part {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.content .service .service_box .domestic .service_part_down .service_part:not(:nth-of-type(2)) {
+  margin-right: 20px;
+}
+.content .service .service_box .domestic .service_part_down .service_part .service_img {
+  width: 120px;
+  height: 120px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  margin-right: 50px;
+}
+.content .service .service_box .domestic .service_part_down .service_part .service_img img {
+  width: 90px;
+  object-fit: cover;
+  transform: translate(17%, 18%);
+  padding: 10px;
+}
+.content .service .service_box .domestic .service_part_down .service_part .service_img:hover {
+  border: 2px solid orange;
+}
+.content .service .service_box .domestic .service_part_down .service_part .service_txt {
+  position: relative;
+}
+.content .service .service_box .domestic .service_part_down .service_part .service_txt h6 {
+  font-size: 22px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 20px;
+}
+.content .service .service_box .domestic .service_part_down .service_part .service_txt .txt_list p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 32px;
+  color: #333;
+}
+.content .service .service_box .domestic .service_part_down .service_part .service_txt .txt_list span {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 28px;
+}
+.content .service .service_box .domestic .service_part_down .service_part .service_txt a {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: orange;
+  border-radius: 30px;
+  padding: 5px 20px;
+}
+.content .service .service_box .domestic .service_part_down .service_part .service_txt a span {
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+}
+.content .service .service_box .domestic .service_part_down .service_part:nth-of-type(3) .service_txt a {
+  margin-top: 10px;
+  transform: translateX(375%);
+}
+.content .service .service_box .domestic .service_part_down .service_part:nth-of-type(4) .service_txt a {
+  margin-top: 10px;
+  transform: translateX(276%);
 }
 
 /*# sourceMappingURL=style.css.map */
