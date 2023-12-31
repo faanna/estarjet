@@ -22,7 +22,7 @@ var swiper = new Swiper(".visual", {
 
 // trip
 var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 4,
+  slidesPerView: 3,
   spaceBetween: 30,
   loop: true,
   autoplay: {
@@ -51,14 +51,14 @@ btnStop.addEventListener("click", () => {
 
 // 다구간이란?
 const tooltip = document.querySelector(".tooltip");
-const tooltip_box = document.querySelector(".tooltip_box");
-const img = tooltip.querySelector("img");
+const tooltip_box = document.querySelector(".tolltip_box");
 const imformation = document.querySelector(".imformation");
 const imfor = document.querySelector(".imfor");
+const close = imfor.querySelector("a");
 
-img.addEventListener("click", () => {
+tooltip_box.addEventListener("click", () => {
   imformation.style.display = "block";
-  imfor.addEventListener("click", () => {
+  close.addEventListener("click", () => {
     imformation.style.display = "none";
   });
 });
