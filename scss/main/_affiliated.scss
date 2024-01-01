@@ -89,3 +89,54 @@
     }
   }
 }
+
+// 모바일 영역
+@media screen and (max-width: 400px) {
+  #Affiliated_services {
+    border-bottom: none;
+    .inner {
+      width: 340px;
+      margin-left: 40px;
+      h2 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 15px;
+        margin-bottom: 30px;
+      }
+      .wrap {
+        display: block;
+        article {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border: 2px solid rgba(0, 0, 0, 0.03);
+          border-radius: 10px;
+          padding: 0 20px;
+          margin-bottom: 10px;
+          &:hover {
+            border: 2px solid orange;
+          }
+
+          .pic {
+            width: 100px;
+            span {
+              width: 80px;
+              height: 80px;
+              background-color: #fff;
+              img {
+                width: 100px;
+              }
+            }
+          }
+          h3 {
+            font-size: 20px;
+            font-weight: normal;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+}

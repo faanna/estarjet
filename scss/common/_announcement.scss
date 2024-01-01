@@ -78,28 +78,23 @@
 // 태블릿 영역
 @media screen and (max-width: 800px) {
   .announc_contents {
-    width: 100%;
     .inner {
       width: 700px;
       .content {
         width: 600px;
-        margin: 0 auto;
-        .announc_icon {
-          a {
-            i {
-              font-size: 14px;
+        ul {
+          .announc_icon {
+            width: 20px;
+            a {
+              i {
+                font-size: 14px;
+              }
             }
           }
-        }
-        .announc_contents {
-          width: 400px;
-          p {
-            text-align: center;
+          .announc_contents {
+            width: 500px;
           }
         }
-      }
-      .close {
-        width: 200px;
       }
     }
   }

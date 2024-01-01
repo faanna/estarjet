@@ -123,3 +123,10 @@
     }
   }
 }
+
+// 모바일 영역
+@media screen and (max-width: 400px) {
+  .gallery {
+    display: none;
+  }
+}

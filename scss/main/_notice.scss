@@ -90,3 +90,41 @@
     }
   }
 }
+
+// 모바일 영역
+@media screen and (max-width: 400px) {
+  #notice {
+    width: 340px;
+    display: block;
+    .inner {
+      width: 100%;
+      margin-left: 10%;
+      h2 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 15px;
+        margin-bottom: 20px;
+      }
+      a {
+        padding: 5px 20px;
+        font-size: 15px;
+      }
+    }
+    .contents {
+      left: 10%;
+      ul {
+        li {
+          a {
+            font-size: 15px;
+            line-height: 55px;
+            font-weight: 500;
+            span {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

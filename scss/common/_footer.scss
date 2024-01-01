@@ -205,3 +205,66 @@ footer {
     }
   }
 }
+
+// 모바일 영역
+@media screen and (max-width: 400px) {
+  footer {
+    margin-top: 100px;
+    .inner {
+      .banner {
+        width: 360px;
+        h2 {
+          font-size: 20px;
+        }
+        p {
+          font-size: 15px;
+        }
+        .art_wrap {
+          display: block;
+          article {
+            width: 100%;
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 10px;
+            .part {
+              width: 100%;
+
+              h4 {
+                font-size: 20px;
+                margin-bottom: 15px;
+              }
+              p {
+                font-size: 15px;
+              }
+              span {
+                font-size: 15px;
+              }
+            }
+            .pic {
+              display: flex;
+              i {
+                color: rgb(255, 228, 188);
+                font-size: 55px;
+              }
+            }
+          }
+          :nth-of-type(3) {
+            .part {
+              h4 {
+                margin-bottom: 15px;
+              }
+              span {
+                font-size: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .footer_sub {
+      .footer_submenu {
+        width: 700px;
+      }
+    }
+  }
+}

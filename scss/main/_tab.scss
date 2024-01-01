@@ -493,7 +493,7 @@
     }
   }
 }
-
+// 태블릿 영역
 @media screen and (max-width: 800px) {
   .popup {
     #popup_tabmenu {
@@ -557,6 +557,93 @@
           white-space: wrap;
           .tab_menu {
             width: 200px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// 모바일 영역
+@media screen and (max-width: 400px) {
+  .popup {
+    #popup_tabmenu {
+      top: 20%;
+      left: 6vw;
+      width: 360px;
+      height: 400px;
+      .top {
+        span {
+          font-size: 15px;
+          margin-left: 25px;
+        }
+        img {
+          width: 100px;
+          margin-right: 25px;
+        }
+      }
+      .inner {
+        .tap_top {
+          width: 320px;
+          display: block;
+          justify-content: center;
+          position: relative;
+          .tab_part {
+            width: 100%;
+            li {
+              width: 100%;
+              font-size: 15px;
+            }
+          }
+          .tooltip {
+            width: 100%;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            margin-top: 10px;
+            .tolltip_box {
+              width: 150px;
+              p {
+                font-size: 17px;
+                margin-right: auto;
+              }
+              img {
+                width: 25px;
+                height: 25px;
+                margin-right: 20px;
+              }
+            }
+            .imformation {
+              width: 310px;
+              top: 30%;
+              right: 6.6vw;
+            }
+          }
+          .group {
+            position: absolute;
+            top: 40px;
+            right: -20px;
+            width: 150px;
+            margin-left: 30px;
+            input[type="checkbox"] {
+              width: 20px;
+              height: 20px;
+              &:checked {
+                accent-color: orange;
+              }
+            }
+            label {
+              font-size: 18px;
+            }
+          }
+        }
+        .tab_box {
+          width: 100%;
+          display: block;
+          justify-content: center;
+          white-space: wrap;
+          .tab_menu {
+            width: 100%;
           }
         }
       }
