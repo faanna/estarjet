@@ -1286,6 +1286,101 @@ footer .footer_main .footer_con .sns i {
   cursor: pointer;
 }
 
+@media screen and (max-width: 800px) {
+  .btn_sub .btnUp {
+    display: none;
+  }
+  .btn_sub .btnDown {
+    display: none;
+  }
+  .footer_sub {
+    margin-top: 100px;
+  }
+  .footer_sub .inner .banner {
+    width: 700px;
+  }
+  .footer_sub .inner .banner .art_wrap article {
+    width: 210px;
+    padding: 20px;
+    border-radius: 15px;
+  }
+  .footer_sub .inner .banner .art_wrap article .part {
+    width: 100%;
+  }
+  .footer_sub .inner .banner .art_wrap article .part h4 {
+    margin-bottom: 15px;
+  }
+  .footer_sub .inner .banner .art_wrap article .part p {
+    font-size: 20px;
+  }
+  .footer_sub .inner .banner .art_wrap article .part span {
+    font-size: 15px;
+  }
+  .footer_sub .inner .banner .art_wrap article .pic {
+    display: none;
+  }
+  .footer_sub .inner .banner .art_wrap :nth-of-type(3) .part h4 {
+    margin-bottom: 15px;
+  }
+  .footer_sub .inner .banner .art_wrap :nth-of-type(3) .part span {
+    font-size: 16px;
+  }
+  .footer_sub .footer_sub .footer_submenu {
+    width: 700px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .footer_sub {
+    margin-top: 100px;
+  }
+  .footer_sub .inner .banner {
+    width: 360px;
+  }
+  .footer_sub .inner .banner h2 {
+    font-size: 20px;
+  }
+  .footer_sub .inner .banner p {
+    font-size: 15px;
+  }
+  .footer_sub .inner .banner .art_wrap {
+    display: block;
+  }
+  .footer_sub .inner .banner .art_wrap article {
+    width: 100%;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+  }
+  .footer_sub .inner .banner .art_wrap article .part {
+    width: 100%;
+  }
+  .footer_sub .inner .banner .art_wrap article .part h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .footer_sub .inner .banner .art_wrap article .part p {
+    font-size: 15px;
+  }
+  .footer_sub .inner .banner .art_wrap article .part span {
+    font-size: 15px;
+  }
+  .footer_sub .inner .banner .art_wrap article .pic {
+    display: flex;
+  }
+  .footer_sub .inner .banner .art_wrap article .pic i {
+    color: rgb(255, 228, 188);
+    font-size: 55px;
+  }
+  .footer_sub .inner .banner .art_wrap :nth-of-type(3) .part h4 {
+    margin-bottom: 15px;
+  }
+  .footer_sub .inner .banner .art_wrap :nth-of-type(3) .part span {
+    font-size: 15px;
+  }
+  .footer_sub .footer_sub .footer_submenu {
+    width: 700px;
+  }
+}
 .popup {
   position: relative;
   width: 100%;
