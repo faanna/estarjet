@@ -374,35 +374,177 @@ header .btn_call.on span {
   transform: translateX(100%);
   opacity: 0;
 }
-header .btn_call #gnb_responsive {
+header #gnb_responsive {
   width: 400px;
   height: 100vh;
-  background-color: #ccc;
+  background-color: #fff;
   position: fixed;
   top: 0px;
-  left: -270px;
-  z-index: 15;
-  padding: 35px 30px;
+  left: 0px;
+  z-index: 5;
+  padding: 30px 0px;
   transition: all 0.5s;
   display: block;
 }
-header .btn_call #gnb_responsive.on {
+header #gnb_responsive.on {
   left: 0px;
 }
-header .btn_call #gnb_responsive h2 {
-  border-bottom: 1px solid #aaa;
-  padding-bottom: 30px;
+header #gnb_responsive h2 {
+  border-bottom: 1px solid #ddd;
+  padding-left: 20px;
+  padding-bottom: 70px;
 }
-header .btn_call #gnb_responsive h2 a img {
-  font-size: 100px;
+header #gnb_responsive h2 a img {
+  width: 150px;
 }
-header .btn_call #gnb_responsive .gnb_manu_responsive {
+header #gnb_responsive .gnb_manu_responsive {
+  width: 120px;
+  height: 100vh;
   display: block;
-  padding: 20px 0px;
+  z-index: 10;
+  background-color: #eee;
+}
+header #gnb_responsive .gnb_manu_responsive li {
   text-align: center;
-  font: bold 14px/1 "맑은고딕";
-  color: #888;
-  border-bottom: 1px solid #eee;
+}
+header #gnb_responsive .gnb_manu_responsive li a {
+  padding: 20px 0px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 60px;
+  color: #333;
+}
+header #gnb_responsive .gnb_manu_responsive li.on {
+  background-color: #fff;
+}
+header #gnb_responsive .gnb_manu_responsive li.on a {
+  color: orange;
+}
+header #gnb_responsive .sub_responsive {
+  cursor: pointer;
+}
+header #gnb_responsive .sub_responsive .sub_manu_responsive .menu_responsive {
+  width: 240px;
+  display: none;
+  position: absolute;
+  top: 120px;
+  left: 140px;
+}
+header #gnb_responsive .sub_responsive .sub_manu_responsive .menu_responsive.on {
+  display: block;
+}
+header #gnb_responsive .sub_responsive .sub_manu_responsive article {
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+header #gnb_responsive .sub_responsive .sub_manu_responsive article h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+header #gnb_responsive .sub_responsive .sub_manu_responsive article ul li {
+  margin-bottom: 10px;
+}
+header #gnb_responsive .sub_responsive .sub_manu_responsive article ul li a {
+  font-size: 17px;
+  font-weight: normal;
+  line-height: 35px;
+  color: #444;
+}
+header #gnb_responsive .sub_responsive .sub_manu_responsive article ul li a:hover {
+  color: orange;
+}
+header #gnb_responsive .util_menu_responsive {
+  width: 360px;
+  position: absolute;
+  top: 90px;
+  left: 10px;
+}
+header #gnb_responsive .util_menu_responsive ul {
+  display: flex;
+  justify-content: space-around;
+}
+header #gnb_responsive .util_menu_responsive ul li a {
+  font-size: 18px;
+  font-weight: normal;
+  color: #555;
+  gap: 20px;
+}
+header #gnb_responsive .util_menu_responsive ul li a:hover {
+  color: #444;
+  font-weight: bold;
+}
+header #gnb_responsive .util_menu_responsive ul .language_responsive {
+  display: block;
+  position: absolute;
+  top: -50px;
+  left: 200px;
+}
+header #gnb_responsive .util_menu_responsive ul .language_responsive ul li {
+  display: flex;
+}
+header #gnb_responsive .util_menu_responsive ul .language_responsive ul li i {
+  margin-top: 4px;
+  color: #777;
+  font-size: 15px;
+}
+header #gnb_responsive .util_menu_responsive ul .language_responsive ul li .language_menu_responsive {
+  width: 130px;
+  height: 30px;
+  border: 1px solid #ccc;
+  position: relative;
+  padding: 1px 10px;
+  margin-left: 10px;
+}
+header #gnb_responsive .util_menu_responsive ul .language_responsive ul li .language_menu_responsive .language_box_responsive {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header #gnb_responsive .util_menu_responsive ul .language_responsive ul li .language_menu_responsive .language_box_responsive h4 {
+  font-size: 17px;
+  font-weight: normal;
+  color: #555;
+}
+header #gnb_responsive .util_menu_responsive ul .language_responsive ul li .language_menu_responsive .language_box_responsive i {
+  font-size: 17px;
+  color: #777;
+  padding-bottom: 3px;
+}
+header #gnb_responsive .util_menu_responsive ul .language_responsive ul li .language_menu_responsive .glober_responsive {
+  display: block;
+  width: 130px;
+  position: relative;
+}
+header #gnb_responsive .util_menu_responsive ul .language_responsive ul li .language_menu_responsive .glober_responsive article {
+  width: 100%;
+  position: absolute;
+  top: 2px;
+  left: -11px;
+  display: none;
+}
+header #gnb_responsive .util_menu_responsive ul .language_responsive ul li .language_menu_responsive .glober_responsive article .glober_box_responsive {
+  width: 100%;
+  background-color: #eee;
+  border: 1px solid #eee;
+  display: block;
+  z-index: 20;
+}
+header #gnb_responsive .util_menu_responsive ul .language_responsive ul li .language_menu_responsive .glober_responsive article .glober_box_responsive span {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: block;
+  font-size: 15px;
+  font-weight: normal;
+  color: #555;
+  padding: 4px 10px;
+}
+header #gnb_responsive .util_menu_responsive ul .language_responsive ul li .language_menu_responsive .glober_responsive article .glober_box_responsive span:hover {
+  background-color: #aaa;
+  color: #fff;
 }
 
 @media screen and (max-width: 800px) {
