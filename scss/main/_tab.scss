@@ -8,6 +8,7 @@
 		top: -17%;
 		left: 50%;
 		transform: translateX(-50%);
+		margin: 0 auto;
 		width: 1200px;
 		height: 220px;
 		border-radius: 20px;
@@ -540,9 +541,9 @@
 	.popup {
 		#popup_tabmenu {
 			top: -45%;
-			left: 6vw;
 			width: 700px;
 			height: 420px;
+			margin: 0 auto;
 			.inner {
 				.tap_top {
 					display: block;
@@ -723,9 +724,9 @@
 	.popup {
 		#popup_tabmenu {
 			top: 20%;
-			left: 6vw;
 			width: 360px;
 			height: 400px;
+			margin: 0 auto;
 			.top {
 				span {
 					font-size: 15px;
