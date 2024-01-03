@@ -539,11 +539,13 @@
 // 태블릿 영역
 @media screen and (max-width: 800px) {
 	.popup {
+		margin: 0 auto;
 		#popup_tabmenu {
 			top: -45%;
+			left: 50%;
+			transform: translateX(-50%);
 			width: 700px;
 			height: 420px;
-			margin: 0 auto;
 			.inner {
 				.tap_top {
 					display: block;
@@ -722,11 +724,13 @@
 // 모바일 영역
 @media screen and (max-width: 400px) {
 	.popup {
+		margin: 0 auto;
 		#popup_tabmenu {
 			top: 20%;
+			left: 50%;
+			transform: translateX(-50%);
 			width: 360px;
 			height: 400px;
-			margin: 0 auto;
 			.top {
 				span {
 					font-size: 15px;

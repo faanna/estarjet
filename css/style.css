@@ -2471,11 +2471,15 @@ footer .footer_main .footer_con .sns i {
 }
 
 @media screen and (max-width: 800px) {
+  .popup {
+    margin: 0 auto;
+  }
   .popup #popup_tabmenu {
     top: -45%;
+    left: 50%;
+    transform: translateX(-50%);
     width: 700px;
     height: 420px;
-    margin: 0 auto;
   }
   .popup #popup_tabmenu .inner .tap_top {
     display: block;
@@ -2642,11 +2646,15 @@ footer .footer_main .footer_con .sns i {
   }
 }
 @media screen and (max-width: 400px) {
+  .popup {
+    margin: 0 auto;
+  }
   .popup #popup_tabmenu {
     top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
     width: 360px;
     height: 400px;
-    margin: 0 auto;
   }
   .popup #popup_tabmenu .top span {
     font-size: 15px;
