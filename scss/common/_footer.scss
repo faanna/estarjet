@@ -5,7 +5,8 @@ footer {
 	.inner {
 		width: 100%;
 		background-color: rgb(255, 228, 188);
-		padding: 40px 0px;
+		padding-top: 40px;
+		padding-bottom: 40px;
 		.banner {
 			width: 1200px;
 			margin: 0 auto;
@@ -39,7 +40,10 @@ footer {
 					border: 1px solid none;
 					background-color: rgb(253, 245, 233);
 					box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.06);
-					padding: 30px;
+					padding-top: 30px;
+					padding-left: 30px;
+					padding-right: 30px;
+					padding-bottom: 30px;
 					.part {
 						width: 250px;
 						h4 {
@@ -99,7 +103,8 @@ footer {
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
-			padding: 20px 0px;
+			padding-top: 20px;
+			padding-bottom: 20px;
 			li {
 				position: relative;
 				font-size: 15px;
@@ -127,12 +132,15 @@ footer {
 			margin: 0 auto;
 			display: flex;
 			justify-content: space-between;
-			padding: 20px 0px;
+			padding-top: 20px;
+			padding-bottom: 20px;
 			h2 {
-				padding: 50px 0px;
+				padding-top: 50px;
+				padding-bottom: 50px;
 			}
 			.copylight {
-				padding: 40px 0px;
+				padding-top: 40px;
+				padding-bottom: 40px;
 				.copy {
 					display: flex;
 					justify-content: left;
@@ -145,7 +153,8 @@ footer {
 				}
 			}
 			.sns {
-				padding: 70px 0px;
+				padding-top: 70px;
+				padding-bottom: 70px;
 				i {
 					font-size: 40px;
 					color: #bbb;
@@ -167,7 +176,10 @@ footer {
 				.art_wrap {
 					article {
 						width: 210px;
-						padding: 20px;
+						padding-top: 20px;
+						padding-left: 20px;
+						padding-right: 20px;
+						padding-bottom: 20px;
 						border-radius: 15px;
 						.part {
 							width: 100%;
@@ -204,7 +216,6 @@ footer {
 			word-break: break-all;
 			.footer_submenu {
 				display: inline;
-
 				li {
 					padding-top: 10px;
 					padding-left: 30px;
@@ -276,7 +287,10 @@ footer {
 						margin-left: 30px;
 						border: 1px solid #aaa;
 						border-radius: 50%;
-						padding: 8px;
+						padding-top: 8px;
+						padding-left: 8px;
+						padding-right: 8px;
+						padding-bottom: 8px;
 					}
 				}
 			}
@@ -301,7 +315,10 @@ footer {
 					display: block;
 					article {
 						width: 100%;
-						padding: 20px;
+						padding-top: 20px;
+						padding-left: 20px;
+						padding-right: 20px;
+						padding-bottom: 20px;
 						border-radius: 15px;
 						margin-bottom: 10px;
 						.part {
@@ -349,7 +366,6 @@ footer {
 					font-size: 16px;
 					padding-top: 10px;
 					padding-left: 30px;
-					padding-bottom: 0px;
 					&:nth-of-type(1) {
 						position: absolute;
 						top: 0px;
@@ -422,7 +438,10 @@ footer {
 						margin-left: 30px;
 						border: 1px solid #aaa;
 						border-radius: 50%;
-						padding: 8px;
+						padding-top: 8px;
+						padding-left: 8px;
+						padding-right: 8px;
+						padding-bottom: 8px;
 					}
 				}
 			}

@@ -4,6 +4,7 @@
 			.navi1 {
 				position: relative;
 				.navi1_part {
+					display: none;
 					width: 250px;
 					position: absolute;
 					top: 30px;
@@ -11,8 +12,10 @@
 					background-color: #f7f7f7;
 					z-index: 2;
 					border: 2px solid #ccc;
-					padding: 10px;
-					display: none;
+					padding-top: 10px;
+					padding-left: 10px;
+					padding-right: 10px;
+					padding-bottom: 10px;
 					.navi1_list {
 						display: flex;
 						margin: 0 auto;
@@ -53,17 +56,20 @@
 			.navi2 {
 				position: relative;
 				.navi2_part {
+					display: none;
 					width: 150px;
 					z-index: 2;
 					position: absolute;
 					top: 30px;
 					left: 0px;
-					display: none;
 					justify-content: center;
 					align-items: center;
 					background-color: #fff;
 					border: 1px solid #ccc;
-					padding: 10px;
+					padding-top: 10px;
+					padding-left: 10px;
+					padding-right: 10px;
+					padding-bottom: 10px;
 					.navi2_list {
 						display: block;
 						.list_txt {
@@ -94,7 +100,10 @@
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
-			padding: 20px;
+			padding-top: 20px;
+			padding-left: 20px;
+			padding-right: 20px;
+			padding-bottom: 20px;
 			.apply_txt {
 				h5 {
 					font-size: 20px;
@@ -110,7 +119,10 @@
 			}
 			.apply_button {
 				background-color: #555;
-				padding: 10px 20px;
+				padding-top: 10px;
+				padding-left: 20px;
+				padding-right: 20px;
+				padding-bottom: 10px;
 				span {
 					font-size: 16px;
 					font-weight: bold;
@@ -130,11 +142,11 @@
 		.best_box {
 			width: 1000px;
 			margin: 0 auto;
-
 			.bext_txt {
 				width: 100%;
 				text-align: center;
-				padding: 25px 0px;
+				padding-top: 25px;
+				padding-bottom: 25px;
 				span {
 					font-size: 25px;
 					font-weight: bold;
@@ -163,14 +175,17 @@
 						align-items: center;
 						border: 2px solid orange;
 						border-radius: 50%;
-						padding: 5px;
+						padding-top: 5px;
+						padding-left: 5px;
+						padding-right: 5px;
+						padding-bottom: 5px;
 					}
 					p {
-						margin-top: 10px;
-						text-align: center;
 						font-size: 17px;
 						font-weight: 500;
 						color: #333;
+						margin-top: 10px;
+						text-align: center;
 					}
 				}
 			}
@@ -185,17 +200,18 @@
 		cursor: pointer;
 		.tab_box {
 			width: 240px;
-			padding: 15px;
-			// border: 2px solid #ccc;
 			background-color: #555;
 			text-align: center;
+			padding-top: 15px;
+			padding-left: 15px;
+			padding-right: 15px;
+			padding-bottom: 15px;
 			span {
 				font-size: 18px;
 				font-weight: 600;
 				color: #fff;
 			}
 			&:nth-of-type(1) {
-				// border: 2px solid orange;
 				background-color: orange;
 				span {
 					font-size: 18px;
@@ -220,7 +236,8 @@
 				color: #333;
 				margin-bottom: 30px;
 				border-left: 4px solid orange;
-				padding: 0px 10px;
+				padding-left: 10px;
+				padding-right: 10px;
 			}
 			.menu_list {
 				width: 100%;
@@ -245,29 +262,26 @@
 							&:nth-of-type(1) {
 								font-size: 16px;
 								font-weight: 600;
-								font-family: 'arial';
 								color: #444;
 							}
 							&:nth-of-type(2) {
 								font-size: 16px;
 								font-weight: 500;
-								font-family: 'arial';
 								color: #444;
 							}
 						}
 					}
 					.menu_part {
+						display: flex;
 						width: 100%;
 						height: 65px;
 						margin-top: 10px;
-						display: flex;
 						span {
 							&:nth-of-type(1) {
 								width: 80px;
 								font-size: 16px;
 								font-weight: 600;
 								line-height: 21px;
-								font-family: 'arial';
 								color: #444;
 							}
 							&:nth-of-type(2) {
@@ -275,7 +289,6 @@
 								font-size: 16px;
 								font-weight: 500;
 								line-height: 21px;
-								font-family: 'arial';
 								color: #444;
 							}
 						}
@@ -285,7 +298,6 @@
 						span {
 							font-size: 16px;
 							font-weight: 500;
-							font-family: 'arial';
 							color: #444;
 						}
 					}
@@ -297,7 +309,6 @@
 						span {
 							font-size: 13px;
 							font-weight: 400;
-							font-family: 'arial';
 							color: #444;
 						}
 					}
@@ -318,7 +329,10 @@
 		.notice_box {
 			margin-top: 130px;
 			background-color: rgba(0, 0, 0, 0.03);
-			padding: 70px;
+			padding-top: 70px;
+			padding-left: 70px;
+			padding-right: 70px;
+			padding-bottom: 70px;
 			.notice_list {
 				margin-top: 30px;
 				h5 {
