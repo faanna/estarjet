@@ -85,5 +85,8 @@
 @media screen and (max-width: 800px) {
 	.announcement {
 		display: none;
+		.inner {
+			display: none;
+		}
 	}
 }

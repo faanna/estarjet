@@ -105,6 +105,9 @@ a {
   .announcement {
     display: none;
   }
+  .announcement .inner {
+    display: none;
+  }
 }
 header {
   width: 100%;
