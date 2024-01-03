@@ -797,15 +797,15 @@
 					}
 				}
 				.tab_box {
+					position: relative;
 					width: 360px;
 					display: block;
 					justify-content: center;
-					position: relative;
 					.tab_menu1 {
-						width: 150px;
 						position: absolute;
 						top: -60px;
 						left: 0px;
+						width: 150px;
 						.contents1 {
 							display: block;
 							width: 130px;
@@ -821,6 +821,29 @@
 						.departures {
 							top: 48px;
 							left: 0px;
+							width: 320px;
+							height: 440px;
+							.departures_box {
+								display: block;
+								margin-bottom: 190px;
+								.list_box {
+									width: 260px;
+									margin-bottom: 20px;
+									li {
+										a {
+											text-align: center;
+										}
+									}
+								}
+								.list {
+									width: 260px;
+									article {
+										a {
+											background-color: rgba(0, 0, 0, 0.1);
+										}
+									}
+								}
+							}
 						}
 					}
 					.tab_menu2 {
@@ -842,7 +865,30 @@
 						}
 						.arrivals {
 							top: 48px;
-							left: -330px;
+							left: -190px;
+							width: 320px;
+							height: 440px;
+							.arrivals_box {
+								display: block;
+								margin-bottom: 190px;
+								.list_box {
+									width: 260px;
+									margin-bottom: 20px;
+									li {
+										a {
+											text-align: center;
+										}
+									}
+								}
+								.list {
+									width: 260px;
+									article {
+										a {
+											background-color: rgba(0, 0, 0, 0.1);
+										}
+									}
+								}
+							}
 							&::before {
 								right: 50px;
 							}

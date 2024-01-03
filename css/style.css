@@ -2719,16 +2719,16 @@ footer .footer_main .footer_con .sns i {
     font-size: 18px;
   }
   .popup #popup_tabmenu .inner .tab_box {
+    position: relative;
     width: 360px;
     display: block;
     justify-content: center;
-    position: relative;
   }
   .popup #popup_tabmenu .inner .tab_box .tab_menu1 {
-    width: 150px;
     position: absolute;
     top: -60px;
     left: 0px;
+    width: 150px;
   }
   .popup #popup_tabmenu .inner .tab_box .tab_menu1 .contents1 {
     display: block;
@@ -2745,6 +2745,25 @@ footer .footer_main .footer_con .sns i {
   .popup #popup_tabmenu .inner .tab_box .tab_menu1 .departures {
     top: 48px;
     left: 0px;
+    width: 320px;
+    height: 440px;
+  }
+  .popup #popup_tabmenu .inner .tab_box .tab_menu1 .departures .departures_box {
+    display: block;
+    margin-bottom: 190px;
+  }
+  .popup #popup_tabmenu .inner .tab_box .tab_menu1 .departures .departures_box .list_box {
+    width: 260px;
+    margin-bottom: 20px;
+  }
+  .popup #popup_tabmenu .inner .tab_box .tab_menu1 .departures .departures_box .list_box li a {
+    text-align: center;
+  }
+  .popup #popup_tabmenu .inner .tab_box .tab_menu1 .departures .departures_box .list {
+    width: 260px;
+  }
+  .popup #popup_tabmenu .inner .tab_box .tab_menu1 .departures .departures_box .list article a {
+    background-color: rgba(0, 0, 0, 0.1);
   }
   .popup #popup_tabmenu .inner .tab_box .tab_menu2 {
     width: 150px;
@@ -2766,7 +2785,26 @@ footer .footer_main .footer_con .sns i {
   }
   .popup #popup_tabmenu .inner .tab_box .tab_menu2 .arrivals {
     top: 48px;
-    left: -330px;
+    left: -190px;
+    width: 320px;
+    height: 440px;
+  }
+  .popup #popup_tabmenu .inner .tab_box .tab_menu2 .arrivals .arrivals_box {
+    display: block;
+    margin-bottom: 190px;
+  }
+  .popup #popup_tabmenu .inner .tab_box .tab_menu2 .arrivals .arrivals_box .list_box {
+    width: 260px;
+    margin-bottom: 20px;
+  }
+  .popup #popup_tabmenu .inner .tab_box .tab_menu2 .arrivals .arrivals_box .list_box li a {
+    text-align: center;
+  }
+  .popup #popup_tabmenu .inner .tab_box .tab_menu2 .arrivals .arrivals_box .list {
+    width: 260px;
+  }
+  .popup #popup_tabmenu .inner .tab_box .tab_menu2 .arrivals .arrivals_box .list article a {
+    background-color: rgba(0, 0, 0, 0.1);
   }
   .popup #popup_tabmenu .inner .tab_box .tab_menu2 .arrivals::before {
     right: 50px;
