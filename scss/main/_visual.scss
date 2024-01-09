@@ -1,9 +1,9 @@
-.gallery {
+#visual {
 	width: 100%;
 	height: 650px;
 	overflow: hidden;
 	position: relative;
-	.visual {
+	.gallery {
 		position: relative;
 		width: 100%;
 		height: 100%;
@@ -89,10 +89,10 @@
 
 // 태블릿 영역
 @media screen and (max-width: 800px) {
-	.gallery {
+	#visual {
 		width: 100%;
 		height: 400px;
-		.visual {
+		.gallery {
 			.auto {
 				top: 50%;
 				left: 40%;
@@ -126,7 +126,9 @@
 
 // 모바일 영역
 @media screen and (max-width: 400px) {
-	.gallery {
-		display: none;
+	#visual {
+		.gallery {
+			display: none;
+		}
 	}
 }

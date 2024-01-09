@@ -50,7 +50,7 @@ lan_box.addEventListener('click', () => {
 
 // 반응형 gnb
 const btn_call = document.querySelector('.btn_call');
-const gnb_responsive = document.querySelector('#gnb_responsive');
+const gnb_responsive = document.querySelector('.gnb_responsive');
 
 btn_call.addEventListener('click', function (e) {
 	e.preventDefault();

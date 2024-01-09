@@ -13,7 +13,7 @@
 		<script defer src="../script/sub/navi.js"></script>
 	</head>
 	<body>
-		<aside class="announcement_sub">
+		<aside id="announcement_sub">
 			<div class="inner">
 				<div class="content">
 					<ul>
@@ -36,14 +36,14 @@
 				</div>
 			</div>
 		</aside>
-		<header class="header_sub">
+		<header id="header_sub">
 			<div class="inner">
 				<h1>
 					<a href="../index.html"
-						><img src="../image/main/main-logo.png" alt="이스타항공 로고"
+						><img src="../image/main/gnb/main_logo.png" alt="이스타항공 로고"
 					/></a>
 				</h1>
-				<nav id="gnb">
+				<nav class="gnb">
 					<ul class="gnb_manu">
 						<li><a href="#;">예약</a></li>
 						<li><a href="#;">나의예약</a></li>
@@ -60,7 +60,7 @@
 								<ul>
 									<li><a href="#;">지정좌석</a></li>
 									<li><a href="#;">위탁수화물</a></li>
-									<li><a href="./airline-meal.html">사전주문기내식</a></li>
+									<li><a href="./airline_meal.html">·사전주문기내식·</a></li>
 									<li><a href="#;">기타서비스 패키지</a></li>
 								</ul>
 							</article>
@@ -77,7 +77,7 @@
 							<article>
 								<div class="image">
 									<img
-										src="../image/main/trip-banner.jpg"
+										src="../image/main/gnb/trip_banner1.jpg"
 										alt="항공권예약배너"
 									/>
 									<p>항공권 예매하러 바로가기</p>
@@ -91,6 +91,22 @@
 									<li><a href="#;">예약내역</a></li>
 									<li><a href="#;">예약 변경 및 취소</a></li>
 								</ul>
+							</article>
+							<article>
+								<h3>셀프 체크인</h3>
+								<ul>
+									<li><a href="#;">홈페이지 체크인</a></li>
+									<li><a href="#;">모바일 체크인</a></li>
+								</ul>
+							</article>
+							<article>
+								<div class="image">
+									<img
+										src="../image/main/gnb/trip_banner2.jpeg"
+										alt="선물박스들과 알파벳 엠이 크게 써있는 사진"
+									/>
+									<p>이스타 멤버십 바로가기</p>
+								</div>
 							</article>
 						</section>
 						<section id="menu3" class="menu">
@@ -132,7 +148,7 @@
 								<ul>
 									<li><a href="#;">면세품</a></li>
 									<li><a href="#;">유료상품</a></li>
-									<li><a href="../html/In-flight-service.html">기내서비스</a></li>
+									<li><a href="../html/In_flight_service.html">·기내서비스·</a></li>
 								</ul>
 							</article>
 							<article class="affiliated_service">
@@ -152,6 +168,15 @@
 									<li><a href="#;">진행중인 이벤트</a></li>
 									<li><a href="#;">종료된 이벤트</a></li>
 								</ul>
+							</article>
+							<article>
+								<div class="image">
+									<img
+										src="../image/main/gnb/event_banner.png"
+										alt="포스텔러어플 새해 이벤트 사진"
+									/>
+									<p>포스텔러 이벤트 바로가기</p>
+								</div>
 							</article>
 						</section>
 					</div>
@@ -192,7 +217,7 @@
 				  </nav>
 			</div>
 		</header>
-		<div class="btn_sub">
+		<div id="btn_sub">
 			<a href="#;" class="btnUp">
 				<em>UP</em>
 			</a>
@@ -200,7 +225,7 @@
 				<em>DOWN</em>
 			</a>
 		</div>
-		<section class="content">
+		<section id="content">
 			<div class="navi">
 				<div class="inner">
 					<div class="home">
@@ -262,7 +287,7 @@
 						</p>
 					</div>
 					<div class="title_img">
-						<img src="../image/sub-airmeal/airline-meal-icon.png" alt="기내식 아이콘" />
+						<img src="../image/sub_airmeal/airline_meal.png" alt="기내식 아이콘" />
 					</div>
 				</div>
 			</div>
@@ -285,19 +310,19 @@
 					<div class="best_img">
 						<div class="img">
 							<a href="#;">
-								<img src="../image/sub-airmeal/best/pizza.png" alt="VIPS 페페로니 피자">
+								<img src="../image/sub_airmeal/best/pizza.png" alt="VIPS 페페로니 피자">
 							</a>
 						<p>VIPS 페페로니 피자</p>
 							</img>
 						</div>
 						<div class="img">
-							<img src="../image/sub-airmeal/best/chicken.png" alt="BBQ 치킨강정(순한맛)">
+							<img src="../image/sub_airmeal/best/chicken.png" alt="BBQ 치킨강정(순한맛)">
 							<p>BBQ 치킨강정</p>
 							<p>(순한맛)</p>
 							</img>
 						</div>
 						<div class="img">
-							<img src="../image/sub-airmeal/best/bulgogi.png" alt="불고기덮밥">
+							<img src="../image/sub_airmeal/best/bulgogi.png" alt="불고기덮밥">
 							<p>불고기라이스</p>
 							</img>
 						</div>
@@ -326,7 +351,7 @@
 					<h5>스페셜</h5>
 					<div class="menu_list">
 						<div class="list">
-							<img src="../image/sub-airmeal/special/pizza-nemo.jpg" alt="VIPS 페퍼로니 피자사진">
+							<img src="../image/sub_airmeal/special/pizza_nemo.jpg" alt="VIPS 페퍼로니 피자사진">
 							<h6>VIPS 페퍼로니 피자</h6>
 							<div class="price">
 								<span>18,000원</span>
@@ -345,7 +370,7 @@
 							</div>
 						</div>
 						<div class="list">
-							<img src="../image/sub-airmeal/special/chicken-nemo.jpg" alt="BBQ 치킨강정(순한맛)사진">
+							<img src="../image/sub_airmeal/special/chicken_nemo.jpg" alt="BBQ 치킨강정(순한맛)사진">
 							<h6>BBQ 치킨강정(순한맛)</h6>
 							<div class="price">
 								<span>18,000원</span>
@@ -369,7 +394,7 @@
 					<h5>라이스</h5>
 					<div class="menu_list">
 						<div class="list">
-							<img src="../image/sub-airmeal/rice/bulgogi-nemo.jpg" alt="불고기라이스 사진">
+							<img src="../image/sub_airmeal/rice/bulgogi_nemo.jpg" alt="불고기라이스 사진">
 							<h6>불고기라이스</h6>
 							<div class="price">
 								<span>15,000원</span>
@@ -390,7 +415,7 @@
 							</div>
 						</div>
 						<div class="list">
-							<img src="../image/sub-airmeal/rice/hambak.jpg" alt="함박스테이크와 볶음밥사진">
+							<img src="../image/sub_airmeal/rice/hambak.jpg" alt="함박스테이크와 볶음밥사진">
 							<h6>함박스테이크와 볶음밥</h6>
 							<div class="price">
 								<span>15,000원</span>
@@ -412,7 +437,7 @@
 							</div>
 						</div>
 						<div class="list">
-							<img src="../image/sub-airmeal/rice/bibimbab.jpg" alt="소고기 비빔밥사진">
+							<img src="../image/sub_airmeal/rice/bibimbab.jpg" alt="소고기 비빔밥사진">
 							<h6>소고기비빔밥</h6>
 							<div class="price">
 								<span>14,000원</span>
@@ -439,7 +464,7 @@
 					<h5>베이커리</h5>
 					<div class="menu_list">
 						<div class="list">
-							<img src="../image/sub-airmeal/sandwich/danhobak.jpg" alt="단호박 샌드위치사진">
+							<img src="../image/sub_airmeal/sandwich/danhobak.jpg" alt="단호박 샌드위치사진">
 							<h6>단호박 샌드위치</h6>
 							<div class="price">
 								<span>10,000원</span>
@@ -460,7 +485,7 @@
 							</div>
 						</div>
 						<div class="list">
-							<img src="../image/sub-airmeal/sandwich/ham&egg.jpg" alt="햄에그마요 샌드위치사진">
+							<img src="../image/sub_airmeal/sandwich/ham&egg.jpg" alt="햄에그마요 샌드위치사진">
 							<h6>햄에그마요 샌드위치</h6>
 							<div class="price">
 								<span>10,000원</span>
@@ -481,7 +506,7 @@
 							</div>
 						</div>
 						<div class="list">
-							<img src="../image/sub-airmeal/sandwich/roze.jpg" alt="로제치킨 부리토사진">
+							<img src="../image/sub_airmeal/sandwich/roze.jpg" alt="로제치킨 부리토사진">
 							<h6>로제치킨 부리토</h6>
 							<div class="price">
 								<span>10,000원</span>
@@ -508,7 +533,7 @@
 					<h5>샐러드</h5>
 					<div class="menu_list">
 						<div class="list">
-							<img src="../image/sub-airmeal/salad/salad.jpg" alt="훈제닭가슴살 샐러드사진">
+							<img src="../image/sub_airmeal/salad/salad.jpg" alt="훈제닭가슴살 샐러드사진">
 							<h6>훈제닭가슴살 샐러드</h6>
 							<div class="price">
 								<span>8,000원</span>
@@ -560,7 +585,7 @@
 				</div>
 			</div>
 		</section>
-		<footer class="footer_sub">
+		<footer id="footer_sub">
 			<div class="inner">
 				<div class="banner">
 					<h2>고객지원센터</h2>
@@ -601,7 +626,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="footer_sub">
+			<div class="footer_sublist">
 				<ul class="footer_submenu">
 					<li>회사소개</li>
 					<li>이용약관</li>
@@ -616,9 +641,9 @@
 			<div class="footer_main">
 				<div class="footer_con">
 					<h2>
-						<a href="./main.html">
+						<a href="../index.html">
 							<img
-								src="../image/footer/footer-logo.png"
+								src="../image/main/footer/footer_logo.png"
 								alt="푸터 하얀색 로고"
 							/>
 						</a>

@@ -1,4 +1,4 @@
-.btn {
+#btn {
 	.btnUp {
 		display: block;
 		position: fixed;
@@ -107,7 +107,7 @@
 
 // 태블릿 영역
 @media screen and (max-width: 800px) {
-	.btn {
+	#btn {
 		.btnUp {
 			display: none;
 		}

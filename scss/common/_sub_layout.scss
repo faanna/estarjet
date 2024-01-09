@@ -1,4 +1,4 @@
-.announcement_sub {
+#announcement_sub {
 	width: 100%;
 	height: 30px;
 	display: flex;
@@ -81,7 +81,7 @@
 	}
 }
 
-.header_sub {
+#header_sub {
 	width: 100%;
 	border-bottom: 2px solid #ddd;
 	.inner {
@@ -99,7 +99,7 @@
 				}
 			}
 		}
-		#gnb {
+		.gnb {
 			position: absolute;
 			top: 5.3vh;
 			left: 15vw;
@@ -311,7 +311,7 @@
 	}
 }
 
-.content {
+#content {
 	width: 100%;
 	.navi {
 		width: 500px;
@@ -389,7 +389,7 @@
 	}
 }
 
-.btn_sub {
+#btn_sub {
 	.btnUp {
 		display: block;
 		position: fixed;
@@ -498,7 +498,7 @@
 	}
 }
 
-.footer_sub {
+#footer_sub {
 	width: 100%;
 	margin: 0 auto;
 	margin-top: 200px;
@@ -592,7 +592,7 @@
 			}
 		}
 	}
-	.footer_sub {
+	.footer_sublist {
 		width: 100%;
 		background-color: #eee;
 		border-top: 1px solid #ddd;
@@ -669,7 +669,7 @@
 
 // 태블릿 영역
 @media screen and (max-width: 800px) {
-	.btn_sub {
+	#btn_sub {
 		.btnUp {
 			display: none;
 		}
@@ -677,7 +677,7 @@
 			display: none;
 		}
 	}
-	.footer_sub {
+	#footer_sub {
 		margin-top: 100px;
 		.inner {
 			.banner {
@@ -719,7 +719,7 @@
 				}
 			}
 		}
-		.footer_sub {
+		.footer_sublist {
 			.footer_submenu {
 				width: 700px;
 			}
@@ -729,7 +729,7 @@
 
 // 모바일 영역
 @media screen and (max-width: 400px) {
-	.footer_sub {
+	#footer_sub {
 		margin-top: 100px;
 		.inner {
 			.banner {
@@ -780,7 +780,7 @@
 				}
 			}
 		}
-		.footer_sub {
+		.footer_sublist {
 			.footer_submenu {
 				width: 700px;
 			}

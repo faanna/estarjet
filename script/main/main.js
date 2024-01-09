@@ -1,5 +1,5 @@
 // visual;
-var swiper = new Swiper('.visual', {
+var swiper = new Swiper('.gallery', {
 	loop: true,
 	spaceBetween: 0,
 	speed: 3000,
